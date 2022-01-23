@@ -1,4 +1,4 @@
-# modal-project
+# agulite-project
 
 ## Project setup
 ```

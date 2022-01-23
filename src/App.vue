@@ -16,7 +16,7 @@ export default {
   },
   data(){
     return{
-      title: 'My first vue application'
+      title: 'Agulite'
     }
   },
   methods:{

@@ -1,7 +1,6 @@
 <template>
    <h1>{{ title }}</h1>
    <button class="btn btn-danger">Check</button>
-   <Modal />
    <!-- <input type="text" ref="name">
    <button @click="handleClick">click me </button> -->
   
@@ -9,12 +8,11 @@
 
 <script>
 
-import Modal from './components/Modal.vue'
 
 export default {
   name: 'App',
   components:{
-    Modal
+  
   },
   data(){
     return{

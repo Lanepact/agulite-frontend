@@ -37,7 +37,7 @@
                                     <input type="password" class="form-control" id="exampleInputPassword1">
                                 </div>
                                 <button type="button" class="btn btn-primary btn-lg btn-block next">Next</button>
-                                <div class="account-login">I already have an account! <a href="#" class="">Login</a> </div>
+                                <div class="account-login">I already have an account! <a href="/signin" class="">Login</a> </div>
                                  <button type="button" class="btn btn-primary btn-lg btn-block google-sign-up">
                                      <img src="@/assets/Google-Logo.png" alt="g"/>
                                      <span>Sign up with Google</span>

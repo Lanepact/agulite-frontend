@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin:0;
     padding:0;
+}
+body{
+    font-family: Nunito !important;
 }
 h1{
     color: purple;
@@ -80,6 +84,7 @@ h1{
 }
 .signup-section .signup-form-section form .google-sign-up img{
     width: 5% !important;
+    margin-right: 10px !important;
 }
 .signup-section .signup-form-section form .account-login{
     display: flex !important;
@@ -103,5 +108,135 @@ h1{
     margin-bottom: 20px !important;
 }
 .signup-section .signup-form-section form input:focus{
+    box-shadow: none !important;
+}
+.signin-section img{
+    width: 100%;
+}
+.signin-section .signin-form-section{
+   background-color: #f7f7f7 !important;
+   height: 100vh;
+   padding: 60px 80px !important;
+   margin-left: -18px !important;
+}
+.signin-section .signin-form-section h1{
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 10px !important;
+}
+.signin-section .signin-form-section p{
+    color: #000000;
+    font-size: 20px;
+    line-height: 27px;
+}
+.signin-section .signin-form-section form{
+    margin-top: 80px !important;
+   
+}
+.signin-section .signin-form-section form label{
+    color:#010107 !important;
+    font-size: 18px !important;
+    line-height: 40px !important;
+}
+.signin-section .signin-form-section form input{
+    border-top:none !important;
+    border-left: none !important;
+    border-right: none !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid rgba(130, 123, 123, 0.44) !important;
+
+}
+.signin-section .signin-form-section form .checkup{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+   
+}
+.signin-section .signin-form-section form .checkup .rem-me{
+    color: #010107 !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    padding-left: 10px !important;
+}
+.signin-section .signin-form-section form .checkup .forgot-pass{
+    color: #666666 !important;
+    font-weight: normal !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    margin-top: -20px !important;
+    text-decoration: none;
+}
+.signin-section .signin-form-section form .login{
+    margin-top: 40px !important;
+    background-color: #DB4D0B !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.signin-section .signin-form-section form .google-sign-in{
+    margin-top: 20px !important;
+    background-color: #F5F2F2 !important;
+    border: 1px solid #333333 !important;
+    display: flex !important;
+    color: #010107;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.signin-section .signin-form-section form .apple-sign-in{
+    margin-top: 20px !important;
+    background-color: #F5F2F2 !important;
+    border: 1px solid #333333 !important;
+    display: flex !important;
+    color: #010107;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.signin-section .signin-form-section form .facebook-sign-in{
+    margin-top: 20px !important;
+    background-color: #F5F2F2 !important;
+    border: 1px solid #333333 !important;
+    display: flex !important;
+    color: #010107;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.signin-section .signin-form-section form .google-sign-in img{
+    width: 5% !important;
+    margin-right: 10px !important;
+}
+.signin-section .signin-form-section form .apple-sign-in img{
+    width: 5% !important;
+    margin-right: 10px !important;
+}
+.signin-section .signin-form-section form .facebook-sign-in img{
+    width: 10% !important;
+    margin-right: 5px !important;
+}
+.signin-section .signin-form-section form .account-signup{
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 20px !important; 
+    color: #010107 !important;
+
+}
+.signin-section .signin-form-section form .account-signup a{
+    text-decoration: none !important;
+    color: #DB4D0B !important;
+    padding-left: 4px !important;
+}
+.signin-section .signin-form-section form button:hover{
+    box-shadow: none !important;
+}
+.signin-section .signin-form-section form button:focus{
+    box-shadow: none !important;
+}
+.signin-section .signin-form-section form .form-group{
+    margin-bottom: 20px !important;
+}
+.signin-section .signin-form-section form input:focus{
     box-shadow: none !important;
 }

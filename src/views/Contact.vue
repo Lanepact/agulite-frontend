@@ -2,7 +2,7 @@
   <div>
     <navbar />
   </div>
-  <h1>About</h1>
+  <h1>Contact</h1>
   
 </template>
 
@@ -10,7 +10,7 @@
 import Navbar from '../components/navbar.vue'
 
 export default {
-  name: 'About',
+  name: 'Contact',
   components:{
     Navbar
   },

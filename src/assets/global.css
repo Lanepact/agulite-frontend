@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+    color: purple;
+}
+.signlogo{
+    display: flex;
+    justify-content: flex-start !important;
+    margin-left: 40px !important;
+}
+.sign-up-step{
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    margin-right: 120px !important;
+}
+.step-writeup{
+    color: #000000 !important;
+}
+.sign-up-step .step-line{
+    border-bottom: 2px solid  #DB4D0B !important;
+    width: 100px !important;
+    margin-left: 20px !important;
+
+}
+.signup-section img{
+    width: 100%;
+}
+.signup-section .signup-form-section{
+   background-color: #f7f7f7 !important;
+   height: 100vh;
+   padding: 60px 80px !important;
+   margin-left: -18px !important;
+}
+.signup-section .signup-form-section h1{
+    color: #000000;
+    font-size: 40px;
+}
+.signup-section .signup-form-section p{
+    color: #000000;
+    font-size: 20px;
+    line-height: 27px;
+}
+.signup-section .signup-form-section form{
+    margin-top: 80px !important;
+   
+}
+.signup-section .signup-form-section form label{
+    color:#010107 !important;
+    font-size: 18px !important;
+    line-height: 40px !important;
+}
+.signup-section .signup-form-section form input{
+    border-top:none !important;
+    border-left: none !important;
+    border-right: none !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid rgba(130, 123, 123, 0.44) !important;
+
+}
+.signup-section .signup-form-section form .next{
+    margin-top: 40px !important;
+    background-color: #DB4D0B !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.signup-section .signup-form-section form .google-sign-up{
+    margin-top: 20px !important;
+    background-color: #F5F2F2 !important;
+    border: 1px solid #333333 !important;
+    display: flex !important;
+    color: #010107;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.signup-section .signup-form-section form .google-sign-up img{
+    width: 5% !important;
+}
+.signup-section .signup-form-section form .account-login{
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 20px !important; 
+    color: #010107 !important;
+
+}
+.signup-section .signup-form-section form .account-login a{
+    text-decoration: none !important;
+    color: #DB4D0B !important;
+    padding-left: 4px !important;
+}
+.signup-section .signup-form-section form button:hover{
+    box-shadow: none !important;
+}
+.signup-section .signup-form-section form button:focus{
+    box-shadow: none !important;
+}
+.signup-section .signup-form-section form .form-group{
+    margin-bottom: 20px !important;
+}
+.signup-section .signup-form-section form input:focus{
+    box-shadow: none !important;
+}

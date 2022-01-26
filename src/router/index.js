@@ -5,7 +5,7 @@ import Service from '../views/Service.vue'
 import Contact from '../views/Contact.vue'
 import Signin from '../views/authentication/Signin.vue'
 import Signup from '../views/authentication/Signup.vue'
-
+import Dashboard from '../views/dashboard/Userdashboard.vue'
 
 const routes = [
   {
@@ -37,6 +37,11 @@ const routes = [
     path: '/signup',
     name: 'Signup',
     component: Signup
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard
   },
 
 ]

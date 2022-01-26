@@ -26,10 +26,10 @@ export default {
         goToSignin(){
             this.$router.push('/signin')
             this.authentication = true
-            console.log(this.$router.current.path)
+           
         },
         goToSignUp(){
-            this.$router.push('signup')
+            this.$router.push('/signup')
             this.authentication = true
         }
             

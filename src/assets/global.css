@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0 !important;
+    padding:0 !important;
+}
+body{
+    font-family: Nunito !important;
+}
+h1{
+    color: purple;
+}
+.signlogo{
+    display: flex;
+    justify-content: flex-start !important;
+    margin-left: 40px !important;
+}
+.sign-up-step{
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    margin-right: 120px !important;
+}
+.step-writeup{
+    color: #000000 !important;
+}
+.sign-up-step .step-line{
+    border-bottom: 2px solid  #DB4D0B !important;
+    width: 100px !important;
+    margin-left: 20px !important;
+
+}
+.signup-section img{
+    width: 100%;
+}
+.signup-section .signup-form-section{
+   background-color: #f7f7f7 !important;
+   height: 100vh;
+   padding: 60px 80px !important;
+   margin-left: -18px !important;
+}
+.signup-section .signup-form-section h1{
+    color: #000000;
+    font-size: 40px;
+}
+.signup-section .signup-form-section p{
+    color: #000000;
+    font-size: 20px;
+    line-height: 27px;
+}
+.signup-section .signup-form-section form{
+    margin-top: 80px !important;
+   
+}
+.signup-section .signup-form-section form label{
+    color:#010107 !important;
+    font-size: 18px !important;
+    line-height: 40px !important;
+}
+.signup-section .signup-form-section form input{
+    border-top:none !important;
+    border-left: none !important;
+    border-right: none !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid rgba(130, 123, 123, 0.44) !important;
+
+}
+.signup-section .signup-form-section form .next{
+    margin-top: 40px !important;
+    background-color: #DB4D0B !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.signup-section .signup-form-section form .google-sign-up{
+    margin-top: 20px !important;
+    background-color: #F5F2F2 !important;
+    border: 1px solid #333333 !important;
+    display: flex !important;
+    color: #010107;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.signup-section .signup-form-section form .google-sign-up img{
+    width: 5% !important;
+    margin-right: 10px !important;
+}
+.signup-section .signup-form-section form .account-login{
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 20px !important; 
+    color: #010107 !important;
+
+}
+.signup-section .signup-form-section form .account-login a{
+    text-decoration: none !important;
+    color: #DB4D0B !important;
+    padding-left: 4px !important;
+}
+.signup-section .signup-form-section form button:hover{
+    box-shadow: none !important;
+}
+.signup-section .signup-form-section form button:focus{
+    box-shadow: none !important;
+}
+.signup-section .signup-form-section form .form-group{
+    margin-bottom: 20px !important;
+}
+.signup-section .signup-form-section form input:focus{
+    box-shadow: none !important;
+}
+.signin-section img{
+    width: 100%;
+}
+.signin-section .signin-form-section{
+   background-color: #f7f7f7 !important;
+   height: 100vh;
+   padding: 60px 80px !important;
+   margin-left: -18px !important;
+}
+.signin-section .signin-form-section h1{
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 10px !important;
+}
+.signin-section .signin-form-section p{
+    color: #000000;
+    font-size: 20px;
+    line-height: 27px;
+}
+.signin-section .signin-form-section form{
+    margin-top: 80px !important;
+   
+}
+.signin-section .signin-form-section form label{
+    color:#010107 !important;
+    font-size: 18px !important;
+    line-height: 40px !important;
+}
+.signin-section .signin-form-section form input{
+    border-top:none !important;
+    border-left: none !important;
+    border-right: none !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid rgba(130, 123, 123, 0.44) !important;
+
+}
+.signin-section .signin-form-section form .checkup{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+   
+}
+.signin-section .signin-form-section form .checkup .rem-me{
+    color: #010107 !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    padding-left: 10px !important;
+}
+.signin-section .signin-form-section form .checkup .forgot-pass{
+    color: #666666 !important;
+    font-weight: normal !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    margin-top: -20px !important;
+    text-decoration: none;
+}
+.signin-section .signin-form-section form .login{
+    margin-top: 40px !important;
+    background-color: #DB4D0B !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.signin-section .signin-form-section form .google-sign-in{
+    margin-top: 20px !important;
+    background-color: #F5F2F2 !important;
+    border: 1px solid #333333 !important;
+    display: flex !important;
+    color: #010107;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.signin-section .signin-form-section form .apple-sign-in{
+    margin-top: 20px !important;
+    background-color: #F5F2F2 !important;
+    border: 1px solid #333333 !important;
+    display: flex !important;
+    color: #010107;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.signin-section .signin-form-section form .facebook-sign-in{
+    margin-top: 20px !important;
+    background-color: #F5F2F2 !important;
+    border: 1px solid #333333 !important;
+    display: flex !important;
+    color: #010107;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.signin-section .signin-form-section form .google-sign-in img{
+    width: 5% !important;
+    margin-right: 10px !important;
+}
+.signin-section .signin-form-section form .apple-sign-in img{
+    width: 5% !important;
+    margin-right: 10px !important;
+}
+.signin-section .signin-form-section form .facebook-sign-in img{
+    width: 10% !important;
+    margin-right: 5px !important;
+}
+.signin-section .signin-form-section form .account-signup{
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 20px !important; 
+    color: #010107 !important;
+
+}
+.signin-section .signin-form-section form .account-signup a{
+    text-decoration: none !important;
+    color: #DB4D0B !important;
+    padding-left: 4px !important;
+}
+.signin-section .signin-form-section form button:hover{
+    box-shadow: none !important;
+}
+.signin-section .signin-form-section form button:focus{
+    box-shadow: none !important;
+}
+.signin-section .signin-form-section form .form-group{
+    margin-bottom: 20px !important;
+}
+.signin-section .signin-form-section form input:focus{
+    box-shadow: none !important;
+}
+.dashboard-section{
+    margin:0 !important;
+}
+.dashboard-items .logo{
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+}
+.dashboard-items{
+    background-color: #F5800C !important;
+    height: 150vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+.dashboard-items .db-item{
+    display: flex !important;
+    align-items: center;
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 41px;
+    margin-bottom: 30px !important;
+    padding: 5px 20px !important;
+    width: 100%;
+}
+.dashboard-items .db-item:hover{
+    background-color: #DB4D0B !important;
+    padding: 5px 20px !important;
+}
+.dashboard-items .profile{
+    /* margin-left: -45px !important; */
+}
+.dashboard-items .logout{
+    margin-top: 50px !important;
+    /* margin-left: -45px !important; */
+}
+.dashboard-items .db-item span{
+    padding-left: 10px !important;
+}
+.db-nav{
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-top: 10px !important;
+    padding: 0 10px !important;
+    align-items: center !important;
+}
+.db-nav .user-detail{
+    display: flex !important;
+    flex-direction: column !important;
+    color:#DB4D0B !important;
+}
+/* .db-nav .search-box{
+    display: flex;
+    align-items: center;
+} */
+.db-nav .search-box{
+    position: relative;
+}
+.db-nav .username{
+    font-weight: bold;
+font-size: 20px;
+line-height: 41px;
+color: #DB4D0B;
+}
+.db-nav .search-box input{
+    border-radius: 25px !important;
+    border: 1px solid #F5800C !important;
+    padding-left: 10px !important;
+    padding: 20px 0 6px 10px;
+    height: 30px !important;
+    outline: none !important; 
+}
+.db-nav .search-box .search-icon{
+    position: absolute;
+    right: 10px;
+    top: 5px !important;
+    
+}
+#menuBtn{
+    width: 35px;
+  cursor: pointer;
+  color:  #F5800C !important ;
+}
+.mobile-dashboard-section .mobile-nav{
+    margin-top: 10px !important;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 20px !important;    
+}
+.mobile-dashboard-section .mobile-nav .logo{
+    width: 150px !important;
+}
+.mobile-dashboard-section .mobile-nav .logo img{
+    width: 100% !important;
+}
+.mobile-dashboard{
+    display: flex !important;
+    flex-direction: column !important;
+    background-color:#F5800C !important;
+    padding-top: 100px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:-250px;
+    background:#647D64;
+    opacity:0.9;
+    z-index:2;
+    transition: 1.5s;
+}
+.mobile-dashboard .db-item:hover{
+    background-color: #DB4D0B !important;
+    color: white;
+    cursor: pointer;
+}
+.mobile-dashboard .db-item{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    color:white;
+    text-decoration: none;
+    text-decoration: none !important;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 41px;
+    margin-bottom: 10px !important;
+    padding: 5px 20px !important;
+    width: 100%;
+}
+.mobile-dashboard .db-item span{
+    padding-left: 10px !important;
+}
+.mobile-nav-info .nav-info{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    padding-top: 5px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important; 
+    margin-bottom: 20px !important;
+}
+.mobile-nav-info .search-box{
+    position: relative;
+}
+.mobile-nav-info .notification{
+    width: 30px !important;
+}
+.mobile-nav-info .notification img{
+    width: 100% !important;
+}
+.mobile-nav-info .user-img img{
+    width: 100% !important;
+}
+.mobile-nav-info .user-img{
+    width: 30px !important;
+}
+.mobile-nav-info .username{
+    font-weight: bold;
+    font-size: 20px;
+    color: #F5800C !important;
+    text-align: center !important;
+    
+}
+.mobile-nav-info .search-box input{
+    border-radius: 25px !important;
+    border: 1px solid #F5800C !important;
+    padding-left: 10px !important;
+    padding: 6px 0 6px 10px;
+    height: 30px !important;
+    outline: none !important; 
+  
+}
+.mobile-nav-info .search-box .search-icon{
+    position: absolute;
+    right: 8px !important;
+    top: 5px !important;
+    
+}
+.courses-det .box{
+    margin: 20px !important;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #3535BC !important;
+    border-radius: 20px !important;
+    padding: 25px 10px !important;
+}
+.courses-det .box button{
+    background: #DB4D0B !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 8px 10px !important;
+    color: #FFFFFF !important;
+}
+.courses-det .box .box-text{
+    width: 50% !important;
+}
+.courses-det .course-prog .title{
+    font-weight: normal;
+    color: #DB4D0B !important;
+    font-size: 20px;
+    margin-left: 10px !important;
+}
+.courses-det .course-prog{
+    margin: 10px 20px !important;
+}
+.courses-det .course-prog .exp{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background: #F5800C !important;
+    padding: 10px 20px !important;
+    border-radius: 20px !important;
+    color: #FFFFFF !important;
+    margin-bottom: 20px !important;
+    height: 45px !important;
+}
+.courses-det .course-prog .percent{
+    display: flex !important;
+    flex-direction: column !important;
+}
+.learning .learn-path{
+    margin:20px !important;
+}
+.learning .learn-path .title{
+    color: #DB4D0B !important;
+    margin-left: 10px !important;
+    font-weight: normal !important;
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+    line-height: 33px !important;
+}
+.learning .learn-path .learn-imgs{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+}
+.learning .learn-path .learn-imgs .img-1{
+    width: 45% !important;
+    margin-bottom: 20px !important;
+    position: relative !important;
+}
+.learning .learn-path .learn-imgs .img-2{
+    width: 45% !important;
+    margin-bottom: 20px !important;
+    position: relative !important;
+}
+.learning .learn-path .learn-imgs .img-3{
+    width: 45% !important;
+    margin-bottom: 20px !important;
+    position: relative !important;
+}
+.learning .learn-path .learn-imgs .img-4{
+    width: 45% !important;
+    margin-bottom: 20px !important;
+    position: relative !important;
+}
+.learning .learn-path .learn-imgs .img-1 .overlay{
+    position: absolute !important;
+    top: 60px !important;
+    left: 30px !important;
+    font-size: 16px;
+    line-height: 25px;
+    color: white !important;
+}
+.learning .learn-path .learn-imgs .img-2 .overlay{
+    position: absolute !important;
+    top: 60px !important;
+    left: 50px !important;
+    font-size: 16px;
+    line-height: 25px;
+    color: white !important;
+}
+.learning .learn-path .learn-imgs .img-3 .overlay{
+    position: absolute !important;
+    top: 60px !important;
+    left: 30px !important;
+    font-size: 16px;
+    line-height: 25px;
+    color: white !important;
+}
+.learning .learn-path .learn-imgs .img-4 .overlay{
+    position: absolute !important;
+    top: 60px !important;
+    left: 70px !important;
+    font-size: 16px;
+    line-height: 25px;
+    color: white !important;
+}
+.learning .upcoming-task{
+    margin: 20px 20px 0 !important;
+}
+.learning .upcoming-task .title{
+    color: #DB4D0B !important;
+    font-weight: normal !important;
+    font-size: 20px !important;
+    line-height: 33px !important;
+}
+.learning .upcoming-task .task{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background: rgba(196, 196, 196, 0.05) !important;
+    padding: 10px 20px !important;
+    border-radius: 20px !important;
+    color: #000000 !important;
+    border: 1px dashed #000000 !important;
+    margin-bottom: 30px !important;
+    height: 45px !important;
+}
+.learning .upcoming-task .task a{
+    color: #DB4D0B !important;
+}
+@media screen and (max-width:1024px){
+    .learning .learn-path .learn-imgs .img-1 .overlay{
+        top: 40px !important;
+    }
+    .learning .learn-path .learn-imgs .img-2 .overlay{
+        top: 40px !important;
+    }
+    .learning .learn-path .learn-imgs .img-3 .overlay{
+        top: 40px !important;
+    }
+    .learning .learn-path .learn-imgs .img-4 .overlay{
+        top: 40px !important;
+        left: 40px !important
+    }
+}

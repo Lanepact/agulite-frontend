@@ -129,7 +129,7 @@
                                     <input type="password" class="form-control" id="exampleInputPassword1">
                                 </div>
                                 <button type="button" class="btn btn-primary btn-lg btn-block next p-3">Finish</button>
-                                <div class="account-login">I already have an account! <a href="/signin" class="">Login</a> </div>
+                                <div class="account-login">I already have an account! <router-link to="/signin" class="">Login</router-link> </div>
                                  <button type="button" class="btn btn-primary btn-lg btn-block google-sign-up p-2">
                                      <img src="@/assets/Google-Logo.png" alt="g"/>
                                      <span>Sign up with Google</span>

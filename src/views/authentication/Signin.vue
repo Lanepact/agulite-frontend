@@ -32,7 +32,7 @@
                                     <a href="#" class="forgot-pass">Forgot password</a>
                                 </div>
                                 <button type="button" class="btn btn-primary btn-lg btn-block login p-3">Login</button>
-                                <div class="account-signup">Don’t have an account?  <a href="/signup" class="">Sign up</a> </div>
+                                <div class="account-signup">Don’t have an account?  <router-link to="/signup" class="">Sign up</router-link></div>
                                  <button type="button" class="btn btn-primary btn-lg btn-block google-sign-in p-2">
                                      <img src="@/assets/Google-Logo.png" alt="g"/>
                                      <span>Login with Google</span>

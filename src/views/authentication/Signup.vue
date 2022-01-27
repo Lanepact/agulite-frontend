@@ -8,7 +8,7 @@
             <span class="step-line"></span>
         </div>
         <div class="signup-section mt-4" v-if="form1">
-            <div class="container">
+            <div class="container main">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-none d-md-block">
                         <div>
@@ -36,9 +36,9 @@
                                     <label for="">Confirm Password:</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1">
                                 </div>
-                                <button type="button" class="btn btn-primary btn-lg btn-block next" @click="next">Next</button>
+                                <button type="button" class="btn btn-primary btn-lg btn-block next p-3" @click="next">Next</button>
                                 <div class="account-login">I already have an account! <a href="/signin" class="">Login</a> </div>
-                                 <button type="button" class="btn btn-primary btn-lg btn-block google-sign-up">
+                                 <button type="button" class="btn btn-primary btn-lg btn-block google-sign-up p-2">
                                      <img src="@/assets/Google-Logo.png" alt="g"/>
                                      <span>Sign up with Google</span>
                                  </button>
@@ -54,7 +54,7 @@
             <span class="step-line"></span>
         </div>
          <div class="signup-section mt-4"  v-if="form2">
-            <div class="container">
+            <div class="container main">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-none d-md-block">
                         <div>
@@ -82,9 +82,9 @@
                                     <label for="">Confirm Password:</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1">
                                 </div>
-                                <button type="button" class="btn btn-primary btn-lg btn-block next" @click="after">Continue</button>
+                                <button type="button" class="btn btn-primary btn-lg btn-block next p-3" @click="after">Continue</button>
                                 <div class="account-login">I already have an account! <a href="/signin" class="">Login</a> </div>
-                                 <button type="button" class="btn btn-primary btn-lg btn-block google-sign-up">
+                                 <button type="button" class="btn btn-primary btn-lg btn-block google-sign-up p-2">
                                      <img src="@/assets/Google-Logo.png" alt="g"/>
                                      <span>Sign up with Google</span>
                                  </button>
@@ -100,7 +100,7 @@
             <span class="step-line"></span>
         </div>
          <div class="signup-section mt-4"  v-if="form3">
-            <div class="container">
+            <div class="container main">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-none d-md-block">
                         <div>
@@ -128,9 +128,9 @@
                                     <label for="">Confirm Password:</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1">
                                 </div>
-                                <button type="button" class="btn btn-primary btn-lg btn-block next">Finish</button>
+                                <button type="button" class="btn btn-primary btn-lg btn-block next p-3">Finish</button>
                                 <div class="account-login">I already have an account! <a href="/signin" class="">Login</a> </div>
-                                 <button type="button" class="btn btn-primary btn-lg btn-block google-sign-up">
+                                 <button type="button" class="btn btn-primary btn-lg btn-block google-sign-up p-2">
                                      <img src="@/assets/Google-Logo.png" alt="g"/>
                                      <span>Sign up with Google</span>
                                  </button>

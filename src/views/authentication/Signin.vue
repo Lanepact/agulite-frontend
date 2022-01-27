@@ -4,7 +4,7 @@
             <img src="@/assets/agulogo.png" alt="agulogo" />
         </div>
         <div class="signin-section mt-4">
-            <div class="container">
+            <div class="container main">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-none d-md-block">
                         <div>
@@ -31,17 +31,17 @@
                                     </div>
                                     <a href="#" class="forgot-pass">Forgot password</a>
                                 </div>
-                                <button type="button" class="btn btn-primary btn-lg btn-block login">Login</button>
+                                <button type="button" class="btn btn-primary btn-lg btn-block login p-3">Login</button>
                                 <div class="account-signup">Don’t have an account?  <a href="/signup" class="">Sign up</a> </div>
-                                 <button type="button" class="btn btn-primary btn-lg btn-block google-sign-in">
+                                 <button type="button" class="btn btn-primary btn-lg btn-block google-sign-in p-2">
                                      <img src="@/assets/Google-Logo.png" alt="g"/>
                                      <span>Login with Google</span>
                                  </button>
-                                  <button type="button" class="btn btn-primary btn-lg btn-block apple-sign-in">
+                                  <button type="button" class="btn btn-primary btn-lg btn-block apple-sign-in p-2">
                                      <img src="@/assets/Apple_logo_black.svg" alt="g"/>
                                      <span>Login with Apple Id</span>
                                  </button>
-                                  <button type="button" class="btn btn-primary btn-lg btn-block facebook-sign-in">
+                                  <button type="button" class="btn btn-primary btn-lg btn-block facebook-sign-in p-2">
                                      <img src="@/assets/facebook-logo.png" alt="g"/>
                                      <span>Login with Facebook</span>
                                  </button>

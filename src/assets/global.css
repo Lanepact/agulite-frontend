@@ -29,14 +29,17 @@ h1{
     margin-left: 20px !important;
 
 }
+.signup-section .main{
+    margin: 0 auto !important;
+}
 .signup-section img{
     width: 100%;
 }
 .signup-section .signup-form-section{
    background-color: #f7f7f7 !important;
-   height: 100vh;
+   height: 140vh;
    padding: 60px 80px !important;
-   margin-left: -18px !important;
+   margin-left: -16px !important;
 }
 .signup-section .signup-form-section h1{
     color: #000000;
@@ -113,9 +116,12 @@ h1{
 .signin-section img{
     width: 100%;
 }
+.signin-section .main{
+    margin: 0 auto !important;
+}
 .signin-section .signin-form-section{
    background-color: #f7f7f7 !important;
-   height: 100vh;
+   height: 121vh !important;
    padding: 60px 80px !important;
    margin-left: -18px !important;
 }
@@ -554,6 +560,270 @@ color: #DB4D0B;
 .learning .upcoming-task .task a{
     color: #DB4D0B !important;
 }
+.user-bio .profile-details{
+    margin:20px !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+}
+.user-bio .profile-details .profile-icon{
+    width: 150px !important;
+}
+.user-bio .profile-details .profile-name{
+    font-weight: normal !important;
+    font-size: 20px !important;
+    line-height: 34px !important;
+    color: #000000 !important;
+}
+.user-bio .profile-details .profile-skill{
+    font-weight: normal !important;
+    font-size: 16px !important;
+    line-height: 29px !important;
+    letter-spacing: 0.04em !important;
+}
+.user-bio .bio-details{
+    margin: 20px 20px 0 !important;
+}
+.user-bio .bio-details .title{
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
+    font-size: 20px !important;
+    line-height: 34px !important;
+    color: #DB4D0B !important;
+}
+.user-bio .bio-details .text{
+   text-align: justify !important;
+    font-size: 14px !important;
+    line-height: 30px !important;
+    width: 80% !important;
+}
+.user-bio .bio-details .bio-personal{
+    margin-top: 20px !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+    line-height: 34px !important;      
+    color: #DB4D0B !important;
+}
+.user-bio .bio-details .bio-full-1{
+    display: flex !important;
+    margin-bottom: 20px !important;
+}
+.user-bio .bio-details .bio-full-1 .bio-full{ 
+    display: flex !important;
+    width: 30% !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+}
+.user-bio .bio-details .bio-full-1 .bio-full .tit{
+    margin-bottom: 10px !important;
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #DB4D0B;
+}
+.user-bio .bio-details .bio-full-1 .bio-full .date{
+    width: 69px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+.user-bio .bio-details .bio-full-2{
+    display: flex !important;
+    margin-bottom: 20px !important;
+}
+.user-bio .bio-details .bio-full-2 .bio-full{ 
+    display: flex !important;
+    width: 30% !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+}
+.user-bio .bio-details .bio-full-2 .bio-full .tit{
+    margin-bottom: 10px !important;
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #DB4D0B;
+}
+.user-bio .bio-details .bio-full-2 .bio-full .date{
+    width: 69px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+.user-bio .bio-details .bio-full-3{
+    display: flex !important;
+    margin-bottom: 20px !important;
+}
+.user-bio .bio-details .bio-full-3 .bio-full{ 
+    display: flex !important;
+    width: 30% !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+}
+.user-bio .bio-details .bio-full-3 .bio-full .tit{
+    margin-bottom: 10px !important;
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #DB4D0B;
+}
+.user-bio .bio-details .bio-full-3 .bio-full .date{
+    width: 69px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+.user-bio .bio-details .bio-full-4{
+    display: flex !important;
+}
+.user-bio .bio-details .bio-full-4 .bio-full{ 
+    display: flex !important;
+    width: 30% !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+}
+.user-bio .bio-details .bio-full-4 .bio-full .tit{
+    margin-bottom: 10px !important;
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #DB4D0B;
+}
+.user-bio .bio-details .bio-full-4 .bio-full .date{
+    width: 69px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+.user-bio .bio-details .advanced-set{
+    margin-top: 20px !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+    line-height: 34px !important;      
+    color: #DB4D0B !important;
+}
+.user-bio .comp-proj{
+    margin:40px 20px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+}
+.user-bio .comp-proj .title{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #DB4D0B;
+    margin-bottom: 20px !important;
+}
+.user-bio .comp-proj .all-proj .pro{
+    display: flex !important;
+    justify-content: center !important;
+}
+.user-bio .comp-proj .all-proj{
+    display: flex !important;
+     align-items: center !important;
+    margin-bottom: 20px !important;
+}
+.user-bio .comp-proj .all-proj .pro-number{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 68px;  
+    color: #DB4D0B;
+    margin-left: 10px !important;
+}
+.user-bio .comp-proj .all-proj .pro .pro-box{
+    width: 200px !important;
+    border: 1px solid #3535BC !important;
+    padding: 20px !important;
+    height: 80px !important;  
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important; 
+    border-radius: 10px !important; 
+}
+.user-bio .comp-proj .all-proj .pro .hr-line{
+    border: 1px solid #000000;
+    height: 90px !important;
+    transform: rotate(-180deg);
+    margin-left: 10px !important;
+
+}
+.user-bio .comp-proj .all-proj .pro{
+    display: flex !important;
+    justify-content: center !important;
+}
+.user-bio .comp-proj .all-proj2{
+    display: flex !important;
+     align-items: center !important;
+    margin-bottom: 20px !important;
+    margin-left: 30px !important;
+}
+.user-bio .comp-proj .all-proj2 .pro-number{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 68px;  
+    color: #DB4D0B;
+    margin-left: 10px !important;
+}
+.user-bio .comp-proj .all-proj2 .pro .pro-box{
+    width: 200px !important;
+    border: 1px solid #3535BC !important;
+    height: 80px !important;   
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 10px !important; 
+}
+.user-bio .comp-proj .all-proj2 .pro .hr-line{
+    border: 1px solid #000000;
+    height: 90px !important;
+    transform: rotate(-180deg);
+    margin-left: 10px !important;
+}
+.user-bio .comp-proj .all-proj2 .pro{
+    display: flex !important;
+    justify-content: center !important;
+}
+.edit-bt{
+    display: flex !important;
+    justify-content: flex-end !important;
+    padding-right: 40px !important;
+}
+.edit-bt .edit-profile-button{
+    width: 88px;
+    font-size: 14px !important;
+    color: white !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background: #DB4D0B;
+    border: none !important;
+    padding: 10px !important;
+    border-radius: 8px;
+}
+.edit-bt .edit-profile-button:hover{
+    cursor: pointer;
+    background-color: #c45b2a !important;
+}
 @media screen and (max-width:1024px){
     .learning .learn-path .learn-imgs .img-1 .overlay{
         top: 40px !important;
@@ -566,6 +836,11 @@ color: #DB4D0B;
     }
     .learning .learn-path .learn-imgs .img-4 .overlay{
         top: 40px !important;
-        left: 40px !important
+        left: 40px !important;
     }
+}
+@media screen and (max-width:480px){
+    .user-bio .bio-details .text{
+         width: 100% !important;
+     }
 }

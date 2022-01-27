@@ -117,129 +117,127 @@
                             </div>
                             <div class="user-img">
                                 <img src="@/assets/pro-im.png" class="img-fluid"/>
-                            </div>                    
+                            </div>
+                            
                         </div>  
                     </div>
-                    <div class="container courses-det mt-4">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <div class="box">
-                                    <div class="image">
-                                        <img src="#" class="img-fluid"/>
-                                    </div>
-                                    <div class="box-text">
-                                        <p><b>Understand design principles and begin to use them in practical ways.This latest article provides all the needed steps to become acquainted with....</b></p>
-                                        <p class="mt-3 mb-3">This latest article provides all the needed steps to get acquainted with </p>
-                                        <button>Read more >> </button>
-                                    </div>
+                    <div class="container user-bio mt-4">
+                       <div class="row">
+                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                               <div class="profile-details">
+                                   <div class="profile-icon"><img src="@/assets/profile-icon.png" class="img-fluid"/></div>
+                                   <div class="profile-name">Seun Olatunji</div>
+                                   <div class="profile-skill">UI/UX Design Apprentice</div>
                                 </div>
-                            </div>
-                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <div class="course-prog">
-                                    <div class="title mb-2">Courses In Progress</div>
-                                    <div class="exp">
-                                        <span>User Experience Basics</span>
-                                        <div class="percent"> 
-                                            <span>40%</span>
-                                            <span>Continue</span>
-                                        </div>
-                                    </div>
-                                     <div class="exp">
-                                        <span>Sketching and Prototyping</span>
-                                        <div class="percent"> 
-                                            <span>Completed</span>
-                                        </div>
-                                    </div>
-                                     <div class="exp">
-                                        <span>Sketching and Prototyping</span>
-                                        <div class="percent"> 
-                                            <span>Completed</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container learning">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <div class="learn-path">
-                                    <div class="title">My Learning path</div>
-                                    <div class="learn-imgs">
-                                        <div class="img-1">
-                                            <div class="img">
-                                                <img src="@/assets/l1.png" class="img-fluid"/>
+                                <div class="comp-proj">
+                                    <div class="title">Completed  Projects</div>
+                                    <div class="all-proj">
+                                        <div class="pro">
+                                            <div class="pro-box">
+                                                <span>All projects will appear here when you begin </span>
                                             </div>
-                                            <div class="overlay">Introduction To Design</div>
+                                            <hr class="hr-line"/>
                                         </div>
-                                        <div class="img-2">
-                                           <div class="img">
-                                                <img src="@/assets/l2.png" class="img-fluid"/>
-                                            </div>
-                                            <div class="overlay">Ideation Proces</div>
-                                        </div>
-                                        <div class="img-3">
-                                           <div class="img">
-                                                <img src="@/assets/l3.png" class="img-fluid"/>
-                                            </div>
-                                            <div class="overlay">Prototyping and Testing</div>
-                                        </div>
-                                        <div class="img-4">
-                                           <div class="img">
-                                                <img src="@/assets/l4.png" class="img-fluid"/>
-                                            </div>
-                                            <div class="overlay">Build to Fit</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <div class="upcoming-task">
-                                     <div class="title mb-4">Upcoming Task</div>
-                                      <div class="task">
-                                    <span>Week 3 Task: Design Sprint</span>
-                                    <div class="percent"> 
-                                        <a href="#">Submit</a>
-                                    </div>
-                                </div>
-                                <div class="task">
-                                    <span>Week 4 Task: Design Sprint</span>
-                                    <div class="percent"> 
-                                        <a href="#">Tap to unlock</a>
-                                    </div>
-                                </div>
-                                <div class="task">
-                                    <span>Week 5 Task: Design Sprint</span>
-                                    <div class="percent"> 
-                                        <a href="#">Tap to unlock</a>
-                                    </div>
-                                </div>
-                                <div class="task">
-                                    <span>Week 6 Task: Design Sprint</span>
-                                    <div class="percent"> 
-                                        <a href="#">Tap to unlock</a>
-                                    </div>
-                                </div>
-                                </div>
-                               
+                                        <div class="pro-number"> 0 </div>
 
-                            </div>
+                                    </div>
+                                    <div class="title">Total Earnings</div>
+                                    <div class="all-proj2">
+                                        <div class="pro">
+                                            <div class="pro-box">
+                                                 <span>No earnings yet</span>
+                                            </div>
+                                            <hr class="hr-line"/>
+                                        </div>
+                                        <div class="pro-number"> $0 </div>
+
+                                    </div>
+                                </div>
+                           </div>
+                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                               <div class="bio-details">
+                                   <div class="title">Bio</div>
+                                   <p class="text"> Odio congue elit, ultricies tortor ornare ultricies. Ac, integer maecenas malesuada non faucibus elementum in Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi placerat enim eu lacus. Odio congue elit, ultricies  </p>
+                                   <div class="bio-personal">Personal</div>
+                                    <div class="bio-full-1">
+                                        <div class="bio-full">
+                                            <span class="tit">Languages</span>
+                                            <span class="date">9th Nov, 2021</span>
+                                        </div>
+                                        <div class="bio-full">
+                                            <span class="tit">Birthday</span>
+                                            <span class="date">9th Nov, 2021</span>
+                                        </div>
+                                        <div class="bio-full">
+                                            <span class="tit">Join Date</span>
+                                            <span class="date">9th Nov, 2021</span>
+                                        </div>
+                                   </div>
+                                    <div class="bio-full-2">
+                                        <div class="bio-full">
+                                            <span class="tit">Marital Status</span>
+                                            <span class="date">9th Nov, 2021</span>
+                                        </div>
+                                        <div class="bio-full">
+                                            <span class="tit">State Of Origin</span>
+                                            <span class="date">9th Nov, 2021</span>
+                                        </div>
+                                        <div class="bio-full">
+                                            <span class="tit">Country Of Origin</span>
+                                            <span class="date">9th Nov, 2021</span>
+                                        </div>
+                                   </div>
+                                   <div class="bio-full-3">
+                                        <div class="bio-full">
+                                            <span class="tit">Hobies</span>
+                                            <span class="date">9th Nov, 2021</span>
+                                        </div>
+                                        <div class="bio-full">
+                                            <span class="tit"></span>
+                                            <span class="date">9th Nov, 2021</span>
+                                        </div>
+                                        <div class="bio-full">
+                                            <span class="tit"></span>
+                                            <span class="date">9th Nov, 2021</span>
+                                        </div>
+                                   </div>
+                                    <div class="bio-full-4">
+                                        <div class="bio-full">
+                                            <span class="tit">Contact</span>
+                                            <span class="date">9th Nov, 2021</span>
+                                        </div>
+                                        <div class="bio-full">
+                                            <span class="tit">Email</span>
+                                            <span class="date">9th Nov, 2021</span>
+                                        </div>
+                                        <div class="bio-full">
+                                            <span class="tit">Address</span>
+                                            <span class="date">9th Nov, 2021</span>
+                                        </div>
+                                   </div>
+                                   <div class="advanced-set">Advanced Settings</div>
+                                </div>
+                           </div> 
                         </div>
+                    </div>   
+                    <div class="container edit-bt">
+                        <button class="edit-profile-button">Edit</button>
                     </div>
                 </div>
             </div>
         </div>
-    
-
-   
 </template>
 <script>
 export default {
-    name:'Dashboard',
     data(){
         return{
-            user:"Esther"
+            user : 'Esther'
         }
     }
 }
 </script>
+<style>
+
+
+
+</style>

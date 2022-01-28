@@ -18,7 +18,7 @@
                 </svg>
                 <span>Dashboard</span>
             </a>
-            <a href="/signin" class="db-item">
+            <a href="/courses" class="db-item">
                 <svg width="18" height="18" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.66683 6.99998H0.333496V30.3333C0.333496 32.1666 1.8335 33.6666 3.66683 33.6666H27.0002V30.3333H3.66683V6.99998ZM30.3335 0.333313H10.3335C8.50016 0.333313 7.00016 1.83331 7.00016 3.66665V23.6666C7.00016 25.5 8.50016 27 10.3335 27H30.3335C32.1668 27 33.6668 25.5 33.6668 23.6666V3.66665C33.6668 1.83331 32.1668 0.333313 30.3335 0.333313ZM28.6668 15.3333H12.0002V12H28.6668V15.3333ZM22.0002 22H12.0002V18.6666H22.0002V22ZM28.6668 8.66665H12.0002V5.33331H28.6668V8.66665Z" fill="white"/>
                 </svg>
@@ -57,7 +57,7 @@
                             </svg>
                             <span>Dashboard</span>
                         </a>
-                         <a href="/signin" class="db-item">
+                         <a href="/courses" class="db-item">
                             <svg width="18" height="18" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3.66683 6.99998H0.333496V30.3333C0.333496 32.1666 1.8335 33.6666 3.66683 33.6666H27.0002V30.3333H3.66683V6.99998ZM30.3335 0.333313H10.3335C8.50016 0.333313 7.00016 1.83331 7.00016 3.66665V23.6666C7.00016 25.5 8.50016 27 10.3335 27H30.3335C32.1668 27 33.6668 25.5 33.6668 23.6666V3.66665C33.6668 1.83331 32.1668 0.333313 30.3335 0.333313ZM28.6668 15.3333H12.0002V12H28.6668V15.3333ZM22.0002 22H12.0002V18.6666H22.0002V22ZM28.6668 8.66665H12.0002V5.33331H28.6668V8.66665Z" fill="white"/>
                             </svg>
@@ -135,13 +135,99 @@
                                         <span class="fund-icon">
                                             <img src="@/assets/Slide-Up.png"/>
                                         </span>
-
                                     </div>
-                                    
+                                    <div class="courses-outline">
+                                        <div class="course-1">
+                                            <span class="course-title">Introduction to user eperience</span>
+                                            <div class="course-level">
+                                                <span class="percent">45%</span>
+                                                <button>Continue</button>
+                                            </div>
+                                        </div>
+                                         <div class="course-1">
+                                            <span class="course-title">Introduction to user eperience</span>
+                                            <div class="course-level">
+                                                <span class="percent">45%</span>
+                                                <button>Continue</button>
+                                            </div>
+                                        </div>
+                                         <div class="course-1">
+                                            <span class="course-title">Introduction to user eperience</span>
+                                            <div class="course-level">
+                                                <span class="percent">45%</span>
+                                                <button>Continue</button>
+                                            </div>
+                                        </div>
+                                        <div class="course-1">
+                                            <span class="course-title">Introduction to user eperience</span>
+                                            <div class="course-level">
+                                                <span class="percent">45%</span>
+                                                <button>Continue</button>
+                                            </div>
+                                        </div>
+                                         <div class="course-1">
+                                            <span class="course-title">Introduction to user eperience</span>
+                                            <div class="course-level">
+                                                <span class="percent">45%</span>
+                                                <button>Continue</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                            </div>
                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                               b
+                               <div class="f-section2">
+                                   <div class="fundamental-nav-right">
+                                       <a href="#">Curricullum/Sections</a>
+                                    </div>
+                                    <div class="curri-outline">
+                                        <div class="cur-1">
+                                          <div class="cur-details">
+                                              <span class="week">Week 4</span>
+                                              <span class="week-course">Empathy map and user data</span>
+                                          </div>
+                                          <div class="lessons">
+                                              <span>10 of 12 lessons</span>
+                                          </div>
+                                        </div>
+                                        <div class="cur-1">
+                                          <div class="cur-details">
+                                              <span class="week">Week 5</span>
+                                              <span class="week-course">Empathy map and user data</span>
+                                          </div>
+                                          <div class="lessons">
+                                              <span>10 of 12 lessons</span>
+                                          </div>
+                                        </div>
+                                        <div class="cur-1">
+                                          <div class="cur-details">
+                                              <span class="week">Week 6</span>
+                                              <span class="week-course">Empathy map and user data</span>
+                                          </div>
+                                          <div class="lessons">
+                                              <span>10 of 12 lessons</span>
+                                          </div>
+                                        </div>
+                                        <div class="cur-1">
+                                          <div class="cur-details">
+                                              <span class="week">Week 7</span>
+                                              <span class="week-course">Empathy map and user data</span>
+                                          </div>
+                                          <div class="lessons">
+                                              <span>10 of 12 lessons</span>
+                                          </div>
+                                        </div>
+                                        <div class="cur-1">
+                                          <div class="cur-details">
+                                              <span class="week">Week 8</span>
+                                              <span class="week-course">Empathy map and user data</span>
+                                          </div>
+                                          <div class="lessons">
+                                              <span>10 of 12 lessons</span>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
                            </div>
                         </div>
                     </div>

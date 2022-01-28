@@ -7,6 +7,7 @@ import Signin from '../views/authentication/Signin.vue'
 import Signup from '../views/authentication/Signup.vue'
 import Dashboard from '../views/dashboard/Userdashboard.vue'
 import Profile from '../views/dashboard/Profile.vue'
+import Courses from '../views/dashboard/Courses.vue'
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
     path: '/profile',
     name: 'Profile',
     component: Profile
+  },
+  {
+    path: '/courses',
+    name: 'Courses',
+    component: Courses
   },
 
 ]

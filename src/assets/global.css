@@ -59,13 +59,27 @@ h1{
     font-size: 18px !important;
     line-height: 40px !important;
 }
-.signup-section .signup-form-section form input{
+.signup-section .signup-form-section form input, .signup-form-section form select{
     border-top:none !important;
     border-left: none !important;
+    width: 100% !important;
     border-right: none !important;
     background-color: transparent !important;
     border-bottom: 1px solid rgba(130, 123, 123, 0.44) !important;
-
+}
+.signup-form-section form select{
+    margin-top: 20px !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+.signup-form-section form select:focus{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+.signup-form-section form select option::selection{
+  background: none !important;
 }
 .signup-section .signup-form-section form .next{
     margin-top: 40px !important;
@@ -824,6 +838,36 @@ color: #DB4D0B;
     cursor: pointer;
     background-color: #c45b2a !important;
 }
+.fundamentals .f-section{
+    margin: 20px !important;
+}
+.fundamentals .f-section .fundamentals-nav{
+    display: flex !important;
+    margin-bottom: 20px !important;
+   
+}
+.fundamentals .f-section .fundamentals-nav a{
+    text-decoration: none !important;
+    color: #000000 !important;
+    font-weight: normal;
+    margin-right: 20px !important;
+    font-size: 16px;
+    line-height: 27px;
+
+}
+.fundamentals .f-section .fundamental-title{
+    display: flex !important;
+    align-items: center !important;
+    /* justify-content: space-between !important; */
+}
+.fundamentals .f-section .fundamental-title .fund-icon{
+    margin-left:60px !important;
+}
+.fundamentals .f-section .fundamental-title .title{
+    color:#DB4D0B !important;
+    font-size: 20px !important;
+}
+
 @media screen and (max-width:1024px){
     .learning .learn-path .learn-imgs .img-1 .overlay{
         top: 40px !important;

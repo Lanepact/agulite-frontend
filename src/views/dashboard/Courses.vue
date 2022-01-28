@@ -100,129 +100,52 @@
                                 <img src="@/assets/pro-im.png" class="img-fluid"/>
                             </div>
                         </div>
-                        <div class="username">Profile</div>
+                        <div class="username">My Courses</div>
                     </div>
                     <div class="d-none d-lg-block">
                         <div class="db-nav">
-                             <div class="username">Profile</div>
+                             <div class="username">My Courses</div>
                              <div class="search-box">
                                 <span class="search-icon border-0 pl-3"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.33333 0.333496C9.64533 0.333496 12.3333 3.0215 12.3333 6.3335C12.3333 9.6455 9.64533 12.3335 6.33333 12.3335C3.02133 12.3335 0.333328 9.6455 0.333328 6.3335C0.333328 3.0215 3.02133 0.333496 6.33333 0.333496ZM6.33333 11.0002C8.91133 11.0002 11 8.9115 11 6.3335C11 3.75483 8.91133 1.66683 6.33333 1.66683C3.75466 1.66683 1.66666 3.75483 1.66666 6.3335C1.66666 8.9115 3.75466 11.0002 6.33333 11.0002ZM11.99 11.0475L13.876 12.9328L12.9327 13.8762L11.0473 11.9902L11.99 11.0475Z" fill="#F5800C"/>
                                     </svg>
                                 </span>
                                 <input type="text">
-                            </div>
+                            </div>                                                              
+                       
                             <div class="notification">
                                 <img src="@/assets/bell.png" class="img-fluid"/>
                             </div>
                             <div class="user-img">
                                 <img src="@/assets/pro-im.png" class="img-fluid"/>
-                            </div>
-                            
+                            </div>                    
                         </div>  
                     </div>
-                    <div class="container user-bio mt-4">
+                    <div class="container fundamentals mt-4">
                        <div class="row">
                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                               <div class="profile-details">
-                                   <div class="profile-icon"><img src="@/assets/profile-icon.png" class="img-fluid"/></div>
-                                   <div class="profile-name">Seun Olatunji</div>
-                                   <div class="profile-skill">UI/UX Design Apprentice</div>
-                                </div>
-                                <div class="comp-proj">
-                                    <div class="title">Completed  Projects</div>
-                                    <div class="all-proj">
-                                        <div class="pro">
-                                            <div class="pro-box">
-                                                <span>All projects will appear here when you begin </span>
-                                            </div>
-                                            <hr class="hr-line"/>
-                                        </div>
-                                        <div class="pro-number"> 0 </div>
+                               <div class="f-section">
+                                   <div class="fundamentals-nav">
+                                       <a href="#">Current section</a>
+                                       <a href="#">Completed</a>
+                                       <a href="#">Upcoming</a>     
+                                    </div>
+                                    <div class="fundamental-title">
+                                        <span class="title">Ux Fundamentals</span>
+                                        <span class="fund-icon">
+                                            <img src="@/assets/Slide-Up.png"/>
+                                        </span>
 
                                     </div>
-                                    <div class="title">Total Earnings</div>
-                                    <div class="all-proj2">
-                                        <div class="pro">
-                                            <div class="pro-box">
-                                                 <span>No earnings yet</span>
-                                            </div>
-                                            <hr class="hr-line"/>
-                                        </div>
-                                        <div class="pro-number"> $0 </div>
-
-                                    </div>
+                                    
                                 </div>
                            </div>
-                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                               <div class="bio-details">
-                                   <div class="title">Bio</div>
-                                   <p class="text"> Odio congue elit, ultricies tortor ornare ultricies. Ac, integer maecenas malesuada non faucibus elementum in Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi placerat enim eu lacus. Odio congue elit, ultricies  </p>
-                                   <div class="bio-personal">Personal</div>
-                                    <div class="bio-full-1">
-                                        <div class="bio-full">
-                                            <span class="tit">Languages</span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                        <div class="bio-full">
-                                            <span class="tit">Birthday</span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                        <div class="bio-full">
-                                            <span class="tit">Join Date</span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                   </div>
-                                    <div class="bio-full-2">
-                                        <div class="bio-full">
-                                            <span class="tit">Marital Status</span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                        <div class="bio-full">
-                                            <span class="tit">State Of Origin</span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                        <div class="bio-full">
-                                            <span class="tit">Country Of Origin</span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                   </div>
-                                   <div class="bio-full-3">
-                                        <div class="bio-full">
-                                            <span class="tit">Hobies</span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                        <div class="bio-full">
-                                            <span class="tit"></span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                        <div class="bio-full">
-                                            <span class="tit"></span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                   </div>
-                                    <div class="bio-full-4">
-                                        <div class="bio-full">
-                                            <span class="tit">Contact</span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                        <div class="bio-full">
-                                            <span class="tit">Email</span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                        <div class="bio-full">
-                                            <span class="tit">Address</span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                   </div>
-                                   <div class="advanced-set">Advanced Settings</div>
-                                </div>
-                           </div> 
+                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                               b
+                           </div>
                         </div>
-                    </div>   
-                    <div class="container edit-bt">
-                        <button class="edit-profile-button">Edit</button>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -231,13 +154,8 @@
 export default {
     data(){
         return{
-            user : 'Esther'
+
         }
     }
 }
 </script>
-<style>
-
-
-
-</style>

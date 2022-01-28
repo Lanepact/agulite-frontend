@@ -127,8 +127,9 @@ h1{
 .signup-section .signup-form-section form input:focus{
     box-shadow: none !important;
 }
+
 .signin-section img{
-    width: 100%;
+    /* width: 100%; */
 }
 .signin-section .main{
     margin: 0 auto !important;
@@ -137,7 +138,7 @@ h1{
    background-color: #f7f7f7 !important;
    height: auto !important;
    padding: 60px 80px !important;
-   margin-left: -18px !important;
+   margin-left: -16px !important;
 }
 .signin-section .signin-form-section h1{
     color: #000000;
@@ -872,6 +873,9 @@ color: #DB4D0B;
 .fundamentals .f-section .fundamental-title .title{
     color:#DB4D0B !important;
     font-size: 20px !important;
+}
+.error-box {
+    border-radius: 5px !important;
 }
 .fundamentals .f-section .courses-outline{
     display: flex !important;

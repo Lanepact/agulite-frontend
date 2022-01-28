@@ -121,24 +121,80 @@
         </div>
     </div>
 </template>
-<script>
 
-export default{
-    data(){
-        return{
-            form1: true,
-            form2: false,
-        }
-    },
-    methods:{
-        next(){
-            this.form2 = true
-            this.form1 = false
+<script>
+    import { ref } from '@vue/reactivity'
+    import { useAgulite } from '../../state'
+    import { computed } from '@vue/runtime-core'
+    import { useRouter } from 'vue-router'
+
+    export default{
+        data(){
+            return{
+                form1: true,
+                form2: false,
+                form3: false
+            }
         },
-      
+        methods:{
+            next(){
+                this.form2 = true
+                this.form1 = false
+            },
+            after(){
+                this.form2 = false,
+                this.form3 = true
+            }
+        },
+
+        setup(){
+            const router = useRouter()
+            const { signup } = useAgulite
+
+            const loading = ref(false)
+            const errorMessage = ref("")
+
+            // Registration details
+            const fullname = ref("")
+            const email = ref("")
+            const password = ref("")
+            const confirmPassword = ref("")
+
+            const loginButtonText = computed(() => loading.value ? "Please, wait." : "Finish")
+
+            const register = async () => {
+                loading.value = true
+
+                const data = {
+                    fullname: fullname.value,
+                    email: email.value,
+                    password: password.value,
+                    confirmPassword: confirmPassword.value
+                }
+
+                try{
+                    const response = await signup(data)
+                    loading.value = false
+                    router.push("/signin")
+                } catch(e) {
+                    errorMessage.value = e.message
+                    loading.value = false
+                }
+
+            }
+
+            return {
+                loginButtonText,
+                loading,
+                errorMessage,
+                fullname,
+                email,
+                password,
+                confirmPassword,
+                register
+            }
+        }
     }
-   
-}
 
 
 </script>

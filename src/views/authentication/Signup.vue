@@ -21,12 +21,20 @@
                             <p>Sign up now to create your account.</p>
                             <form>
                                  <div class="form-group">
-                                    <label for="">Full Name:</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <label for="">First Name:</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">last Name:</label>
+                                    <input type="text" class="form-control" id="exampleInputPassword1">
                                 </div>
                                 <div class="form-group">
                                     <label for="">Email Address:</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <input type="email" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Phone:</label>
+                                    <input type="number" class="form-control" id="exampleInputPassword1">
                                 </div>
                                 <div class="form-group">
                                     <label for="">Password:</label>

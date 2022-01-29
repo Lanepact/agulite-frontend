@@ -1,4 +1,4 @@
-# agulite-project
+# Agulite
 
 ## Project setup
 ```

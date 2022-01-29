@@ -8,6 +8,8 @@ import Signup from '../views/authentication/Signup.vue'
 import Dashboard from '../views/dashboard/Userdashboard.vue'
 import Profile from '../views/dashboard/Profile.vue'
 import Courses from '../views/dashboard/Courses.vue'
+import Updateprofile from '../views/dashboard/Updateprofile.vue'
+import Verification from '../views/verification.vue'
 
 const routes = [
   {
@@ -55,6 +57,17 @@ const routes = [
     name: 'Courses',
     component: Courses
   },
+  {
+    path: '/updateprofile',
+    name: 'Updateprofile',
+    component: Updateprofile
+  },
+  {
+    path: '/verification',
+    name: 'Verification',
+    component: Verification
+  },
+
 
 ]
 

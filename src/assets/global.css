@@ -37,7 +37,7 @@ h1{
 }
 .signup-section .signup-form-section{
    background-color: #f7f7f7 !important;
-   height: 140vh;
+   height: auto !important;
    padding: 60px 80px !important;
    margin-left: -16px !important;
 }
@@ -135,7 +135,7 @@ h1{
 }
 .signin-section .signin-form-section{
    background-color: #f7f7f7 !important;
-   height: 121vh !important;
+   height: auto !important;
    padding: 60px 80px !important;
    margin-left: -18px !important;
 }
@@ -955,6 +955,88 @@ color: #DB4D0B;
     line-height: 30px !important;
     color: #000000;
  }
+ .updateprofile-section form{
+    width:50% !important;
+    margin: 0 auto !important;
+ }
+ .updateprofile-section form{
+    margin-top: 80px !important;
+   
+}
+.updateprofile-section form .form-group{
+    margin-bottom: 20px !important;
+}
+.updateprofile-section form label{
+    color:#010107 !important;
+    font-size: 18px !important;
+    line-height: 40px !important;
+}
+.updateprofile-section form input{
+    border-top:none !important;
+    border-left: none !important;
+    border-right: none !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid rgba(130, 123, 123, 0.44) !important;
+}
+.updateprofile-section form input:focus{
+    box-shadow: none !important;
+}
+.updateprofile-section form textarea{
+    border-top:none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+.updateprofile-section form textarea:focus{
+    box-shadow: none !important;
+}
+.updateprofile-section form select{
+    margin-top: 20px !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+.updateprofile-section form select:focus{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+.updateprofile-section form select option::selection{
+  background: none !important;
+}
+.updateprofile-section form button{
+    margin-top: 40px !important;
+    background-color: #DB4D0B !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.verify-box{
+    background-color: gainsboro !important;
+    width: 50% !important;
+    margin: 40px auto 0 !important;
+    padding: 20px !important;
+    height: 40vh !important;
+    border-radius: 10px !important;
+}
+.verify-box .verify{
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 20px !important;
+}
+.verify-box .verify h1{
+    font-size: 25px !important;
+    color: green !important;
+}
+.verify-box .verify a{
+    margin-top: 40px !important;
+    color: white !important;
+    padding: 10px !important;
+    text-decoration: none !important;
+    font-size: 16px !important;
+}
 @media screen and (max-width:1024px){
     .learning .learn-path .learn-imgs .img-1 .overlay{
         top: 40px !important;
@@ -978,5 +1060,45 @@ color: #DB4D0B;
         font-weight: 600 !important;
         font-size: 16px !important;
         /* justify-content: space-between !important; */
+    }
+    .signin-section .signin-form-section form .login{
+       font-size: 14px !important;
+       padding-top: 5px !important;
+       padding-bottom: 5px !important;
+        
+    }
+    .signin-section .signin-form-section form .google-sign-in{
+        font-size: 14px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    .signin-section .signin-form-section form .apple-sign-in{
+        font-size: 14px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    .signin-section .signin-form-section form .facebook-sign-in{
+        font-size: 14px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    .signin-section .signin-form-section form .account-signup a{
+        font-size: 10px !important;
+    }
+    .signin-section .signin-form-section form .account-signup{
+        font-size: 10px !important;
+    }
+    .signup-section .signup-form-section form .next{
+        font-size: 14px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    .signup-section .signup-form-section form .google-sign-up{
+        font-size: 14px !important;
+       padding-top: 5px !important;
+       padding-bottom: 5px !important;
+    }
+    .signup-section .signup-form-section form .account-login{
+        font-size: 10px !important;
     }
 }

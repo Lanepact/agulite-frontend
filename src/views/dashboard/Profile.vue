@@ -161,7 +161,7 @@
                                    <div class="bio-personal">Personal</div>
                                     <div class="bio-full-1">
                                         <div class="bio-full">
-                                            <span class="tit">Languages</span>
+                                            <span class="tit">Join Date</span>
                                             <span class="date">9th Nov, 2021</span>
                                         </div>
                                         <div class="bio-full">
@@ -169,13 +169,13 @@
                                             <span class="date">9th Nov, 2021</span>
                                         </div>
                                         <div class="bio-full">
-                                            <span class="tit">Join Date</span>
+                                            <span class="tit">Years of Experience</span>
                                             <span class="date">9th Nov, 2021</span>
                                         </div>
                                    </div>
                                     <div class="bio-full-2">
                                         <div class="bio-full">
-                                            <span class="tit">Marital Status</span>
+                                            <span class="tit">Experience Level</span>
                                             <span class="date">9th Nov, 2021</span>
                                         </div>
                                         <div class="bio-full">
@@ -187,20 +187,7 @@
                                             <span class="date">9th Nov, 2021</span>
                                         </div>
                                    </div>
-                                   <div class="bio-full-3">
-                                        <div class="bio-full">
-                                            <span class="tit">Hobies</span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                        <div class="bio-full">
-                                            <span class="tit"></span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                        <div class="bio-full">
-                                            <span class="tit"></span>
-                                            <span class="date">9th Nov, 2021</span>
-                                        </div>
-                                   </div>
+                                  
                                     <div class="bio-full-4">
                                         <div class="bio-full">
                                             <span class="tit">Contact</span>
@@ -215,23 +202,33 @@
                                             <span class="date">9th Nov, 2021</span>
                                         </div>
                                    </div>
-                                   <div class="advanced-set">Advanced Settings</div>
+                                   <div class="advanced-set">{{advanced}}</div>
                                 </div>
                            </div> 
                         </div>
                     </div>   
                     <div class="container edit-bt">
-                        <button class="edit-profile-button">Edit</button>
+                        <button class="edit-profile-button" @click="goToUpdateProfile">Edit</button>
                     </div>
+                     
                 </div>
             </div>
         </div>
 </template>
 <script>
+import { ref } from 'vue'
+import {useRouter} from 'vue-router'
 export default {
-    data(){
+    setup(){
+        const router = useRouter()
+        const advanced = ref('Advanced Settings')
+       
+        const goToUpdateProfile = () => {
+            router.push('/updateprofile')
+        }
         return{
-            user : 'Esther'
+            goToUpdateProfile,
+            advanced
         }
     }
 }

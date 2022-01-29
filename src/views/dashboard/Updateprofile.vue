@@ -1,5 +1,5 @@
 <template>
-    <div class="mobile-dashboard-section">
+      <div class="mobile-dashboard-section">
         <div class="mobile-nav d-flex d-lg-none">
               <div class="logo">
                 <img src="@/assets/agulogo.png" alt="agulog"/>
@@ -100,19 +100,18 @@
                                 <img src="@/assets/pro-im.png" class="img-fluid"/>
                             </div>
                         </div>
-                        <div class="username">My Courses</div>
+                        <div class="username">Welcome back {{user}},</div>
                     </div>
                     <div class="d-none d-lg-block">
                         <div class="db-nav">
-                             <div class="username">My Courses</div>
+                             <div class="username">Welcome back {{user}},</div>
                              <div class="search-box">
                                 <span class="search-icon border-0 pl-3"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.33333 0.333496C9.64533 0.333496 12.3333 3.0215 12.3333 6.3335C12.3333 9.6455 9.64533 12.3335 6.33333 12.3335C3.02133 12.3335 0.333328 9.6455 0.333328 6.3335C0.333328 3.0215 3.02133 0.333496 6.33333 0.333496ZM6.33333 11.0002C8.91133 11.0002 11 8.9115 11 6.3335C11 3.75483 8.91133 1.66683 6.33333 1.66683C3.75466 1.66683 1.66666 3.75483 1.66666 6.3335C1.66666 8.9115 3.75466 11.0002 6.33333 11.0002ZM11.99 11.0475L13.876 12.9328L12.9327 13.8762L11.0473 11.9902L11.99 11.0475Z" fill="#F5800C"/>
                                     </svg>
                                 </span>
                                 <input type="text">
-                            </div>                                                              
-                       
+                            </div>
                             <div class="notification">
                                 <img src="@/assets/bell.png" class="img-fluid"/>
                             </div>
@@ -121,76 +120,53 @@
                             </div>                    
                         </div>  
                     </div>
-                    <div class="container fundamentals mt-4">
-                       <div class="row">
-                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                               <div class="f-section">
-                                   <div class="fundamentals-nav">
-                                       <a href="#">Current section</a>
-                                       <a href="#">Completed</a>
-                                       <a href="#">Upcoming</a>     
+                    <div class="container updateprofile-section mt-4">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="">Upload Image</label>
+                                        <input type="file" class="form-control" id="exampleInputPassword1">
                                     </div>
-                                    <div class="fundamental-title">
-                                        <span class="title">Ux Fundamentals</span>
-                                        <span class="fund-icon">
-                                            <img src="@/assets/Slide-Up.png"/>
-                                        </span>
+                                    <div class="form-group">
+                                        <label for="">Bio:</label>
+                                        <textarea type="text" class="form-control" id="exampleInputPassword1"></textarea>
                                     </div>
-                                    <div class="courses-outline">
-                                        <div v-for="course in courses" :key = course.id>
-                                            <course-item :course="course"></course-item>
-                                        </div>
+                                     <div class="form-group">
+                                        <label for="">Date of Birth:</label>
+                                         <input type="date" class="form-control" id="exampleInputPassword1">
                                     </div>
-                                </div>
-                           </div>
-                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                               <div class="f-section2">
-                                   <div class="fundamental-nav-right">
-                                       <a href="#">Curricullum/Sections</a>
+                                    <div class="form-group">
+                                        <label for="">State of Residence:</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1">
                                     </div>
-                                    <div class="curri-outline">
-                                       <div v-for="curriculum in curriculums" :key= curriculum.id>
-                                           <curriculum-item :curriculum ="curriculum"></curriculum-item>
-                                       </div>
+                                    <div class="form-group">
+                                        <label for="">Country:</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1">
                                     </div>
-                                </div>
-                           </div>
+                                     <div class="form-group">
+                                        <label for="">Phone:</label>
+                                        <input type="number" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    
+                                    <button type="button" class="btn btn-primary btn-lg btn-block login p-3">Update Profile</button>
+                                   
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    
+                   
                 </div>
             </div>
         </div>
+
+
+
 </template>
 <script>
-import { ref } from 'vue'
-import CourseItem from '../../components/courseItem'
-import CurriculumItem from '../../components/curriculum'
 export default {
-    components:{
-        CourseItem,
-        CurriculumItem
-    },
-    setup(){
-        const courses = ref([
-            {id:1, title:'Introduction to User experience', progress:45},
-            {id:2, title:'Introduction to User experience', progress:35},
-            {id:3, title:'Introduction to User experience', progress:55},
-            {id:4, title:'Introduction to User experience', progress:45},
-            {id:5, title:'Introduction to User experience', progress:45},
-            {id:6, title:'Introduction to User experience', progress:75},  
-        ])
-        const curriculums = ref([
-            {id: 1, week:'Week 1', title:'Empathy map and user data', index:10},
-            {id: 2, week:'Week 2', title:'Empathy map and user data', index:10},
-            {id: 3, week:'Week 3', title:'Empathy map and user data', index:10},
-            {id: 4, week:'Week 4', title:'Empathy map and user data', index:10},
-        ])
-        return{
-            courses,
-            curriculums
-        }
-    }
+    data(){
 
+    }
 }
 </script>

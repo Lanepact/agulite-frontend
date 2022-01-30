@@ -62,14 +62,15 @@
 
 <script>
 import { ref } from '@vue/reactivity'
-import { useAgulite } from '../../state'
-import { computed } from '@vue/runtime-core'
+import { useAgulite } from '../../composables'
+import { validateEmail } from '../../utils'
+import { computed, onMounted } from '@vue/runtime-core'
 import { useRouter } from 'vue-router'
 
 export default {
     setup(){
         const router = useRouter()
-        const { signin } = useAgulite
+        const { signin } = useAgulite()
 
         const loading = ref(false)
         const errorMessage = ref("")
@@ -79,6 +80,11 @@ export default {
         const loginButtonText = computed(() => loading.value ? "Please, wait." : "Login")
 
         const login = async () => {
+            if(!validateEmail(email.value)){
+                errorMessage.value = "Invalid email"
+                return
+            }
+
             loading.value = true
 
             const data = {
@@ -87,8 +93,7 @@ export default {
             }
 
             try{
-                const response = await signin(data)
-                loading.value = false
+                await signin(data)
                 router.push("/dashboard")
             } catch(e) {
                 errorMessage.value = e.message

@@ -136,11 +136,7 @@ h1{
 }
 .signin-section .signin-form-section{
    background-color: #f7f7f7 !important;
-<<<<<<< HEAD
    height: auto !important;
-=======
-   height: 121vh !important;
->>>>>>> dd59d43 (Accepted changes)
    padding: 60px 80px !important;
    margin-left: -16px !important;
 }
@@ -877,12 +873,6 @@ color: #DB4D0B;
 .fundamentals .f-section .fundamental-title .title{
     color:#DB4D0B !important;
     font-size: 20px !important;
-<<<<<<< HEAD
-}
-.error-box {
-    border-radius: 5px !important;
-=======
->>>>>>> dd59d43 (Accepted changes)
 }
 .fundamentals .f-section .courses-outline{
     display: flex !important;
@@ -1047,6 +1037,9 @@ color: #DB4D0B;
     padding: 10px !important;
     text-decoration: none !important;
     font-size: 16px !important;
+}
+.error-box {
+    border-radius: 5px;
 }
 @media screen and (max-width:1024px){
     .learning .learn-path .learn-imgs .img-1 .overlay{

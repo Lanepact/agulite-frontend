@@ -19,9 +19,10 @@
                         <div class="signup-form-section">
                             <h1>Welcome to Agu,</h1>
                             <p>Sign up now to create your account.</p>
-                            <form>
+                            <form @submit.prevent="next">
                                  <div class="form-group">
                                     <label for="">First Name:</label>
+<<<<<<< HEAD
                                     <input type="text" class="form-control" id="exampleInputPassword1">
                                 </div>
                                 <div class="form-group">
@@ -35,16 +36,34 @@
                                 <div class="form-group">
                                     <label for="">Phone:</label>
                                     <input type="number" class="form-control" id="exampleInputPassword1">
+=======
+                                    <input type="text" class="form-control" v-model="firstName" required>
+                                </div>
+                                 <div class="form-group">
+                                    <label for="">Last Name:</label>
+                                    <input type="text" class="form-control" v-model="lastName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Email Address:</label>
+                                    <input type="email" class="form-control" v-model="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Phone Number:</label>
+                                    <input type="tel" class="form-control" v-model="phoneNumber" required>
+>>>>>>> 1df4325 (Modified signin and signup flow)
                                 </div>
                                 <div class="form-group">
                                     <label for="">Password:</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <input type="password" class="form-control" v-model="password" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="">Confirm Password:</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <input type="password" class="form-control" v-model="confirmPassword" required>
                                 </div>
-                                <button type="button" class="btn btn-primary btn-lg btn-block next p-3" @click="next">Next</button>
+                                <div class="border border-danger p-3 error-box" v-show="errorMessage">
+                                    <span class="text-danger font-bold">{{ errorMessage }}</span>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block next p-3">Next</button>
                                 <div class="account-login">I already have an account! <a href="/signin" class="">Login</a> </div>
                                  <button type="button" class="btn btn-primary btn-lg btn-block google-sign-up p-2">
                                      <img src="@/assets/Google-Logo.png" alt="g"/>
@@ -73,26 +92,32 @@
                         <div class="signup-form-section">
                             <h1>My Interest,</h1>
                             <p>Let us know what you wish to learn.</p>
-                            <form>
+                            <div class="bg-success mt-4 p-3 error-box" v-if="signUpFeedBack">
+                                <span class="text-white font-bold">{{ signUpFeedBack }}</span>
+                            </div>
+                            <div class="bg-danger mt-4 p-3 error-box" v-if="errorMessage">
+                                <span class="text-white font-bold">{{ errorMessage }}</span>
+                            </div>
+                            <form @submit.prevent="register">
                                  <div class="form-group">
-                                    <label for="">What field are you passionate about?</label>
-                                    <select>
-                                        <option value="">Graphics Design And Motion graphics</option>
-                                        <option value="">UI/UX Design</option>
-                                        <option value="">Frontend Software Engineering(Web and Mobile)</option>
-                                        <option value="">Backend Software Engineering(Web and Mobile)</option>
-                                        <option value="">Mobile App Development </option>
-                                        <option value="">DevOps Engineering </option>
-                                        <option value="">Cloud Computing </option>
-                                        <option value="">Data Analysis</option>
-                                        <option value="">Quality Assurance and Engineering </option>
-                                        <option value="">Digital Marketing </option>
-                                        <option value="">Business Development and sales</option>
+                                    <label for="">What field are you interested in?</label>
+                                    <select v-model="interestField">
+                                        <option value="Graphics Design And Motion graphics">Graphics Design And Motion graphics</option>
+                                        <option value="UI/UX Design">UI/UX Design</option>
+                                        <option value="Frontend Software Engineering(Web and Mobile)">Frontend Software Engineering(Web and Mobile)</option>
+                                        <option value="Backend Software Engineering(Web and Mobile)">Backend Software Engineering(Web and Mobile)</option>
+                                        <option value="Mobile App Development">Mobile App Development</option>
+                                        <option value="DevOps Engineering">DevOps Engineering</option>
+                                        <option value="">Cloud Computing</option>
+                                        <option value="Cloud Computing">Data Analysis</option>
+                                        <option value="Quality Assurance and Engineering">Quality Assurance and Engineering</option>
+                                        <option value="Digital Marketing">Digital Marketing</option>
+                                        <option value="Business Development and sales">Business Development and sales</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="" class="">What is your experience level?</label>
-                                    <select class="">
+                                    <select class="" v-model="experienceLevel">
                                         <option value="beginner">Beginner</option>
                                         <option value="intermediate">Intermediate</option>
                                         <option value="advanced">Advanced</option>
@@ -100,13 +125,13 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="">How long have you been in tech?</label>
-                                    <select>
-                                        <option value="">0-1 year</option>
-                                        <option value="">2-4 years</option>
-                                        <option value="">5 and above</option>
+                                    <select v-model="yearsOfExperience" required>
+                                        <option value="0-1 year">0-1 year</option>
+                                        <option value="2-4 years">2-4 years</option>
+                                        <option value="5 and above">5 and above</option>
                                     </select>
                                 </div>
-                                <button type="button" class="btn btn-primary btn-lg btn-block next p-3" @click="after">Sign up</button>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block next p-3" :disabled="loading">{{ registerButtonText }}</button>
                                 <div class="account-login">I already have an account! <a href="/signin" class="">Login</a> </div>
                                  <button type="button" class="btn btn-primary btn-lg btn-block google-sign-up p-2">
                                      <img src="@/assets/Google-Logo.png" alt="g"/>
@@ -124,58 +149,83 @@
 
 <script>
     import { ref } from '@vue/reactivity'
-    import { useAgulite } from '../../state'
-    import { computed } from '@vue/runtime-core'
+    import { useAgulite } from '../../composables'
+    import { validateEmail } from '../../utils'
+    import { computed, onMounted, watchEffect } from '@vue/runtime-core'
     import { useRouter } from 'vue-router'
 
     export default{
-        data(){
-            return{
-                form1: true,
-                form2: false,
-                form3: false
-            }
-        },
-        methods:{
-            next(){
-                this.form2 = true
-                this.form1 = false
-            },
-            after(){
-                this.form2 = false,
-                this.form3 = true
-            }
-        },
-
         setup(){
             const router = useRouter()
-            const { signup } = useAgulite
+            const { signup } = useAgulite()
+
+            const form1 = ref(true)
+            const form2 = ref(false)
 
             const loading = ref(false)
             const errorMessage = ref("")
+            const signUpFeedBack = ref("")
 
             // Registration details
-            const fullname = ref("")
+            const firstName = ref("")
+            const lastName = ref("")
+            const phoneNumber = ref("")
             const email = ref("")
             const password = ref("")
             const confirmPassword = ref("")
+            const interestField = ref("Graphics Design And Motion graphics")
+            const experienceLevel = ref("beginner");
+            const yearsOfExperience = ref("0-1 year");
 
-            const loginButtonText = computed(() => loading.value ? "Please, wait." : "Finish")
+            const registerButtonText = computed(() => loading.value ? "Please, wait." : "Sign up")
+
+            watchEffect(() => {
+                const _password = password.value.trim()
+                const _confirmPassword = confirmPassword.value.trim()
+
+                if(
+                    (_password !== "" && _confirmPassword !== "") &&
+                    (_password !== _confirmPassword)
+                ){
+                    errorMessage.value = "Password mismatch"
+                } else {
+                    errorMessage.value = ""
+                }
+            })
+
+            const next = () => {
+                if(!validateEmail(email.value)){
+                    errorMessage.value = "Invalid email"
+                    return
+                }
+
+                if(password.value !== confirmPassword.value){
+                    errorMessage.value = "Password mismatch"
+                    return
+                }
+
+                form2.value = true
+                form1.value = false
+            }
 
             const register = async () => {
                 loading.value = true
 
                 const data = {
-                    fullname: fullname.value,
+                    firstName: firstName.value,
+                    lastName: lastName.value,
+                    phoneNumber: phoneNumber.value,
                     email: email.value,
                     password: password.value,
-                    confirmPassword: confirmPassword.value
+                    interestField: interestField.value,
+                    experienceLevel: experienceLevel.value,
+                    yearsOfExperience: yearsOfExperience.value
                 }
 
                 try{
-                    const response = await signup(data)
+                    await signup(data)
                     loading.value = false
-                    router.push("/signin")
+                    signUpFeedBack.value = "Success! A verification link has been sent to your mail"
                 } catch(e) {
                     errorMessage.value = e.message
                     loading.value = false
@@ -184,13 +234,22 @@
             }
 
             return {
-                loginButtonText,
+                form1,
+                form2,
+                registerButtonText,
                 loading,
                 errorMessage,
-                fullname,
+                signUpFeedBack,
+                firstName,
+                lastName,
+                phoneNumber,
                 email,
                 password,
                 confirmPassword,
+                interestField,
+                experienceLevel,
+                yearsOfExperience,
+                next,
                 register
             }
         }

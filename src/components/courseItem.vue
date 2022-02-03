@@ -1,17 +1,21 @@
 <template>
-        <div class="course-1">
-            <span class="course-title">{{ course.title }}</span>
-                <div class="course-level">
-                    <span class="percent">{{ course.progress }}%</span>
-                    <button>Continue</button>
-                </div>
-         </div>
+
+        <div v-for="course in courses" :key = "course.id">
+            <div class="course-1">
+               <single-course :course="course"></single-course>
+            </div>
+        </div>
         
 </template>
 <script>
-export default {
-    props: ["course"],
 
+import SingleCourse from '../components/Singlecourse'
+
+export default {
+    props: ["courses"],
+    components:{
+        SingleCourse
+    },
     setup(){
     }
 }

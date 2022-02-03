@@ -33,14 +33,6 @@ export default {
   /* margin-top: 60px; */
 }
 
-
-.navbar-section{
-  padding: 20px 10px;
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-}
 #nav a {
   font-weight: bold;
   color: #2c3e50;

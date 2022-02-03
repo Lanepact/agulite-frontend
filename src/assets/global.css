@@ -5,7 +5,125 @@
 }
 body{
     font-family: Nunito !important;
+    background-color: #fefefe !important;
 }
+.navbar-section{
+    width: 100% !important;
+    height: 10vh !important;
+    padding: 30px 10px !important;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed !important;
+    z-index: 2 !important;
+    background-color: white !important;
+  }
+.navbar-section .logo{
+    width:100px !important;
+}
+.navbar-section .action-but button{
+    background-color: #ed4809 !important;
+    color: white !important;
+    padding: 8px 20px !important;
+    border: none !important;
+    font-size: 14px !important;
+    border-radius: 5px !important;
+}
+.h-banner{
+    background-image: url(../assets/banner.jpg);
+    background-position: center !important;
+    width: 100% !important;
+    height: 80vh !important;
+    background-size: cover !important;
+    position: relative !important;
+}
+.h-banner .bg-overlay{
+    width: 100% !important;
+    height: 80vh !important;
+    background-color: black !important;
+    opacity: 0.6 !important;
+    position: absolute !important;
+}
+.h-banner .banner-text{
+    position: absolute !important;
+    margin-left: 50px !important;
+    margin-top: 200px !important;
+}
+.h-banner .banner-text h1{
+    color: white !important;  
+    font-size: 40px !important;
+    font-weight: bold !important;
+    margin-bottom: 10px !important;
+}
+.h-banner .banner-text p{
+    color: white !important;  
+    font-size: 16px !important;
+    margin-bottom: 15px !important;
+}
+.h-banner .banner-text button{
+    background-color: #ed4809 !important;
+    color: white !important;
+    padding: 8px 20px !important;
+    border: none !important;
+    font-size: 14px !important;
+    border-radius: 5px !important;
+}
+.agu-aim{
+    margin: 40px 60px 40px 60px !important;
+}
+.agulite-head{
+    display: flex !important;
+    align-items: center !important;
+}
+.agulite-head .head{
+    font-size: 16px !important;
+    font-weight: bold !important;
+    color: #ababab !important;
+}
+.agulite-head .line{
+    width: 100px !important;
+    border-bottom: 1px solid  #ed4809 !important;
+    margin-left: 10px !important;
+}
+.agu-aim .why{
+    color: #112a55 !important;
+    font-size: 40px !important;
+    font-weight: 700 !important;
+    margin-bottom: 60px !important;
+}
+.agu-aim .service-bg{
+    background-color: #f4f6f6 !important;
+    width: 100% !important;
+    padding-top: 20px !important;
+    padding-left: 10px !important;
+    padding-bottom: 20px !important;
+}
+.agu-aim .service-bg .box-1{
+    padding: 20px !important;
+    width: 96% !important;
+    height: 30vh !important;
+    background-color: #ffffff !important;
+    border-radius: 5px !important;
+    border: 2px solid #f4f6f6 !important;
+}
+.agu-aim .service-bg .box-1 .title{
+    margin-bottom: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+.agu-aim .service-bg .box-1 .title .h-text{
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin-left: 20px !important;
+}
+.agu-aim .service-bg .box-1 .title span .fn{
+    font-size: 40px !important;
+    color: #ed4809 !important ;
+
+}
+.agu-aim .service-bg .box-1 .title .details{
+    font-size: 16px !important;
+} 
 h1{
     color: purple;
 }
@@ -51,8 +169,7 @@ h1{
     line-height: 27px;
 }
 .signup-section .signup-form-section form{
-    margin-top: 80px !important;
-   
+    margin-top: 80px !important; 
 }
 .signup-section .signup-form-section form label{
     color:#010107 !important;
@@ -302,10 +419,13 @@ h1{
 }
 .db-nav{
     display: flex !important;
-    justify-content: space-between !important;
+    justify-content: flex-end !important;
     margin-top: 10px !important;
     padding: 0 10px !important;
     align-items: center !important;
+}
+.db-nav div{
+    padding-right: 15px !important;
 }
 .db-nav .user-detail{
     display: flex !important;
@@ -321,9 +441,9 @@ h1{
 }
 .db-nav .username{
     font-weight: bold;
-font-size: 20px;
-line-height: 41px;
-color: #DB4D0B;
+    font-size: 20px;
+    line-height: 41px;
+    color: #DB4D0B;
 }
 .db-nav .search-box input{
     border-radius: 25px !important;
@@ -335,7 +455,7 @@ color: #DB4D0B;
 }
 .db-nav .search-box .search-icon{
     position: absolute;
-    right: 10px;
+    right: 24px;
     top: 5px !important;
     
 }
@@ -396,12 +516,15 @@ color: #DB4D0B;
 }
 .mobile-nav-info .nav-info{
     display: flex !important;
-    justify-content: space-evenly !important;
+    justify-content: flex-end !important;
     align-items: center !important;
     padding-top: 5px !important;
     padding-left: 10px !important;
     padding-right: 10px !important; 
     margin-bottom: 20px !important;
+}
+.mobile-nav-info .nav-info div{
+    padding-right: 10px !important;
 }
 .mobile-nav-info .search-box{
     position: relative;
@@ -822,6 +945,7 @@ color: #DB4D0B;
     display: flex !important;
     justify-content: flex-end !important;
     padding-right: 40px !important;
+    margin-bottom: 20px !important;
 }
 .edit-bt .edit-profile-button{
     width: 88px;
@@ -892,6 +1016,9 @@ color: #DB4D0B;
     display: flex !important;
     flex-direction: column !important;
 }
+.fundamentals .f-section .courses-outline a{
+    text-decoration: none !important;
+}
 .fundamentals .f-section .courses-outline .course-1 .course-title{
     font-weight: normal;
     font-size: 16px !important;
@@ -946,6 +1073,7 @@ color: #DB4D0B;
    margin-bottom: 20px !important;
    font-weight: normal;
    font-size: 16px !important;
+   font-weight: bold !important;
    line-height: 30px !important;
    color: #000000;
 }
@@ -1037,6 +1165,304 @@ color: #DB4D0B;
     text-decoration: none !important;
     font-size: 16px !important;
 }
+
+#lesToggleBtn{
+    width: 35px;
+  cursor: pointer;
+  color:  #F5800C !important ;
+}
+.courselist-single .m-nav{
+    margin-top: 10px !important;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 20px !important;    
+}
+.courselist-single .m-nav .logo{
+    width: 150px !important;
+}
+.courselist-single .m-nav .logo img{
+    width: 100% !important;
+}
+.les-side-nav{
+    display: flex !important;
+    flex-direction: column !important;
+    background-color:#F5800C !important;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    /* left:-250px; */
+    background:#647D64;
+    opacity:0.9;
+    z-index:2;
+    transition: 3.5s;
+}
+.fade-enter-active, .fade-leave-active{
+    transition: opacity 2.5s ease !important;
+}
+.fade-enter-from, .fade-leave-to{
+    opacity: 0 !important;
+}
+
+/* .ht .test{
+    background-color: red !important;
+} */
+.les-side-nav .side{
+    margin-top: 80px !important;
+}
+.les-side-nav .les-item{
+    display: flex;
+    align-items: center;
+    color:white !important;
+    text-decoration: none;
+    text-decoration: none !important;
+    font-weight: normal;
+    font-size: 18px;
+    /* line-height: 41px; */
+    margin-bottom: 10px !important;
+    padding: 5px 20px !important;
+    width: 100%;
+}
+.les-side-nav .l{
+    margin-left: -10px !important;
+}
+.les-side-nav .les-item span{
+    padding-left: 10px !important;
+}
+.desk-courselist-single{
+    margin:0 !important;
+}
+.desk-les-items .logo{
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+}
+.desk-les-items{
+    background-color: #F5800C !important;
+    height: 150vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+.desk-les-items .les-item{
+    display: flex !important;
+    align-items: center;
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 41px;
+    margin-bottom: 30px !important;
+    padding: 5px 20px !important;
+    width: 100%;
+}
+.desk-les-items .les-item:hover{
+    background-color: #DB4D0B !important;
+    padding: 5px 20px !important;
+}
+.dashboard-items .profile{
+    /* margin-left: -45px !important; */
+}
+.dashboard-items .logout{
+    margin-top: 50px !important;
+    /* margin-left: -45px !important; */
+}
+.desk-les-items .l{
+    margin-left: -10px !important;
+}
+.desk-les-items .les-item span{
+    padding-left: 10px !important;
+}
+.active-course .active-course-left{
+    margin: 20px !important;
+}
+.active-course .active-course-left .details{
+    display: flex !important;
+    flex-direction: column !important;
+    margin-left: 40px !important;
+}
+.active-course .active-course-left .details .week{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 41px;
+    margin-bottom: 10px !important;
+    color: #DB4D0B;
+}
+.active-course .active-course-left .details .title{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    color: #000000;
+}
+.active-course .active-course-left .details .video{
+    border-radius: 40px !important;
+    width: 80% !important;
+    margin-bottom: 20px !important;
+}
+.active-course .active-course-left .details .video video{
+    object-fit: contain !important;
+    border-radius: 40px !important;
+    border: none !important;
+    width: 100% !important;
+}
+.active-course .active-course-left .details .video video:focus{
+    border: none !important;
+    outline: none !important;
+}
+.active-course .active-course-left .hr-line{
+    border: 1px solid #000000 !important;
+    width: 70% !important;
+    margin-bottom: 20px !important;
+    margin-left: 50px  !important;
+}
+.active-course .active-course-left .transcript-info{
+    margin-left: 40px !important;
+}
+.active-course .active-course-left .transcript-info h2{
+    font-weight: 600 !important;
+    color: #000000 !important;
+}
+.active-course .active-course-left .transcript-info p{
+    width: 80% !important;
+    text-align: justify !important;
+    font-size: 14px;
+    color: #000000 !important;  
+}
+.active-course .active-course-right{
+    margin: 20px 40px 20px 20px !important;
+}
+.active-course .active-course-right .controls{
+    display: flex !important;
+    justify-content: space-between !important;
+} 
+.active-course .active-course-right .notes{
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 30px !important;
+}
+.active-course .active-course-right .notes .note-btn{
+    height:30px !important;
+    background-color: #DB4D0B !important;
+    border: none !important;
+    font-size: 16px !important;
+}
+.active-course .active-course-right .notes .note-access{
+    height:30px !important;
+    color: #DB4D0B !important;
+    margin-top: 40px !important;
+    font-size: 40px !important;
+    border: none !important;
+    font-size: 20px !important;
+}
+.active-course .active-course-right .notes .note-title{
+    font-weight: normal;
+    font-size: 18px !important;
+    margin-bottom: 40px !important;
+    line-height: 34px;;
+    color: #000000;
+}
+.active-course .active-course-right .notes .note-space{
+    background: rgba(196, 196, 196, 0.01);
+    border: 1px solid #3535BC;
+    border-radius: 20px;
+    height: 50vh !important;
+}
+
+.active-course .active-course-right .controls a{
+    font-size: 14px !important;
+    color: #DB4D0B !important;
+    align-items: center !important;
+}
+
+.assessment .assessment-tab{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center !important;
+    margin: 40px !important;
+}
+.assessment .assessment-tab-2{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center !important;
+    margin: 40px !important;
+}
+.assessment .hr-line{
+    margin: 40px !important;
+}
+.assessment .links{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    margin: 20px !important;
+}
+.assessment .links a{
+    margin-right: 40px !important;
+    font-size: 16px !important;
+    line-height: 27px !important;
+    text-decoration-line: underline !important;
+}
+.assessment .links .save{
+    text-decoration-line: underline;
+    color: #000000;
+}
+.assessment .links .upload{
+    text-decoration-line: underline;
+    color: #F5800C;
+}
+.assessment .submit{
+    display: flex !important;
+    justify-content: center !important;
+}
+.assessment .submit button{
+    background: #DB4D0B !important;
+    border-radius: 8px;
+    font-size: 16px !important;
+    border: none !important;
+    padding: 10px 20px !important;
+}
+.assessment .next-mod{
+    margin-top: 40px !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin: 40px !important;
+}
+.assessment .next-mod button{
+    background: #DB4D0B !important;
+    border-radius: 8px;
+    font-size: 16px !important;
+    border: none !important;
+    padding: 10px 20px !important;
+}
+.assessment .assessment-details{
+    margin: 40px !important;
+    color: #000000 !important;
+    font-size: 12px !important;
+    text-align: justify !important;
+}
+.assessment .assessment-tab-2 .title{
+    font-size: 25px !important;
+    color: #F5800C !important;
+}
+.assessment .assessment-tab-2 .title-date{
+    font-size: 12px !important;
+    color: #000000 !important; 
+}
+.assessment .assessment-tab .week-title{
+    font-weight: bold !important;
+    font-size: 20px !important;
+    color: #F5800C !important;
+}
+.assessment .assessment-tab .a-controls{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+.assessment .assessment-tab .a-controls a{
+    font-weight: normal !important;
+    font-size: 14px !important;
+    margin-right: 40px !important;
+    color: #F5800C;
+}
 @media screen and (max-width:1024px){
     .learning .learn-path .learn-imgs .img-1 .overlay{
         top: 40px !important;
@@ -1088,6 +1514,12 @@ color: #DB4D0B;
     .signin-section .signin-form-section form .account-signup{
         font-size: 10px !important;
     }
+    .assessment .next-mod button{
+      font-size: 10px !important;
+    }
+    .assessment .submit button{
+        font-size: 10px !important;
+      }
     .signup-section .signup-form-section form .next{
         font-size: 14px !important;
         padding-top: 5px !important;
@@ -1100,5 +1532,294 @@ color: #DB4D0B;
     }
     .signup-section .signup-form-section form .account-login{
         font-size: 10px !important;
+    }
+    .courses-det .box{
+        flex-wrap: wrap !important;
+    }
+    .courses-det .box image{
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+    .courses-det .box .box-text{
+        width: 100% !important;
+    }
+    .courses-det .box .box-text button{
+      font-size: 10px !important;
+    }
+    .courses-det .course-prog .title{
+        font-size: 16px !important;
+        font-weight: bold !important;
+        margin-bottom: 20px !important;
+    }
+    .courses-det .course-prog .exp{
+        font-size: 12px !important;
+        padding: 25px 20px !important;
+    }
+    .learning .learn-path .title{
+        font-size: 16px !important;
+        font-weight: bold !important;
+        margin-bottom: 20px !important; 
+    }
+    .learning .learn-path{
+        margin-bottom: 0 !important;
+    }
+    .learning .learn-path .learn-imgs .overlay{
+        font-size: 14px !important;  
+    }
+    .learning .learn-path .learn-imgs .idea{
+        right: 10px !important;
+    }
+    .learning .upcoming-task .title{
+        font-size: 16px !important;
+        font-weight: bold !important;
+        margin-bottom: 20px !important; 
+    }
+    .learning .upcoming-task .task{
+        font-size: 12px !important;
+        padding: 25px 20px !important; 
+    }
+    .mobile-nav-info .nav-info{
+        margin-top: 10px !important;
+    }
+    .mobile-dashboard-section .mobile-nav .logo{
+        width: 100px !important;
+    }
+    .fundamentals .f-section .fundamentals-nav a{
+        font-size: 14px !important;
+    }
+    .fundamentals .f-section .courses-outline a{
+        text-decoration: none !important;
+        font-size: 10px !important;
+    }
+    .fundamentals .f-section .courses-outline .course-level .percent{
+        font-size: 12px !important;
+     }
+     .fundamentals .f-section .courses-outline .course-level button{
+        font-size: 11px !important;
+     }
+     .f-section2 .curri-outline .cur-1 .cur-details .week{
+        font-size: 14px !important;
+        font-weight: bold !important;
+     }
+     .f-section2 .curri-outline .cur-1 .cur-details .week-course{
+         font-size: 14px !important;
+      }
+      .active-course .active-course-left{
+          margin-right: 24px !important;
+      }
+      .active-course .active-course-left .details{
+        margin-left: 10px !important;
+    }
+    .active-course .active-course-left .details .week{
+        font-size: 18px !important;
+    }
+    .active-course .active-course-left .details .title{
+        font-size: 18px;
+    }
+    .active-course .active-course-left .details .video{
+       margin-top: -60px !important;
+       width: 100% !important
+    }
+    .active-course .active-course-left .hr-line{
+        border: 1px solid #000000 !important;
+        width: 100% !important;
+        margin-left: 0px  !important;
+    }
+    .active-course .active-course-left .transcript-info{
+        margin-left: 0px !important;
+    }
+    .active-course .active-course-left .transcript-info h2{
+        font-weight: 600 !important;
+        color: #000000 !important;
+    }
+    .active-course .active-course-left .transcript-info p{
+        width: 100% !important;
+        text-align: justify !important;
+        font-size: 12px;
+    }
+    .active-course .active-course-right .notes .note-title{
+        font-size: 16px !important;
+    }
+    
+    .active-course .active-course-right .controls a{
+        font-size: 12px !important;
+    }
+    .active-course .active-course-right .notes .note-btn{
+        height:20px !important;
+        font-size: 14px !important;
+    }
+    .user-bio .profile-details .profile-icon{
+        width: 100px !important;
+    }
+    .user-bio .profile-details .profile-name{
+        font-size: 14px !important;
+    }
+    .user-bio .profile-details .profile-skill{
+        font-size: 14px !important;
+    }
+    .user-bio .bio-details{
+        margin: 20px 20px 0 !important;
+    }
+    .user-bio .bio-details .title{
+        font-weight: bold !important;
+        margin-bottom: 10px !important;
+        font-size: 20px !important;
+        line-height: 34px !important;
+        color: #DB4D0B !important;
+    }
+    .user-bio .bio-details .text{
+       text-align: justify !important;
+        font-size: 14px !important;
+        line-height: 30px !important;
+        width: 80% !important;
+    }
+    .user-bio .bio-details .advanced-set{
+        margin-top: 20px !important;
+        font-weight: bold !important;
+        font-size: 20px !important;
+        margin-bottom: 10px !important;
+        line-height: 34px !important;      
+        color: #DB4D0B !important;
+    }
+    .user-bio .comp-proj{
+        margin:40px 20px 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        flex-direction: column !important;
+    }
+    .user-bio .comp-proj .title{
+        font-size: 16px !important;
+    }
+    .user-bio .bio-details .title{
+        font-size: 16px !important;
+    }
+    .user-bio .bio-details .text{
+        font-size: 12px !important;
+        width: 100% !important;
+    }
+    .user-bio .bio-details .bio-personal{
+        font-size: 16px !important;
+        margin-bottom: 10px !important;
+    }
+    .user-bio .bio-details{
+        margin: 20px 20px 0 !important;
+    }
+    .user-bio .bio-details .bio-full{
+        width: 35% !important;
+    }
+    .user-bio .bio-details .bio-full .tit{
+        font-size: 12px !important;
+        width: 10% !important;
+    }
+    .user-bio .bio-details .bio-full .date{
+        width: 69px;
+        font-size: 11px !important;
+    }
+    .user-bio .bio-details .bio-full-3,  .user-bio .bio-details .bio-full-1,  .user-bio .bio-details .bio-full-2{
+        display: flex !important;
+        justify-content: space !important;
+    }
+    .signlogo{
+        margin-bottom: 20px !important;
+    }
+    .signlogo img{
+       width: 100px !important;
+    }
+    .signup-section .signup-form-section h1{
+        font-size: 30px !important;
+        margin-bottom: 10px !important;
+    }
+    .signup-section .signup-form-section p{
+        font-size: 16px !important;
+    }
+    .signup-section .signup-form-section form{
+        margin-top: 40px !important; 
+    }
+    .signup-section .signup-form-section form label{
+        font-size: 14px !important;
+    }
+    .signup-section .signup-form-section{
+        padding: 60px 60px !important;
+    }
+    .signin-section .signin-form-section h1{
+        font-size: 30px !important;
+        margin-bottom: 10px !important;
+    }
+    .signin-section .signin-form-section p{
+        font-size: 16px !important;
+    }
+    .signin-section .signin-form-section form{
+        margin-top: 40px !important; 
+    }
+    .signin-section .signin-form-section form label{
+        font-size: 14px !important;
+    }
+    .signin-section .signin-form-section form .checkup .rem{
+        display: flex !important;
+        align-items: center !important;
+    }
+    .signin-section .signin-form-section form .checkup .rem-me{
+        font-size: 12px !important;
+    }
+    .signin-section .signin-form-section form .checkup .forgot-pass{
+        font-size: 12px !important;
+    }
+    .signin-section .signin-form-section form .login{
+        margin-top: 10px !important;
+    }
+    .updateprofile-section form{
+        width:80% !important;
+        margin: 0 auto !important;
+     }
+     .updateprofile-section form{
+        margin-top: 20px !important;
+       
+    }
+    .updateprofile-section form .form-group{
+        margin-bottom: 20px !important;
+    }
+    .updateprofile-section form label{
+        color:#010107 !important;
+        font-size: 14px !important;
+        line-height: 40px !important;
+    }
+    .mobile-nav-info .search-box .search-icon{
+        position: absolute;
+        right: 18px !important;
+        top: 5px !important;
+        
+    }
+    .assessment .links .save{
+        font-size: 12px !important;
+    }
+    .assessment .links .upload{
+      font-size: 12px !important;
+    }
+    .agu-aim{
+        margin: 40px 20px 40px 20px !important;
+    }
+    .agu-aim .service-bg .box-1{
+        margin-bottom: 20px !important;
+      }
+      .h-banner .banner-text{
+        margin-left: 20px !important;
+        margin-top: 280px !important;
+    }
+    .h-banner .banner-text h1{
+        color: white !important;  
+        font-size: 30px !important;
+    }
+    .h-banner .banner-text p{
+        font-size: 14px !important;
+        width: 80% !important;
+
+    }
+    .h-banner .banner-text button{
+        background-color: #ed4809 !important;
+        color: white !important;
+        padding: 6px 10px !important;
+        border: none !important;
+        font-size: 14px !important;
+        border-radius: 5px !important;
     }
 }

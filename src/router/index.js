@@ -10,6 +10,8 @@ import Profile from '../views/dashboard/Profile.vue'
 import Courses from '../views/dashboard/Courses.vue'
 import Updateprofile from '../views/dashboard/Updateprofile.vue'
 import Verification from '../views/verification.vue'
+import Assessment from '../views/dashboard/Assessment.vue'
+import Details from '../views/Details.vue'
 
 const routes = [
   {
@@ -67,8 +69,19 @@ const routes = [
     name: 'Verification',
     component: Verification
   },
+  {
+    path: '/courses/:id',
+    name: 'Details',
+    component: Details
+  },
+  {
+    path: '/assessment',
+    name: 'Assessment',
+    component:Assessment 
+  }
 
-
+   
+       
 ]
 
 const router = createRouter({

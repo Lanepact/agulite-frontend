@@ -3,14 +3,13 @@
         <div class="mobile-nav d-flex d-lg-none">
               <div class="logo">
                 <img src="@/assets/agulogo.png" alt="agulog"/>
-            </div>
+             </div>
              <div id="menuBtn">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#F5800C">
                     <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                 </svg>
             </div>
         </div>
-        
         <div class="mobile-dashboard d-block d-lg-none" id="mobile-dashboard">
             <a href="/dashboard" class="db-item">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,13 +85,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
                     <div class="mobile-nav-info d-block d-lg-none">
                         <div class="nav-info">
-                            <div class="search-box">
-                                <span class="search-icon border-0 pl-3"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.33333 0.333496C9.64533 0.333496 12.3333 3.0215 12.3333 6.3335C12.3333 9.6455 9.64533 12.3335 6.33333 12.3335C3.02133 12.3335 0.333328 9.6455 0.333328 6.3335C0.333328 3.0215 3.02133 0.333496 6.33333 0.333496ZM6.33333 11.0002C8.91133 11.0002 11 8.9115 11 6.3335C11 3.75483 8.91133 1.66683 6.33333 1.66683C3.75466 1.66683 1.66666 3.75483 1.66666 6.3335C1.66666 8.9115 3.75466 11.0002 6.33333 11.0002ZM11.99 11.0475L13.876 12.9328L12.9327 13.8762L11.0473 11.9902L11.99 11.0475Z" fill="#F5800C"/>
-                                    </svg>
-                                </span>
-                                <input type="text">
-                            </div>
+                            <div class="username">Welcome {{user}},</div>
                             <div class="notification">
                                 <img src="@/assets/bell.png" class="img-fluid"/>
                             </div>
@@ -100,18 +93,11 @@
                                 <img src="@/assets/pro-im.png" class="img-fluid"/>
                             </div>
                         </div>
-                        <div class="username">Welcome back {{user}},</div>
+                   
                     </div>
                     <div class="d-none d-lg-block">
                         <div class="db-nav">
                              <div class="username">Welcome back {{user}},</div>
-                             <div class="search-box">
-                                <span class="search-icon border-0 pl-3"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.33333 0.333496C9.64533 0.333496 12.3333 3.0215 12.3333 6.3335C12.3333 9.6455 9.64533 12.3335 6.33333 12.3335C3.02133 12.3335 0.333328 9.6455 0.333328 6.3335C0.333328 3.0215 3.02133 0.333496 6.33333 0.333496ZM6.33333 11.0002C8.91133 11.0002 11 8.9115 11 6.3335C11 3.75483 8.91133 1.66683 6.33333 1.66683C3.75466 1.66683 1.66666 3.75483 1.66666 6.3335C1.66666 8.9115 3.75466 11.0002 6.33333 11.0002ZM11.99 11.0475L13.876 12.9328L12.9327 13.8762L11.0473 11.9902L11.99 11.0475Z" fill="#F5800C"/>
-                                    </svg>
-                                </span>
-                                <input type="text">
-                            </div>
                             <div class="notification">
                                 <img src="@/assets/bell.png" class="img-fluid"/>
                             </div>
@@ -176,7 +162,7 @@
                                            <div class="img">
                                                 <img src="@/assets/l2.png" class="img-fluid"/>
                                             </div>
-                                            <div class="overlay">Ideation Proces</div>
+                                            <div class="overlay idea">Ideation Proces</div>
                                         </div>
                                         <div class="img-3">
                                            <div class="img">
@@ -229,9 +215,6 @@
                 </div>
             </div>
         </div>
-    
-
-   
 </template>
 <script>
 export default {

@@ -24,7 +24,7 @@
                 </svg>
                 <span>My Courses</span>
             </a>
-            <a href="/signin" class="db-item">
+            <a href="/dash" class="db-item">
                 <svg width="18" height="18" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M40 19.375V20.625C40 21.3156 39.5525 21.875 39 21.875H21.5V25H26C27.1044 25 28 26.1195 28 27.5V37.5C28 38.8805 27.1044 40 26 40H14C12.8956 40 12 38.8805 12 37.5V27.5C12 26.1195 12.8956 25 14 25H18.5V21.875H1C0.4475 21.875 0 21.3156 0 20.625V19.375C0 18.6844 0.4475 18.125 1 18.125H7.5V15H4C2.89562 15 2 13.8805 2 12.5V2.5C2 1.11953 2.89562 0 4 0H14C15.1044 0 16 1.11953 16 2.5V12.5C16 13.8805 15.1044 15 14 15H10.5V18.125H29.5V15H26C24.8956 15 24 13.8805 24 12.5V2.5C24 1.11953 24.8956 0 26 0H36C37.1044 0 38 1.11953 38 2.5V12.5C38 13.8805 37.1044 15 36 15H32.5V18.125H39C39.5525 18.125 40 18.6844 40 19.375ZM16 30V35H24V30H16ZM12 5H6V10H12V5ZM34 5H28V10H34V5Z" fill="white"/>
                 </svg>
@@ -100,7 +100,6 @@
                                 <img src="@/assets/pro-im.png" class="img-fluid"/>
                             </div>
                         </div>
-                        <div class="username">My Courses</div>
                     </div>
                     <div class="d-none d-lg-block">
                         <div class="db-nav">
@@ -123,7 +122,7 @@
                     </div>
                     <div class="container fundamentals mt-4">
                        <div class="row">
-                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
                                <div class="f-section">
                                    <div class="fundamentals-nav">
                                        <a href="#">Current section</a>
@@ -137,16 +136,14 @@
                                         </span>
                                     </div>
                                     <div class="courses-outline">
-                                        <div v-for="course in courses" :key = course.id>
-                                            <course-item :course="course"></course-item>
-                                        </div>
+                                            <course-item :courses="courses"></course-item>
                                     </div>
                                 </div>
                            </div>
                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                <div class="f-section2">
                                    <div class="fundamental-nav-right">
-                                       <a href="#">Curricullum/Sections</a>
+                                       <a href="#"><b>Curricullum/Sections</b></a>
                                     </div>
                                     <div class="curri-outline">
                                        <div v-for="curriculum in curriculums" :key= curriculum.id>

@@ -10,3 +10,16 @@ menuBtn.onclick = function(){
         sideNav.style.left ="-250px";
     }
 }
+
+// var lesBtn = document.getElementById("lesToggleBtn");
+// var lesSide = document.getElementById("lesSideNav");
+
+// lesBtn.onclick = function(){
+//     console.log('start');
+//     if(lesSide.style.left == "-250px"){
+//         lesSide.style.left ="0";
+//     }
+//     else{
+//         lesSide.style.left ="-250px";
+//     }
+// }

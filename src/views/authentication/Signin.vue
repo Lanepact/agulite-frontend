@@ -18,14 +18,14 @@
                             <form>
                                 <div class="form-group">
                                     <label for="">Email Address:</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <input type="email" class="form-control" id="exampleInputPassword1">
                                 </div>
                                 <div class="form-group">
                                     <label for="">Password:</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1">
                                 </div>
                                 <div class="checkup">
-                                     <div class="form-group">
+                                     <div class="form-group rem">
                                         <input type="radio" class="" id="">
                                         <label class="rem-me" for="exampleCheck1">Remember me</label>
                                     </div>

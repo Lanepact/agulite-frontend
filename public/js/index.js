@@ -11,15 +11,20 @@ menuBtn.onclick = function(){
     }
 }
 
-// var lesBtn = document.getElementById("lesToggleBtn");
-// var lesSide = document.getElementById("lesSideNav");
 
-// lesBtn.onclick = function(){
-//     console.log('start');
-//     if(lesSide.style.left == "-250px"){
-//         lesSide.style.left ="0";
-//     }
-//     else{
-//         lesSide.style.left ="-250px";
-//     }
-// }
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})

@@ -140,7 +140,7 @@
                                         <label for="">Phone:</label>
                                         <input type="number" class="form-control" id="exampleInputPassword1">
                                     </div>
-                                    
+
                                     <button type="button" class="btn btn-primary btn-lg btn-block login p-3">Update Profile</button>
                                    
                                 </form>

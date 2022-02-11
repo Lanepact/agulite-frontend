@@ -1,7 +1,7 @@
-export const getAxiosHeader = (bearerToken = null) => {
+export const getAxiosHeader = (bearerToken = null, contentType = "application/json") => {
     return !bearerToken ? 
-        { "Content-Type" : "application/json" } : 
-            { "Content-Type" : "application/json", "Authorization" : `Bearer ${bearerToken}` }
+        { "Content-Type" : `${contentType}` } : 
+            { "Content-Type" : `${contentType}`, "Authorization" : `Bearer ${bearerToken}` }
 }
 
 export const validateEmail = (email) => {

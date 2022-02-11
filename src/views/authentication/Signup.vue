@@ -22,21 +22,6 @@
                             <form @submit.prevent="next">
                                  <div class="form-group">
                                     <label for="">First Name:</label>
-<<<<<<< HEAD
-                                    <input type="text" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">last Name:</label>
-                                    <input type="text" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Email Address:</label>
-                                    <input type="email" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Phone:</label>
-                                    <input type="number" class="form-control" id="exampleInputPassword1">
-=======
                                     <input type="text" class="form-control" v-model="firstName" required>
                                 </div>
                                  <div class="form-group">
@@ -50,7 +35,6 @@
                                 <div class="form-group">
                                     <label for="">Phone Number:</label>
                                     <input type="tel" class="form-control" v-model="phoneNumber" required>
->>>>>>> 1df4325 (Modified signin and signup flow)
                                 </div>
                                 <div class="form-group">
                                     <label for="">Password:</label>
@@ -156,6 +140,7 @@
 
     export default{
         setup(){
+
             const router = useRouter()
             const { signup } = useAgulite()
 
@@ -204,6 +189,11 @@
                     return
                 }
 
+                if(password.value.trim().length < 8){
+                    errorMessage.value = "Password must be up-to 8 characters"
+                    return
+                }
+
                 form2.value = true
                 form1.value = false
             }
@@ -225,7 +215,7 @@
                 try{
                     await signup(data)
                     loading.value = false
-                    signUpFeedBack.value = "Success! A verification link has been sent to your mail"
+                    router.push("/verification")
                 } catch(e) {
                     errorMessage.value = e.message
                     loading.value = false

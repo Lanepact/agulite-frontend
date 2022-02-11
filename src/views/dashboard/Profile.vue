@@ -125,9 +125,9 @@
                        <div class="row">
                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                <div class="profile-details">
-                                   <div class="profile-icon"><img src="@/assets/profile-icon.png" class="img-fluid"/></div>
-                                   <div class="profile-name">Seun Olatunji</div>
-                                   <div class="profile-skill">UI/UX Design Apprentice</div>
+                                   <div class="profile-icon"><img :src="agulite.image" class="img-fluid rounded-circle" alt="profile image"/></div>
+                                   <div class="profile-name">{{ agulite.firstName }} {{ agulite.lastName }}</div>
+                                   <div class="profile-skill">{{ agulite.interestField }} Apprentice</div>
                                 </div>
                                 <div class="comp-proj">
                                     <div class="title">Completed  Projects</div>
@@ -157,52 +157,52 @@
                              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                <div class="bio-details">
                                    <div class="title">Bio</div>
-                                   <p class="text"> Odio congue elit, ultricies tortor ornare ultricies. Ac, integer maecenas malesuada non faucibus elementum in Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi placerat enim eu lacus. Odio congue elit, ultricies  </p>
+                                   <p class="text">{{ agulite.bio }}</p>
                                    <div class="bio-personal">Personal</div>
                                     <div class="bio-full-1">
                                         <div class="bio-full">
                                             <span class="tit">Join Date</span>
-                                            <span class="date">9th Nov, 2021</span>
+                                            <span class="date">{{ agulite.joinDate }}</span>
                                         </div>
                                         <div class="bio-full">
                                             <span class="tit">Birthday</span>
-                                            <span class="date">9th Nov, 2021</span>
+                                            <span class="date">{{ agulite.dateOfBirth }}</span>
                                         </div>
                                         <div class="bio-full">
                                             <span class="tit">Years of Experience</span>
-                                            <span class="date">9th Nov, 2021</span>
+                                            <span class="date">{{ agulite.yearsOfExperience }}</span>
                                         </div>
                                    </div>
                                     <div class="bio-full-2">
                                         <div class="bio-full">
                                             <span class="tit">Experience Level</span>
-                                            <span class="date">9th Nov, 2021</span>
+                                            <span class="date">{{ agulite.experienceLevel }}</span>
                                         </div>
                                         <div class="bio-full">
                                             <span class="tit">State Of Origin</span>
-                                            <span class="date">9th Nov, 2021</span>
+                                            <span class="date">{{ agulite.stateOfResidence }}</span>
                                         </div>
                                         <div class="bio-full">
                                             <span class="tit">Country Of Origin</span>
-                                            <span class="date">9th Nov, 2021</span>
+                                            <span class="date">{{ agulite.nationality }}</span>
                                         </div>
                                    </div>
                                   
                                     <div class="bio-full-4">
                                         <div class="bio-full">
                                             <span class="tit">Contact</span>
-                                            <span class="date">9th Nov, 2021</span>
+                                            <span class="date">{{ agulite.phoneNumber }}</span>
                                         </div>
                                         <div class="bio-full">
                                             <span class="tit">Email</span>
-                                            <span class="date">9th Nov, 2021</span>
+                                            <span class="date">{{ agulite.email }}</span>
                                         </div>
                                         <div class="bio-full">
                                             <span class="tit">Address</span>
-                                            <span class="date">9th Nov, 2021</span>
+                                            <span class="date">{{ agulite.residenceAddress }}</span>
                                         </div>
                                    </div>
-                                   <div class="advanced-set">{{advanced}}</div>
+                                   <div class="advanced-set">Advanced Settings</div>
                                 </div>
                            </div> 
                         </div>
@@ -217,18 +217,23 @@
 </template>
 <script>
 import { ref } from 'vue'
-import {useRouter} from 'vue-router'
+import { useRouter } from 'vue-router'
+import { useAgulite } from '../../composables'
+
 export default {
     setup(){
         const router = useRouter()
-        const advanced = ref('Advanced Settings')
+        const { getAgulite } = useAgulite()
+
+        const agulite = ref(getAgulite())
        
         const goToUpdateProfile = () => {
             router.push('/updateprofile')
         }
+
         return{
-            goToUpdateProfile,
-            advanced
+            agulite,
+            goToUpdateProfile
         }
     }
 }

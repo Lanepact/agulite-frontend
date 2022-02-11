@@ -94,7 +94,7 @@ export default {
 
             try{
                 await signin(data)
-                router.push("/dashboard")
+                router.push("/profile")
             } catch(e) {
                 errorMessage.value = e.message
                 loading.value = false

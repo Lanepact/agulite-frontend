@@ -123,33 +123,39 @@
                     <div class="container updateprofile-section mt-4">
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <form>
+                                <form @submit.prevent="editProfile">
+                                    <div v-show="errorMessage" class="mb-3">
+                                        <h6 class="text-danger">{{ errorMessage }}</h6>
+                                    </div>
                                     <div class="form-group">
                                         <label for="">Upload Image</label>
-                                        <input type="file" class="form-control" id="exampleInputPassword1">
+                                        <div v-if="showPreviewImage" class="preview-image-section d-flex justify-content-center align-utems-center mb-3">
+                                            <img :src="previewImage" alt="profile image" class="img-fluid rounded-circle"/>
+                                        </div>
+                                        <input type="file" class="form-control" @change="imageFileProcess" accept="image/*">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Bio:</label>
-                                        <textarea type="text" class="form-control" id="exampleInputPassword1"></textarea>
+                                        <textarea type="text" class="form-control" v-model="bio"></textarea>
                                     </div>
                                      <div class="form-group">
                                         <label for="">Date of Birth:</label>
-                                         <input type="date" class="form-control" id="exampleInputPassword1">
+                                         <input type="date" class="form-control" v-model="dateOfBirth">
                                     </div>
                                     <div class="form-group">
                                         <label for="">State of Residence:</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1">
+                                        <input type="text" class="form-control" v-model="stateOfResidence">
                                     </div>
                                     <div class="form-group">
                                         <label for="">Country:</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1">
+                                        <input type="text" class="form-control" v-model="nationality">
                                     </div>
                                      <div class="form-group">
                                         <label for="">Phone:</label>
-                                        <input type="number" class="form-control" id="exampleInputPassword1">
+                                        <input type="number" class="form-control" v-model="phoneNumber">
                                     </div>
                                     
-                                    <button type="button" class="btn btn-primary btn-lg btn-block login p-3">Update Profile</button>
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block login p-3" :disabled="loading">{{ updateButtonText }}</button>
                                    
                                 </form>
                             </div>
@@ -164,9 +170,83 @@
 
 </template>
 <script>
-export default {
-    data(){
+import { computed, ref } from 'vue'
+import { useRouter } from 'vue-router'
+import { useAgulite } from '../../composables'
 
+export default {
+    setup(){
+        const router = useRouter()
+        const { getAgulite, updateProfile } = useAgulite()
+
+        const agulite = ref(getAgulite())
+
+        const loading = ref(false)
+        const errorMessage = ref("")
+        const showPreviewImage = ref(false)
+        const previewImage = ref(null)
+
+        const image = ref(null)
+        const bio = ref(agulite.value.bio)
+        const dateOfBirth = ref(agulite.value.dateOfBirth)
+        const stateOfResidence = ref(agulite.value.stateOfResidence)
+        const nationality = ref(agulite.value.nationality)
+        const phoneNumber = ref(+agulite.value.phoneNumber)
+
+        const updateButtonText = computed(() => loading.value ? "Please, wait." : "Update Profile")
+
+        const imageFileProcess = (e) => {
+            if(e.target.files && (e.target.files.length > 0)){
+                image.value = e.target.files[0];
+                let reader = new FileReader();
+                reader.readAsDataURL(e.target.files[0]);
+                reader.onload = (event) => {
+                    showPreviewImage.value = true
+                    previewImage.value = event.target.result;
+                }
+            }
+        }
+       
+        const editProfile = async () => {
+            loading.value = true
+
+            const formData = new FormData()
+            
+            if(image.value){
+                formData.append("image", image.value)
+            }
+            formData.append("bio", bio.value)
+            formData.append("dateOfBirth", dateOfBirth.value)
+            formData.append("stateOfResidence", stateOfResidence.value)
+            formData.append("nationality", nationality.value)
+            formData.append("phoneNumber", phoneNumber.value)
+
+            try{
+                let res = await updateProfile(formData)
+                loading.value = false
+                router.push('/profile')
+            } catch(e) {
+                errorMessage.value = e.message
+                loading.value = false
+            }
+        }
+
+        return {
+            agulite,
+            loading,
+            errorMessage,
+            showPreviewImage,
+            previewImage,
+            updateButtonText,
+            image,
+            bio,
+            dateOfBirth,
+            stateOfResidence,
+            nationality,
+            phoneNumber,
+            imageFileProcess,
+            editProfile
+        }
     }
 }
 </script>

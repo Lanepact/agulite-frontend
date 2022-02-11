@@ -642,7 +642,7 @@ color: #DB4D0B;
     color: #DB4D0B;
 }
 .user-bio .bio-details .bio-full-1 .bio-full .date{
-    width: 69px;
+    width: auto;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -668,7 +668,7 @@ color: #DB4D0B;
     color: #DB4D0B;
 }
 .user-bio .bio-details .bio-full-2 .bio-full .date{
-    width: 69px;
+    width: auto;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -694,7 +694,7 @@ color: #DB4D0B;
     color: #DB4D0B;
 }
 .user-bio .bio-details .bio-full-3 .bio-full .date{
-    width: 69px;
+    width: auto;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -719,7 +719,7 @@ color: #DB4D0B;
     color: #DB4D0B;
 }
 .user-bio .bio-details .bio-full-4 .bio-full .date{
-    width: 69px;
+    width: auto;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -1040,6 +1040,9 @@ color: #DB4D0B;
 }
 .error-box {
     border-radius: 5px;
+}
+.preview-image-section img{
+    width: 120px;
 }
 @media screen and (max-width:1024px){
     .learning .learn-path .learn-imgs .img-1 .overlay{

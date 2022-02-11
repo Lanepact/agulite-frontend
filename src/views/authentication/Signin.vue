@@ -28,7 +28,7 @@
                                     <input type="password" class="form-control" v-model="password" required>
                                 </div>
                                 <div class="checkup">
-                                     <div class="form-group">
+                                     <div class="form-group rem">
                                         <input type="radio" class="" id="">
                                         <label class="rem-me" for="exampleCheck1">Remember me</label>
                                     </div>

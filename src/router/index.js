@@ -12,6 +12,7 @@ import Updateprofile from '../views/dashboard/Updateprofile.vue'
 import Verification from '../views/verification.vue'
 import Assessment from '../views/dashboard/Assessment.vue'
 import CordinatorDashboard from '../views/CordinatorDashboard/cordinatordashboard.vue'
+import CordinatorStudents from '../views/CordinatorDashboard/Students.vue'
 import Details from '../views/Details.vue'
 
 const routes = [
@@ -84,6 +85,11 @@ const routes = [
     path: '/cordinator/dashboard',
     name: 'CordinatorDashboard',
     component: CordinatorDashboard
+  },
+  {
+    path: '/cordinator/students',
+    name: 'CordinatorStudents',
+    component: CordinatorStudents
   }
 
    

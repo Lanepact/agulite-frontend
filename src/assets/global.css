@@ -603,8 +603,9 @@ h1{
 .signup-section .signup-form-section form input:focus{
     box-shadow: none !important;
 }
+
 .signin-section img{
-    width: 100%;
+    /* width: 100%; */
 }
 .signin-section .main{
     margin: 0 auto !important;
@@ -613,7 +614,7 @@ h1{
    background-color: #f7f7f7 !important;
    height: auto !important;
    padding: 60px 80px !important;
-   margin-left: -18px !important;
+   margin-left: -16px !important;
 }
 .signin-section .signin-form-section h1{
     color: #000000;
@@ -1124,7 +1125,7 @@ h1{
     color: #DB4D0B;
 }
 .user-bio .bio-details .bio-full-1 .bio-full .date{
-    width: 69px;
+    width: auto;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -1150,7 +1151,7 @@ h1{
     color: #DB4D0B;
 }
 .user-bio .bio-details .bio-full-2 .bio-full .date{
-    width: 69px;
+    width: auto;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -1176,7 +1177,7 @@ h1{
     color: #DB4D0B;
 }
 .user-bio .bio-details .bio-full-3 .bio-full .date{
-    width: 69px;
+    width: auto;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -1201,7 +1202,7 @@ h1{
     color: #DB4D0B;
 }
 .user-bio .bio-details .bio-full-4 .bio-full .date{
-    width: 69px;
+    width: auto;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -1526,10 +1527,17 @@ h1{
     font-size: 16px !important;
 }
 
+.error-box {
+    border-radius: 5px;
+}
+.preview-image-section img {
+    width: 120px;
+}
+
 #lesToggleBtn{
     width: 35px;
-  cursor: pointer;
-  color:  #F5800C !important ;
+    cursor: pointer;
+    color:  #F5800C !important ;
 }
 .courselist-single .m-nav{
     margin-top: 10px !important;

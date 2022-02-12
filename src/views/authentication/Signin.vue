@@ -63,7 +63,7 @@
 <script>
 import { ref } from '@vue/reactivity'
 import { useAgulite } from '../../composables'
-import { validateEmail } from '../../utils'
+import { validateEmail, getErrorMessage } from '../../utils'
 import { computed, onMounted } from '@vue/runtime-core'
 import { useRouter } from 'vue-router'
 
@@ -96,7 +96,7 @@ export default {
                 await signin(data)
                 router.push("/profile")
             } catch(e) {
-                errorMessage.value = e.message
+                errorMessage.value = getErrorMessage(e)
                 loading.value = false
                 
             }

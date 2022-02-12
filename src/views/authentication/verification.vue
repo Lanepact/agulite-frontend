@@ -22,6 +22,7 @@
 <script>
     import { ref } from '@vue/reactivity'
     import { useAgulite } from '../../composables'
+    import { getErrorMessage } from '../../utils'
     import { computed, watchEffect } from '@vue/runtime-core'
     import { useRouter } from 'vue-router'
 
@@ -56,7 +57,7 @@
                     loading.value = false
                     router.push("/signin")
                 } catch(e){
-                    errorMessage.value = e.message
+                    errorMessage.value = getErrorMessage(e)
                     loading.value = false
                 }
             }

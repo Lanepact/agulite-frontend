@@ -134,7 +134,7 @@
 <script>
     import { ref } from '@vue/reactivity'
     import { useAgulite } from '../../composables'
-    import { validateEmail } from '../../utils'
+    import { validateEmail, getErrorMessage } from '../../utils'
     import { computed, onMounted, watchEffect } from '@vue/runtime-core'
     import { useRouter } from 'vue-router'
 
@@ -217,7 +217,7 @@
                     loading.value = false
                     router.push("/verification")
                 } catch(e) {
-                    errorMessage.value = e.message
+                    errorMessage.value = getErrorMessage(e)
                     loading.value = false
                 }
 

@@ -162,6 +162,7 @@
 <script>
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { getErrorMessage } from '../../utils'
 import { useAgulite } from '../../composables'
 
 export default {
@@ -216,7 +217,7 @@ export default {
                 loading.value = false
                 router.push('/profile')
             } catch(e) {
-                errorMessage.value = e.message
+                errorMessage.value = getErrorMessage(e)
                 loading.value = false
             }
         }

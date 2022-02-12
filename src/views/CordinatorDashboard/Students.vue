@@ -120,171 +120,261 @@
                             </div>                    
                         </div>  
                     </div>
-                    <div class="cordinator-grade-section">
+                    <div class="student-table-section">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
-                                <div class="grade-section-left">
-                                  <div class="title">Your students completed <span class="sixty">60%</span> of their tasks</div>
-                                  <div class="students">
-                                      <span class="tit">My Students </span>
-                                      <span class="view">View all</span>
-                                  </div>
-                                  <div class="student-prog">
-                                      <div class="stud-img"><img src="@/assets/lad.png" class="img-fluid" alt="lady" /></div>
-                                      <div class="progress pg">
-                                        <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                     </div>
-                                    <div class="perc">75%</div>
-                                  </div>
-                                  <div class="student-prog">
-                                      <div class="stud-img"><img src="@/assets/lad.png" class="img-fluid" alt="lady" /></div>
-                                      <div class="progress pg">
-                                        <div class="progress-bar bar2" style="width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                     </div>
-                                    <div class="perc">80%</div>
-                                  </div>
-                                  <div class="student-prog">
-                                      <div class="stud-img"><img src="@/assets/lad.png" class="img-fluid" alt="lady" /></div>
-                                      <div class="progress pg">
-                                        <div class="progress-bar bar3" style="width: 94%;" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
-                                     </div>
-                                    <div class="perc">94%</div>
-                                  </div>
-                                </div>
-                              
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                               <div class="students-total">Students (50)</div> 
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
-                                <div class="grade-section-right">
-                                    <div class="section-notes">
-                                        <div class="n-tit">Your Notes</div>
-                                        <span class="bg">7</span>
-                                    </div>
-                                    <div class="note-block">
-                                        <div class="n-part">
-                                            <div class="ic">
-                                                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.6138 6.88704L18.3696 0.288238C18.1397 0.104256 17.8294 0 17.5038 0H1.22982C0.551735 0 0.00390625 0.438489 0.00390625 0.981235V26.4933C0.00390625 27.0361 0.551735 27.4746 1.22982 27.4746H25.748C26.4261 27.4746 26.9739 27.0361 26.9739 26.4933V7.58311C26.9739 7.32246 26.8437 7.07102 26.6138 6.88704ZM24.1467 8.03386H16.9368V2.26297L24.1467 8.03386ZM24.2156 25.2668H2.7622V2.20778H14.3317V8.83111C14.3317 9.17268 14.5013 9.50025 14.803 9.74178C15.1047 9.9833 15.514 10.119 15.9407 10.119H24.2156V25.2668Z" fill="#F5800C"/>
-                                                </svg>
-                                            </div>
-                                            <div class="n-detail">
-                                                <span class="m-tit">Schedule meeting with students</span>
-                                                <span class="mb-3 m-det">Meeting should be to ask all to submit tasks</span>
-                                                <span class="dat">05/Dec 2021</span>
-                                            </div>    
-                                        </div>
-                                        <hr class="mb-5 hr">
-                                        <div class="n-part">
-                                            <div class="ic">
-                                                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.6138 6.88704L18.3696 0.288238C18.1397 0.104256 17.8294 0 17.5038 0H1.22982C0.551735 0 0.00390625 0.438489 0.00390625 0.981235V26.4933C0.00390625 27.0361 0.551735 27.4746 1.22982 27.4746H25.748C26.4261 27.4746 26.9739 27.0361 26.9739 26.4933V7.58311C26.9739 7.32246 26.8437 7.07102 26.6138 6.88704ZM24.1467 8.03386H16.9368V2.26297L24.1467 8.03386ZM24.2156 25.2668H2.7622V2.20778H14.3317V8.83111C14.3317 9.17268 14.5013 9.50025 14.803 9.74178C15.1047 9.9833 15.514 10.119 15.9407 10.119H24.2156V25.2668Z" fill="#F5800C"/>
-                                                </svg>
-                                            </div>
-                                            <div class="n-detail">
-                                                <span class="m-tit">Schedule meeting with students</span>
-                                                <span class="mb-3 m-det">Meeting should be to ask all to submit tasks</span>
-                                                <span class="dat">05/Dec 2021</span>
-                                            </div>    
-                                        </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="students-table d-none d-md-block">
+                                    <table>
+                                        <tr>
+                                            <th>Profile</th>
+                                            <th>Full name</th>
+                                            <th>Email </th>
+                                            <th>Status</th>
+                                            <th colspan="3">Actions</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                            </td>
+                                            <td>Harry Potter</td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <button>Message</button>
+                                            </td>
+                                            <td>
+                                                <button>Call</button>
+                                            </td>
+                                            <td>
+                                                <button>Check Stats</button>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                            </td>
+                                            <td>Harry Potter</td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <button>Message</button>
+                                            </td>
+                                            <td>
+                                                <button>Call</button>
+                                            </td>
+                                            <td>
+                                                <button>Check Stats</button>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                            </td>
+                                            <td>Harry Potter</td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <button>Message</button>
+                                            </td>
+                                            <td>
+                                                <button>Call</button>
+                                            </td>
+                                            <td>
+                                                <button>Check Stats</button>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                            </td>
+                                            <td>Harry Potter</td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <button>Message</button>
+                                            </td>
+                                            <td>
+                                                <button>Call</button>
+                                            </td>
+                                            <td>
+                                                <button>Check Stats</button>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                            </td>
+                                            <td>Harry Potter</td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <button>Message</button>
+                                            </td>
+                                            <td>
+                                                <button>Call</button>
+                                            </td>
+                                            <td>
+                                                <button>Check Stats</button>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                            </td>
+                                            <td>Harry Potter</td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <button>Message</button>
+                                            </td>
+                                            <td>
+                                                <button>Call</button>
+                                            </td>
+                                            <td>
+                                                <button>Check Stats</button>
+                                            </td>
+                                        </tr>
 
+                                    </table>
+                                </div>
+                                 <div class="students-table-mobile d-block d-sm-none">
+                                    <table>
+                                        <tr>
+                                            <th>Profile</th>
+                                            <th>Full name</th>
+                                            <th>Email </th>
+                                            <th>Status</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                            </td>
+                                            <td>Harry Potter</td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <span>
+                                                   <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                       <circle cx="2" cy="2" r="2" fill="#333333"/>
+                                                        <circle cx="2" cy="8" r="2" fill="#333333"/>
+                                                        <circle cx="2" cy="14" r="2" fill="#333333"/>
+                                                    </svg>
+                                               </span>
+                                                
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                            </td>
+                                            <td>Harry Potter</td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <span>
+                                                   <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                       <circle cx="2" cy="2" r="2" fill="#333333"/>
+                                                        <circle cx="2" cy="8" r="2" fill="#333333"/>
+                                                        <circle cx="2" cy="14" r="2" fill="#333333"/>
+                                                    </svg>
+                                               </span>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                            </td>
+                                            <td>Harry Potter</td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <span>
+                                                   <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                       <circle cx="2" cy="2" r="2" fill="#333333"/>
+                                                        <circle cx="2" cy="8" r="2" fill="#333333"/>
+                                                        <circle cx="2" cy="14" r="2" fill="#333333"/>
+                                                    </svg>
+                                               </span>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                            </td>
+                                            <td>Harry Potter</td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <span>
+                                                   <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                       <circle cx="2" cy="2" r="2" fill="#333333"/>
+                                                        <circle cx="2" cy="8" r="2" fill="#333333"/>
+                                                        <circle cx="2" cy="14" r="2" fill="#333333"/>
+                                                    </svg>
+                                               </span>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                            </td>
+                                            <td>Harry Potter</td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <span>
+                                                   <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                       <circle cx="2" cy="2" r="2" fill="#333333"/>
+                                                        <circle cx="2" cy="8" r="2" fill="#333333"/>
+                                                        <circle cx="2" cy="14" r="2" fill="#333333"/>
+                                                    </svg>
+                                               </span>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                            </td>
+                                            <td>Harry Potter</td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                               <span>
+                                                   <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                       <circle cx="2" cy="2" r="2" fill="#333333"/>
+                                                        <circle cx="2" cy="8" r="2" fill="#333333"/>
+                                                        <circle cx="2" cy="14" r="2" fill="#333333"/>
+                                                    </svg>
+                                               </span>
+                                            </td>
+                                           
+                                        </tr>
+
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="student-control-section">
+                                    <div class="control-box">
+                                        <div class="number">
+                                            <span> 1 </span>
+                                            <span> 2 </span>
+                                            <span> 3 </span>
+                                            <span> 4 </span>
+                                            <span> 5 </span>
+                                        </div>
+                                        <div>
+                                            <span class="next">Next >></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
-                    </div>
-                    <div class="task-overview">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
-                                <div class="overview-left">
-                                    <div class="title mb-5">Task Overview</div>
-                                    <div class="overview-det">
-                                        <div class="details">
-                                            <svg width="37" class="mb-3" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M17.9541 24.4629C17.9906 24.5096 18.0373 24.5473 18.0906 24.5733C18.1439 24.5993 18.2024 24.6128 18.2617 24.6128C18.321 24.6128 18.3795 24.5993 18.4328 24.5733C18.4861 24.5473 18.5328 24.5096 18.5693 24.4629L24.0381 17.5439C24.2383 17.29 24.0576 16.9141 23.7305 16.9141H20.1123V0.390625C20.1123 0.175781 19.9365 0 19.7217 0H16.792C16.5771 0 16.4014 0.175781 16.4014 0.390625V16.9092H12.793C12.4658 16.9092 12.2852 17.2852 12.4854 17.5391L17.9541 24.4629ZM36.1328 22.7539H33.2031C32.9883 22.7539 32.8125 22.9297 32.8125 23.1445V30.6641H3.71094V23.1445C3.71094 22.9297 3.53516 22.7539 3.32031 22.7539H0.390625C0.175781 22.7539 0 22.9297 0 23.1445V32.8125C0 33.6768 0.698242 34.375 1.5625 34.375H34.9609C35.8252 34.375 36.5234 33.6768 36.5234 32.8125V23.1445C36.5234 22.9297 36.3477 22.7539 36.1328 22.7539Z" fill="#3535BC"/>
-                                            </svg>
-                                            <div class="mb-1 numb">30</div>
-                                            <div class="txt">Recieved</div>
-                                        </div>
-                                         <div class="details">
-                                            <svg width="37" class="mb-3" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M17.9541 24.4629C17.9906 24.5096 18.0373 24.5473 18.0906 24.5733C18.1439 24.5993 18.2024 24.6128 18.2617 24.6128C18.321 24.6128 18.3795 24.5993 18.4328 24.5733C18.4861 24.5473 18.5328 24.5096 18.5693 24.4629L24.0381 17.5439C24.2383 17.29 24.0576 16.9141 23.7305 16.9141H20.1123V0.390625C20.1123 0.175781 19.9365 0 19.7217 0H16.792C16.5771 0 16.4014 0.175781 16.4014 0.390625V16.9092H12.793C12.4658 16.9092 12.2852 17.2852 12.4854 17.5391L17.9541 24.4629ZM36.1328 22.7539H33.2031C32.9883 22.7539 32.8125 22.9297 32.8125 23.1445V30.6641H3.71094V23.1445C3.71094 22.9297 3.53516 22.7539 3.32031 22.7539H0.390625C0.175781 22.7539 0 22.9297 0 23.1445V32.8125C0 33.6768 0.698242 34.375 1.5625 34.375H34.9609C35.8252 34.375 36.5234 33.6768 36.5234 32.8125V23.1445C36.5234 22.9297 36.3477 22.7539 36.1328 22.7539Z" fill="#EB5757"/>
-                                            </svg>
-                                            <div class="mb-1 numb">30</div>
-                                            <div class="txt">Yet to submit</div>
-                                        </div>
-                                         <div class="details">
-                                            <svg width="37" class="mb-3" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M17.9541 24.4629C17.9906 24.5096 18.0373 24.5473 18.0906 24.5733C18.1439 24.5993 18.2024 24.6128 18.2617 24.6128C18.321 24.6128 18.3795 24.5993 18.4328 24.5733C18.4861 24.5473 18.5328 24.5096 18.5693 24.4629L24.0381 17.5439C24.2383 17.29 24.0576 16.9141 23.7305 16.9141H20.1123V0.390625C20.1123 0.175781 19.9365 0 19.7217 0H16.792C16.5771 0 16.4014 0.175781 16.4014 0.390625V16.9092H12.793C12.4658 16.9092 12.2852 17.2852 12.4854 17.5391L17.9541 24.4629ZM36.1328 22.7539H33.2031C32.9883 22.7539 32.8125 22.9297 32.8125 23.1445V30.6641H3.71094V23.1445C3.71094 22.9297 3.53516 22.7539 3.32031 22.7539H0.390625C0.175781 22.7539 0 22.9297 0 23.1445V32.8125C0 33.6768 0.698242 34.375 1.5625 34.375H34.9609C35.8252 34.375 36.5234 33.6768 36.5234 32.8125V23.1445C36.5234 22.9297 36.3477 22.7539 36.1328 22.7539Z" fill="#9B51E0"/>
-                                            </svg>
-                                            <div class="mb-1 numb">30</div>
-                                            <div class="txt">Graded</div>
-                                        </div>
-                                    </div>
-                                    <div class="all-task">
-                                        <div class="title">All tasks </div>
-                                         <div class="all-task-info">
-                                             <div class="task-1">
-                                                <div class="perc">78%</div>
-                                                <div class="mb-3 week">WEEK 5</div>
-                                                <div class="det">Introduction to ux</div>
-                                            </div>
-                                              <div class="task-1">
-                                                <div class="perc">78%</div>
-                                                <div  class="mb-3 week">WEEK 5</div>
-                                                <div class="det">Introduction to ux</div>
-                                            </div>
-                                              <div class="task-1">
-                                                <div class="perc">78%</div>
-                                                <div  class="mb-3 week">WEEK 5</div>
-                                                <div class="det">Introduction to ux</div>
-                                            </div>   
-                                         </div>
-                                    </div>
-                                </div>     
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
-                                <div class="discussion-section">
-                                    <div class="discuss">Latest discussions</div>
-                                    <div class="chat-details">
-                                        <div class="chat">
-                                            <div class="chat-left">
-                                                <div class="title">Project Build Solutions</div>
-                                                <div class="mb-2 sub-tit">Ui/Ux First batch</div>
-                                                <div class="upd">Updated 4 minutes ago</div>
-                                            </div>
-                                            <div class="chat-right">
-                                                <div class="mb-2"><img src="@/assets/lad.png" class="img-fluid" /></div>
-                                                <div class="new-mess">5 New Messages</div>
-                                            </div>
-                                        </div>
-                                        <div class="chat">
-                                            <div class="chat-left">
-                                                <div class="title">Project Build Solutions</div>
-                                                <div class="mb-2 sub-tit">Ui/Ux First batch</div>
-                                                <div class="upd">Updated 4 minutes ago</div>
-                                            </div>
-                                            <div class="chat-right">
-                                                <div class="mb-2"><img src="@/assets/lad.png" class="img-fluid" /></div>
-                                                <div class="new-mess">5 New Messages</div>
-                                            </div>
-                                        </div>
-                                        <div class="chat">
-                                            <div class="chat-left">
-                                                <div class="title">Project Build Solutions</div>
-                                                <div class="mb-2 sub-tit">Ui/Ux First batch</div>
-                                                <div class="upd">Updated 4 minutes ago</div>
-                                            </div>
-                                            <div class="chat-right">
-                                                <div class="mb-2"><img src="@/assets/lad.png" class="img-fluid" /></div>
-                                                <div class="new-mess">5 New Messages</div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

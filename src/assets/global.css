@@ -1936,11 +1936,17 @@ h1{
 .grade-section-right .note-block .n-part .n-detail .m-tit{
     font-weight: 600 !important;
     color: #000000 !important;
+    font-size: 14px !important;
     margin-bottom: 10px !important;
+}
+.grade-section-right .note-block .n-part .n-detail .m-det{
+    font-size: 14px !important;
 }
 .grade-section-right .note-block .n-part .n-detail .dat{
     font-weight: 600 !important;
     color: #000000 !important;
+    font-size: 12px !important;
+
 
 }
 .grade-section-right .note-block{
@@ -2024,8 +2030,16 @@ h1{
 }
 .discussion-section .chat-details .chat .chat-left .title{
     font-weight: 600 !important;
+    font-size: 12px !important;
     margin-bottom: 10px !important;
     color:  #000000 !important;
+}
+.discussion-section .chat-details .chat .chat-left .sub-tit{
+    font-size: 12px !important;
+   
+}
+.discussion-section .chat-details .chat .chat-left .upd{
+    font-size: 12px !important; 
 }
 .discussion-section .chat-details{
     box-shadow: 2px 2px 2px 2px rgba(130, 123, 123, 0.44) !important;
@@ -2040,9 +2054,66 @@ h1{
     background-color: #F0CBA6 !important;
     display: flex !important;
     align-items: center !important;
-    padding: 10px 15px !important;
+    padding: 8px 15px !important;
     border-radius: 10px !important;
+    font-size: 12px !important;
+}
 
+.student-table-section .students-total{
+    margin:20px !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #ed4809 !important;
+}
+.student-table-section .students-table{
+    margin: 20px !important;
+}
+.student-table-section .students-table table{
+    width:100% !important
+}
+.student-table-section .students-table table th{
+    padding-right: 20px !important;
+    font-size: 16px !important;
+    color: black !important;
+}
+.student-table-section .students-table table td{
+    padding-top: 20px !important;
+    font-size: 14px !important;
+    color: black !important;
+    padding-bottom: 10px !important;
+}
+.student-table-section .students-table table td button{
+    background-color: #ed4809 !important;
+    padding: 6px 10px !important;
+    border: none !important;
+    color: white !important;
+    border-radius:5px !important;
+}
+.student-table-section .student-control-section{
+    margin: 40px 80px 20px 20px !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+.student-table-section .student-control-section .control-box{
+    display:flex !important;
+    background-color: #ed4809 !important;
+    padding: 10px 20px !important;
+    width: 40% !important;
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    color: white !important;
+    justify-content: space-between !important;
+}
+.student-table-section .student-control-section .control-box .number{
+    margin-left: 40px !important;
+}
+.student-table-section .student-control-section .control-box .next{
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
+.student-table-section .student-control-section .control-box .number span{
+    padding-right: 10px !important;
+    font-size: 14px !important;
 }
 @media screen and (max-width:1024px){
     .learning .learn-path .learn-imgs .img-1 .overlay{
@@ -2526,6 +2597,7 @@ h1{
     .caro-itm .profile .profile-info .story{
         font-size: 12px !important;
     }
+    
     .grade-section-right{
         margin: 20px 20px  !important;   
     }
@@ -2534,9 +2606,36 @@ h1{
     }
     .task-overview .overview-left .all-task .all-task-info .task-1{
         margin-bottom: 20px !important;
+        border: none !important;
+        padding-bottom: 20px !important;
       }
+      .task-overview .overview-left .overview-det{
+          margin: 20px !important;
+      }
+      .task-overview .overview-left .all-task .all-task-info .task-1 .perc{
+          font-size: 14px !important;
+      }
+      .task-overview .overview-left .all-task .all-task-info .task-1 .week{
+        font-size: 14px !important;
+    }
+    .task-overview .overview-left .all-task .all-task-info .task-1 .det{
+        font-size: 14px !important;
+    }
       .discussion-section{
         margin: 20px 20px  !important; 
+    }
+    .discussion-section .chat .chat-left .title{
+        font-size: 14px !important;
+    }
+    .discussion-section .chat .chat-left .sub-tit{
+        font-size: 14px !important;
+    }
+    .discussion-section .chat-details{
+        padding-top: 40px !important;
+        padding-bottom: 20px !important;
+    }
+    .discussion-section .chat .chat-left .upd{
+        font-size: 12px !important;
     }
     .cordinator-grade-section .grade-section-left .title{
         font-size: 16px !important;
@@ -2547,17 +2646,33 @@ h1{
     .cordinator-grade-section .grade-section-left .students .view{
         font-size: 14px !important;
     }
+    .cordinator-grade-section .grade-section-left .student-prog{
+        margin: 30px 10px 30px 10px !important;
+    }
     .cordinator-grade-section .grade-section-left .student-prog .perc{
         font-size: 14px !important;
     }
     .grade-section-right .section-notes .n-tit{
         font-size: 16px !important;
     }
+    .grade-section-right .note-block .n-detail .m-tit{
+        font-size: 14px !important;
+    }
+    .grade-section-right .note-block .n-detail .m-tit{
+        font-size: 14px !important;
+    }
+    .grade-section-right .note-block .n-detail .m-det{
+        font-size: 12px !important;
+    }
+    .grade-section-right .note-block .n-detail .dat{
+        font-size: 12px !important;
+    }
     .grade-section-right .section-notes .bg{
         font-size: 12px !important;
     }
     .task-overview .overview-left .title{
         font-size: 16px !important;
+        font-weight: 600 !important;
     }
     .task-overview .overview-left .overview-det .details .numb{
         font-size: 14px !important;
@@ -2567,15 +2682,55 @@ h1{
     }
     .discussion-section .discuss{
         font-size: 16px !important;
+        font-weight: 600 !important;
     }
     .discussion-section .chat-details .chat .chat-right .new-mess{
        font-size: 10px !important;
+       padding: 5px 10px !important;
     }
     .cordinator-grade-section .grade-section-left .students{
         margin-top: 30px !important;
     }
-}
-.bgred{
-    background-color: red !important;
-    padding: 10px !important;
+    .student-table-section .students-table-mobile table{
+        text-align: center !important;
+    }
+    .student-table-section .students-table-mobile table th{
+        padding-right: 20px !important;
+        font-size: 12px !important;
+        color: black !important;
+    }
+    .student-table-section .students-table-mobile table td{
+        padding-top: 20px !important;
+        padding-right: 10px !important;
+        font-size: 10px !important;
+        color: black !important;
+        padding-bottom: 10px !important;
+    }
+    .student-table-section .students-table-mobile{
+        margin: 20px !important;
+    }
+    .student-table-section .students-table-mobile table{
+        width:100% !important
+    }
+    .student-table-section .students-table-mobile table img{
+        width: 40px !important;
+    }
+    .student-table-section .student-control-section{
+        justify-content: center !important;
+
+    }
+    .student-table-section .student-control-section .control-box{
+        width: 80% !important;
+        padding: 5px 20px !important;
+    }
+    .student-table-section .student-control-section .control-box .number span{
+      font-size: 12px !important;
+    }
+    .student-table-section .student-control-section .control-box .next{
+        font-size: 12px !important;
+    }
+    .student-table-section .students-total{
+        font-size: 14px !important;
+        margin-bottom: 10px !important;
+    }
 }

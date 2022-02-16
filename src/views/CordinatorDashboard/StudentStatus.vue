@@ -239,8 +239,11 @@
 </template>
 
 <script>
+import CoSideBar from '../../components/coSideBar.vue'
 export default {
-
+     components:{
+    CoSideBar
+  }
 }
 </script>
 

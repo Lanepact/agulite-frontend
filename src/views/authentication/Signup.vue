@@ -92,8 +92,8 @@
                                         <option value="Backend Software Engineering(Web and Mobile)">Backend Software Engineering(Web and Mobile)</option>
                                         <option value="Mobile App Development">Mobile App Development</option>
                                         <option value="DevOps Engineering">DevOps Engineering</option>
-                                        <option value="">Cloud Computing</option>
-                                        <option value="Cloud Computing">Data Analysis</option>
+                                        <option value="Cloud Computing">Cloud Computing</option>
+                                        <option value="Data Analysis">Data Analysis</option>
                                         <option value="Quality Assurance and Engineering">Quality Assurance and Engineering</option>
                                         <option value="Digital Marketing">Digital Marketing</option>
                                         <option value="Business Development and sales">Business Development and sales</option>

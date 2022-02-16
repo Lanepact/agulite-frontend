@@ -2107,6 +2107,61 @@ h1{
     padding-right: 10px !important;
     font-size: 14px !important;
 }
+.student-status-section .id-section{
+    margin: 20px !important;
+}
+.student-status-section .id-section .id-number{
+    font-size: 16px !important;
+    color: #ed4809 !important;
+}
+.student-status-section .id-section table{
+    width: 100% !important;
+}
+.student-status-section .id-section table th{
+    font-size: 14px !important;
+}
+.student-status-section .id-section table td{
+    font-size: 14px !important;
+    color: black !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.student-status-section .hor{
+    border-bottom: 2px solid #000000 !important;
+    margin-top: 20px !important;
+}
+.students-activity-section{
+    margin: 20px !important;
+}
+.backtostud{
+    margin-left: 120px !important;
+    background-color: #ed4809 !important;
+    border: none !important;
+    padding: 10px 15px !important;
+    color: white !important;
+    border-radius: 8px !important;
+    font-size: 12px !important;
+}
+.students-activity-section .act-title{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    margin-bottom: 20px !important;
+}
+.students-activity-section table{
+    width: 100% !important;
+}
+.students-activity-section table th{
+    font-size: 14px !important;
+    padding-top: 10px !important;
+    color: black !important;
+    padding-bottom: 10px !important;
+}
+.students-activity-section table td{
+    font-size: 14px !important;
+    color: black !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
 @media screen and (max-width:1024px){
     .learning .learn-path .learn-imgs .img-1 .overlay{
         top: 40px !important;
@@ -2676,6 +2731,9 @@ h1{
         font-size: 16px !important;
         font-weight: 600 !important;
     }
+    .discussion-section .chat-details{
+        margin-left: 0px !important;
+    }
     .discussion-section .chat-details .chat .chat-right .new-mess{
        font-size: 10px !important;
        padding: 5px 10px !important;
@@ -2724,5 +2782,41 @@ h1{
     .student-table-section .students-total{
         font-size: 14px !important;
         margin-bottom: 10px !important;
+    }
+    .student-status-section .id-section table{
+        text-align: center !important;
+    }
+    .student-status-section .id-section table th{
+        font-size: 12px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    
+    }
+    .student-status-section .id-section table th img{
+        width: 20px !important;
+    }
+    .student-status-section .id-section table td{
+        font-size: 12px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    .backtostud{
+        margin: 10px 0px !important;
+        background-color: #ed4809 !important;
+        border: none !important;
+        padding: 5px 15px !important;
+    }
+    .students-activity-section .act-title{
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        margin-top: 10px !important;
+    }
+    .students-activity-section table th{
+        font-size: 12px !important;
+      
+    }
+    .students-activity-section table td{
+        font-size: 12px !important;
+       
     }
 }

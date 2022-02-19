@@ -137,9 +137,9 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                               <router-link to="/cordinator/student/status"> <span><img src="@/assets/lad.png" class="img-fluid"/></span></router-link>
                                             </td>
-                                            <td>Harry Potter</td>
+                                            <td> <router-link to="/cordinator/student/status">Harry Potter</router-link></td>
                                             <td>Harry Potter@gmail.com</td>
                                             <td>Online</td>
                                             <td>
@@ -149,14 +149,14 @@
                                                 <button>Call</button>
                                             </td>
                                             <td>
-                                                <button>Check Stats</button>
+                                                <router-link to="/cordinator/student/status"><button>Check Stats</button></router-link>
                                             </td>
                                         </tr>
-                                         <tr>
+                                           <tr>
                                             <td>
-                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                               <router-link to="/cordinator/student/status"> <span><img src="@/assets/lad.png" class="img-fluid"/></span></router-link>
                                             </td>
-                                            <td>Harry Potter</td>
+                                            <td> <router-link to="/cordinator/student/status">Harry Potter</router-link></td>
                                             <td>Harry Potter@gmail.com</td>
                                             <td>Online</td>
                                             <td>
@@ -166,14 +166,14 @@
                                                 <button>Call</button>
                                             </td>
                                             <td>
-                                                <button>Check Stats</button>
+                                                <router-link to="/cordinator/student/status"><button>Check Stats</button></router-link>
                                             </td>
                                         </tr>
-                                         <tr>
+                                           <tr>
                                             <td>
-                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                               <router-link to="/cordinator/student/status"> <span><img src="@/assets/lad.png" class="img-fluid"/></span></router-link>
                                             </td>
-                                            <td>Harry Potter</td>
+                                            <td> <router-link to="/cordinator/student/status">Harry Potter</router-link></td>
                                             <td>Harry Potter@gmail.com</td>
                                             <td>Online</td>
                                             <td>
@@ -183,14 +183,14 @@
                                                 <button>Call</button>
                                             </td>
                                             <td>
-                                                <button>Check Stats</button>
+                                                <router-link to="/cordinator/student/status"><button>Check Stats</button></router-link>
                                             </td>
                                         </tr>
-                                         <tr>
+                                           <tr>
                                             <td>
-                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                               <router-link to="/cordinator/student/status"> <span><img src="@/assets/lad.png" class="img-fluid"/></span></router-link>
                                             </td>
-                                            <td>Harry Potter</td>
+                                            <td> <router-link to="/cordinator/student/status">Harry Potter</router-link></td>
                                             <td>Harry Potter@gmail.com</td>
                                             <td>Online</td>
                                             <td>
@@ -200,14 +200,14 @@
                                                 <button>Call</button>
                                             </td>
                                             <td>
-                                                <button>Check Stats</button>
+                                                <router-link to="/cordinator/student/status"><button>Check Stats</button></router-link>
                                             </td>
                                         </tr>
-                                         <tr>
+                                           <tr>
                                             <td>
-                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                               <router-link to="/cordinator/student/status"> <span><img src="@/assets/lad.png" class="img-fluid"/></span></router-link>
                                             </td>
-                                            <td>Harry Potter</td>
+                                            <td> <router-link to="/cordinator/student/status">Harry Potter</router-link></td>
                                             <td>Harry Potter@gmail.com</td>
                                             <td>Online</td>
                                             <td>
@@ -217,14 +217,14 @@
                                                 <button>Call</button>
                                             </td>
                                             <td>
-                                                <button>Check Stats</button>
+                                                <router-link to="/cordinator/student/status"><button>Check Stats</button></router-link>
                                             </td>
                                         </tr>
-                                         <tr>
+                                           <tr>
                                             <td>
-                                                <span><img src="@/assets/lad.png" class="img-fluid"/></span>
+                                               <router-link to="/cordinator/student/status"> <span><img src="@/assets/lad.png" class="img-fluid"/></span></router-link>
                                             </td>
-                                            <td>Harry Potter</td>
+                                            <td> <router-link to="/cordinator/student/status">Harry Potter</router-link></td>
                                             <td>Harry Potter@gmail.com</td>
                                             <td>Online</td>
                                             <td>
@@ -234,9 +234,62 @@
                                                 <button>Call</button>
                                             </td>
                                             <td>
-                                                <button>Check Stats</button>
+                                                <router-link to="/cordinator/student/status"><button>Check Stats</button></router-link>
                                             </td>
                                         </tr>
+                                           <tr>
+                                            <td>
+                                               <router-link to="/cordinator/student/status"> <span><img src="@/assets/lad.png" class="img-fluid"/></span></router-link>
+                                            </td>
+                                            <td> <router-link to="/cordinator/student/status">Harry Potter</router-link></td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <button>Message</button>
+                                            </td>
+                                            <td>
+                                                <button>Call</button>
+                                            </td>
+                                            <td>
+                                                <router-link to="/cordinator/student/status"><button>Check Stats</button></router-link>
+                                            </td>
+                                        </tr>
+                                           <tr>
+                                            <td>
+                                               <router-link to="/cordinator/student/status"> <span><img src="@/assets/lad.png" class="img-fluid"/></span></router-link>
+                                            </td>
+                                            <td> <router-link to="/cordinator/student/status">Harry Potter</router-link></td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <button>Message</button>
+                                            </td>
+                                            <td>
+                                                <button>Call</button>
+                                            </td>
+                                            <td>
+                                                <router-link to="/cordinator/student/status"><button>Check Stats</button></router-link>
+                                            </td>
+                                        </tr>
+                                           <tr>
+                                            <td>
+                                               <router-link to="/cordinator/student/status"> <span><img src="@/assets/lad.png" class="img-fluid"/></span></router-link>
+                                            </td>
+                                            <td> <router-link to="/cordinator/student/status">Harry Potter</router-link></td>
+                                            <td>Harry Potter@gmail.com</td>
+                                            <td>Online</td>
+                                            <td>
+                                                <button>Message</button>
+                                            </td>
+                                            <td>
+                                                <button>Call</button>
+                                            </td>
+                                            <td>
+                                                <router-link to="/cordinator/student/status"><button>Check Stats</button></router-link>
+                                            </td>
+                                        </tr>
+                                       
+                    
 
                                     </table>
                                 </div>

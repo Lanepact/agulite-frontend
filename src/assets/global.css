@@ -2074,12 +2074,20 @@ h1{
     color: black !important;
     padding-bottom: 10px !important;
 }
+.student-table-section .students-table table td a{
+    text-decoration: none !important;
+    color: black;
+}
 .student-table-section .students-table table td button{
     background-color: #ed4809 !important;
     padding: 6px 10px !important;
     border: none !important;
     color: white !important;
     border-radius:5px !important;
+}
+.student-table-section .students-table table td a button:focus{
+    outline: none !important;
+    color: white !important;
 }
 .student-table-section .student-control-section{
     margin: 40px 80px 20px 20px !important;
@@ -2125,6 +2133,9 @@ h1{
     color: black !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
+}
+.student-status-section  a button:focus{
+   outline: none !important;
 }
 .student-status-section .hor{
     border-bottom: 2px solid #000000 !important;
@@ -2637,6 +2648,10 @@ h1{
         padding: 20px !important;
         margin-left: 0px !important;
         margin-top: 40px !important;
+    }
+    .footer-section .footer-form form input{
+        margin-bottom: 20px !important;
+        padding: 5px 5px !important;
     }
     .caro-itm .profile .image{
         width: 130px !important;

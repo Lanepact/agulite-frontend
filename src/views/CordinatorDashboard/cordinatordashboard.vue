@@ -127,7 +127,7 @@
                                   <div class="title">Your students completed <span class="sixty">60%</span> of their tasks</div>
                                   <div class="students">
                                       <span class="tit">My Students </span>
-                                      <span class="view">View all</span>
+                                      <router-link to="/cordinator/students"><span class="view">View all</span></router-link>
                                   </div>
                                   <div class="student-prog">
                                       <div class="stud-img"><img src="@/assets/lad.png" class="img-fluid" alt="lady" /></div>

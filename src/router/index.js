@@ -6,6 +6,15 @@ import Contact from '../views/Contact.vue'
 import Signin from '../views/authentication/Signin.vue'
 import Signup from '../views/authentication/Signup.vue'
 import Dashboard from '../views/dashboard/Userdashboard.vue'
+import Profile from '../views/dashboard/Profile.vue'
+import Courses from '../views/dashboard/Courses.vue'
+import Updateprofile from '../views/dashboard/Updateprofile.vue'
+import Verification from '../views/authentication/verification.vue'
+import Assessment from '../views/dashboard/Assessment.vue'
+import CordinatorDashboard from '../views/CordinatorDashboard/cordinatordashboard.vue'
+import CordinatorStudentStatus from '../views/CordinatorDashboard/StudentStatus.vue'
+import CordinatorStudents from '../views/CordinatorDashboard/Students.vue'
+import Details from '../views/Details.vue'
 
 const routes = [
   {
@@ -43,7 +52,55 @@ const routes = [
     name: 'Dashboard',
     component: Dashboard
   },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: Profile
+  },
+  {
+    path: '/courses',
+    name: 'Courses',
+    component: Courses
+  },
+  {
+    path: '/updateprofile',
+    name: 'Updateprofile',
+    component: Updateprofile
+  },
+  {
+    path: '/verification',
+    name: 'Verification',
+    component: Verification
+  },
+  {
+    path: '/courses/:id',
+    name: 'Details',
+    component: Details
+  },
+  {
+    path: '/assessment',
+    name: 'Assessment',
+    component:Assessment 
+  },
+  {
+    path: '/cordinator/dashboard',
+    name: 'CordinatorDashboard',
+    component: CordinatorDashboard
+  },
+  {
+    path: '/cordinator/students',
+    name: 'CordinatorStudents',
+    component: CordinatorStudents
+  },
+  {
+    path: '/cordinator/student/status',
+    name: 'CordinatorStudentStatus',
+    component: CordinatorStudentStatus
+  }
 
+
+   
+       
 ]
 
 const router = createRouter({

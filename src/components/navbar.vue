@@ -4,7 +4,7 @@
         <img src="@/assets/agulogo.png" class="img-fluid"/>
     </div>
      <div class="action-but">
-       <button @click="goToSignin">Get Started</button>
+       <button @click="goToCourses">Get Started</button>
     </div>
   </div>
 
@@ -18,8 +18,8 @@ export default {
         }
     },
     methods:{
-        goToSignin(){
-            this.$router.push('/signin')
+        goToCourses(){
+            this.$router.push('/courses')
             this.authentication = true
            
         },

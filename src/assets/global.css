@@ -2172,6 +2172,196 @@ h1{
     color: black !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
+    background-color: #f5800c;
+    background-color: #db4d0b;
+}
+.advert .advert-bg{
+    background-image: linear-gradient(75deg,rgba(245, 128, 12, 0.8) 10%, rgba(219, 77, 11, 0.8));
+    padding: 10px 10px !important;
+    color: white !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+.advert .advert-bg a{
+    color: white !important;
+}
+.navc .cr-nav{
+    margin: 20px 80px 0 !important;
+   display: flex !important;
+   justify-content: space-between !important;
+}
+.navc .cr-nav .logo{
+    width:100px !important;
+}
+.navc .cr-nav .action-but button{
+    background-color: #ed4809 !important;
+    color: white !important;
+    padding: 8px 20px !important;
+    border: none !important;
+    font-size: 14px !important;
+    border-radius: 5px !important;
+}
+.courses-bannner .c-banner{
+    background-image: linear-gradient(75deg, rgba(245, 128, 12, 0.5) 10%, rgba(219, 77, 11, 0.9)), url(../assets/cbanner.jpg) !important;
+    height: auto !important;
+    margin: 20px 80px !important;
+    background-repeat: no-repeat !important;
+    border-radius: 5px !important;
+    box-shadow: 2px 2px 2px 2px rgba(131, 73, 73, 0.3) !important;
+}
+.courses-bannner .c-banner .c-banner-info{
+    text-align: center !important;
+    color: white !important;
+    flex-direction: column !important;
+    display: flex !important;
+    padding-top: 200px !important;
+    padding-bottom: 60px !important;
+    align-items: center !important;
+}
+.courses-bannner .c-banner .c-banner-info .title{
+    font-size: 40px !important;
+    font-weight: 600 !important;
+}
+.courses-bannner .c-banner .c-banner-info .details{
+    font-size: 18px !important;
+    width: 70% !important;
+    margin-bottom: 20px !important;
+}
+.courses-bannner .c-banner .c-banner-info .action-buttons .b1{
+    background-color: white !important;
+    border:none !important;
+    padding: 10px 25px !important;
+    font-size: 14px !important;
+    color: #ed4809 !important;
+    font-weight: 600 !important;
+    border-radius: 5px !important;
+}
+.courses-bannner .c-banner .c-banner-info .action-buttons .b1:hover{
+    background-image: linear-gradient(75deg, rgba(245, 128, 12, 0.8) 10%, rgba(219, 77, 11, 0.9)), url(../assets/cbanner.jpg) !important;
+    color: white !important;
+}
+.courses-bannner .c-banner .c-banner-info .action-buttons .b2{
+    background-color: #ed4809 !important;
+    border:none !important;
+    padding: 10px 25px !important;
+    font-size: 14px !important;
+    color: #ed4809 !important;
+    margin-left: 20px !important;
+    color:white !important;
+    font-weight: 600 !important;
+    border-radius: 5px !important;
+}
+.courses-bannner .c-banner .c-banner-info .action-buttons .b2:hover{
+    background-image: linear-gradient(75deg, rgba(245, 128, 12, 0.8) 10%, rgba(219, 77, 11, 0.9)), url(../assets/cbanner.jpg) !important;
+}
+.courses-bannner .c-banner .c-banner-info .countdown{
+    margin-top: 60px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.courses-bannner .c-banner .c-banner-info .countdown div{
+    display: flex !important;
+    flex-direction: column !important;
+    margin-right: 40px !important;
+}
+.courses-bannner .c-banner .c-banner-info .countdown div .numb{
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+.courses-bannner .c-banner .c-banner-info .countdown div .text{
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+.courses-sect .sect{
+    margin: 20px 80px !important;
+}
+.courses-sect .sect .sect-all{
+    display: flex !important;
+    margin-right: 20px !important ;
+    margin-bottom: 40px !important;
+    flex-wrap: wrap !important;
+    padding: 30px 0px 30px 0px !important;
+    box-shadow: 2px 2px 4px 2px rgba(131, 73, 73, 0.3) !important;
+    background-color: white !important;
+    border-radius: 8px !important;
+    /* justify-content: space-between !important; */
+}
+.courses-sect .sect .sect-all .sect-left{
+    padding: 10px 10px !important;
+    width: 30% !important;
+    border-right: 1px solid rgba(131, 73, 73, 0.4) !important;
+}
+.courses-sect .sect .sect-all .sect-left .sect-buttons{
+    margin-top: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+.courses-sect .sect .sect-all .sect-left .sect-buttons .bA{
+    background-color: #ed4809 !important;
+    color: white !important;
+    padding: 6px 0 !important;
+    font-size: 14px !important;
+    border: none !important;
+    margin-bottom: 10px !important;
+    border-radius: 4px !important;
+    font-weight: 600 !important;
+}
+.courses-sect .sect .sect-all .sect-left .sect-buttons .bB{
+    background-color: white !important;
+    color: #ed4809 !important;
+    padding: 6px 0 !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    border: 2px solid #ed4809 !important;
+    margin-bottom: 10px !important;
+    border-radius: 4px !important;
+}
+.courses-sect .sect .sect-all .sect-right{
+    width: 60% !important;
+    margin-left: 20px !important;
+}
+.courses-sect .sect .sect-all .sect-right .course-tit{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: black !important;
+    margin-bottom: 10px !important;
+}
+.courses-sect .sect .sect-all .sect-right .info{
+    margin-bottom: 20px !important;
+    color: black !important;
+    font-size: 12px !important;
+}
+.courses-sect .sect .sect-all .sect-right .level-block{
+    margin-bottom: 20px !important;
+    padding: 10px !important;
+    background-color: #f7fbfe !important;
+}
+.courses-sect .sect .sect-all .sect-right .level-block span{
+    margin-right: 20px !important;
+}
+.courses-sect .sect .sect-all .sect-right .level-block span i{
+    margin-right: 10px !important;
+}
+.courses-sect .sect .sect-all .sect-right .skills-covered{
+    margin-bottom: 20px !important;
+}
+.courses-sect .sect .sect-all .sect-right .skills-covered h2{
+    font-size: 14px !important;
+    color: #ed4809 !important;
+    margin-bottom: 5px !important;
+    font-weight: 600 !important;
+}
+.courses-sect .sect .sect-all .sect-right .skills-covered p{
+    font-size: 12px !important;
+}
+.courses-sect .sect .sect-all .sect-right .prerequesites h2{
+    font-size: 14px !important;
+    color: #ed4809 !important;
+    margin-bottom: 5px !important;
+    font-weight: 600 !important;
+}
+.courses-sect .sect .sect-all .sect-right .prerequesites p{
+    font-size: 12px !important;
 }
 @media screen and (max-width:1024px){
     .learning .learn-path .learn-imgs .img-1 .overlay{
@@ -2207,6 +2397,75 @@ h1{
     .agu-aim .service-bg .box-1{
         height: auto !important;
         margin-bottom: 20px !important;
+    }
+    .navc .cr-nav{
+        margin: 20px 10px !important;
+       display: flex !important;
+       justify-content: space-between !important;
+    }
+    .courses-bannner .c-banner{
+        background-image: linear-gradient(75deg, rgba(245, 128, 12, 0.5) 10%, rgba(219, 77, 11, 0.9)), url(../assets/cbanner.jpg) !important;
+        height: auto !important;
+        margin: 0px 0px !important;  
+        border-radius: 0px !important; 
+    }
+    .courses-bannner .c-banner .c-banner-info{
+        padding-top: 100px !important;
+        padding-bottom: 40px !important;
+        align-items: center !important;
+    }
+}
+@media screen and (max-width:885px){
+    .navc .cr-nav{
+        margin: 20px 10px !important;
+       display: flex !important;
+       justify-content: space-between !important;
+    }
+    .courses-bannner .c-banner{
+        background-image: linear-gradient(75deg, rgba(245, 128, 12, 0.5) 10%, rgba(219, 77, 11, 0.9)), url(../assets/cbanner.jpg) !important;
+        height: auto !important;
+        margin: 0px 0px !important;  
+        border-radius: 0px !important; 
+    }
+    .courses-bannner .c-banner .c-banner-info{
+        padding-top: 100px !important;
+        padding-bottom: 40px !important;
+        align-items: center !important;
+    }
+    .courses-sect .sect .sect-all{
+        flex-direction: column !important;
+        margin-bottom: 40px !important;
+        /* justify-content: space-between !important; */
+    }
+    .courses-sect .sect .sect-all .sect-left{
+        width: 100% !important;
+        border-right: 0px !important;
+    }
+    .courses-sect .sect .sect-all .sect-left .sect-buttons{
+        flex-direction: row  !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    .courses-sect .sect .sect-all .sect-right{
+        width: 100% !important;
+    }
+    .courses-sect .sect .sect-all .sect-right .info{
+        width: 80% !important;
+    }
+    .courses-sect .sect .sect-all .sect-right .level-block{
+        width: 90% !important;
+    }
+    .courses-sect .sect{
+        margin: 20px 0px 20px 20px !important;
+    }
+    .courses-sect .sect .sect-all .sect-left .sect-buttons .bA{
+        color: white !important;
+        padding: 6px 10px !important;
+        font-size: 12px !important;
+    }
+    .courses-sect .sect .sect-all .sect-left .sect-buttons .bB{
+        padding: 6px 10px !important;
+        font-size: 12px !important;
     }
 }
 @media screen and (max-width:480px){
@@ -2833,5 +3092,114 @@ h1{
     .students-activity-section table td{
         font-size: 12px !important;
        
+    }
+    .navc .cr-nav{
+        margin: 20px 10px !important;
+       display: flex !important;
+       justify-content: space-between !important;
+    }
+    .advert .advert-bg{
+        font-size: 12px !important;
+        font-weight: 600 !important;
+    }
+    .courses-bannner .c-banner{
+        background-image: linear-gradient(75deg, rgba(245, 128, 12, 0.5) 10%, rgba(219, 77, 11, 0.9)), url(../assets/cbanner.jpg) !important;
+        height: auto !important;
+        margin: 0px 0px !important;  
+        border-radius: 0px !important; 
+    }
+    .courses-bannner .c-banner .c-banner-info{
+        padding-top: 100px !important;
+        padding-bottom: 40px !important;
+        align-items: center !important;
+    }
+    .courses-bannner .c-banner .c-banner-info .action-buttons{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .courses-bannner .c-banner .c-banner-info .action-buttons .b1{
+        margin-bottom: 20px !important;
+        font-size: 12px !important;
+        width: 100% !important;
+    }
+    .courses-bannner .c-banner .c-banner-info .action-buttons .b2{
+        margin-bottom: 20px !important;
+        font-size: 12px !important;
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+    .courses-bannner .c-banner .c-banner-info .title{
+        font-size: 32px !important;
+        font-weight: 600 !important;
+        margin-bottom: 20px !important;
+    }
+    .courses-bannner .c-banner .c-banner-info .details{
+        font-size: 16px !important;
+        width: 85% !important;
+        margin-bottom: 20px !important;
+    }
+    .courses-bannner .c-banner .c-banner-info .countdown{
+        margin-top: 0px !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .courses-bannner .c-banner .c-banner-info .countdown div{
+        display: flex !important;
+        flex-direction: column !important;
+        margin-right: 10px !important;
+    }
+    .courses-sect .sect{
+        margin: 20px 0px 20px 20px !important;
+    }
+    .courses-sect .sect .sect-all{
+        flex-direction: column !important;
+        margin-bottom: 40px !important;
+        /* justify-content: space-between !important; */
+    }
+    .courses-sect .sect .sect-all .sect-left{
+        width: 100% !important;
+        border-right: 0px !important;
+    }
+    .courses-sect .sect .sect-all .sect-left .sect-buttons{
+        flex-direction: row  !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    .courses-sect .sect .sect-all .sect-right{
+        width: 100% !important;
+    }
+    .courses-sect .sect .sect-all .sect-right .info{
+        width: 80% !important;
+    }
+    .courses-sect .sect .sect-all .sect-right .level-block{
+        width: 90% !important;
+      
+    }
+    .courses-sect .sect .sect-all .sect-right .skills-covered h2{
+        font-size: 12px !important;
+    }
+    .courses-sect .sect .sect-all .sect-right .skills-covered p{
+        font-size: 10px !important;
+    }
+    .courses-sect .sect .sect-all .sect-right .prerequesites h2{
+        font-size: 12px !important;
+    }
+    .courses-sect .sect .sect-all .sect-right .prerequesites p{
+        font-size: 10px !important;
+    }
+    .courses-sect .sect .sect-all .sect-right .course-tit{
+        font-size: 16px !important;
+    }
+    .courses-sect .sect .sect-all .sect-left .sect-buttons .bA{
+        color: white !important;
+        padding: 6px 10px !important;
+        font-size: 12px !important;
+    }
+    .courses-sect .sect .sect-all .sect-left .sect-buttons .bB{
+        background-color: white !important;
+        color: #ed4809 !important;
+        padding: 6px 10px !important;
+        font-size: 12px !important;
     }
 }

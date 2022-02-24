@@ -3,11 +3,12 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Service from '../views/Service.vue'
 import Contact from '../views/Contact.vue'
+import Courses from '../views/Courses.vue'
 import Signin from '../views/authentication/Signin.vue'
 import Signup from '../views/authentication/Signup.vue'
 import Dashboard from '../views/dashboard/Userdashboard.vue'
 import Profile from '../views/dashboard/Profile.vue'
-import Courses from '../views/dashboard/Courses.vue'
+import StudentCourses from '../views/dashboard/Courses.vue'
 import Updateprofile from '../views/dashboard/Updateprofile.vue'
 import Verification from '../views/verification.vue'
 import Assessment from '../views/dashboard/Assessment.vue'
@@ -32,6 +33,11 @@ const routes = [
     path: '/service',
     name: 'Service',
     component: Service
+  },
+  {
+    path: '/courses',
+    name: 'Courses',
+    component: Courses
   },
   {
     path: '/contact',
@@ -59,9 +65,9 @@ const routes = [
     component: Profile
   },
   {
-    path: '/courses',
-    name: 'Courses',
-    component: Courses
+    path: '/dashboard/courses',
+    name: 'StudentCourses',
+    component: StudentCourses
   },
   {
     path: '/updateprofile',
@@ -74,7 +80,7 @@ const routes = [
     component: Verification
   },
   {
-    path: '/courses/:id',
+    path: '/dashboard/courses/:id',
     name: 'Details',
     component: Details
   },

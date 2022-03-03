@@ -29,7 +29,7 @@
                         <div class="details">Demand for blockchain developers in skyrocketing in this program, you'll work with tthe Bitcoin and ethereum protocols, build projects and real wordd application. </div>
                         <div class="action-buttons">
                             <button class="b1">LEARN MORE </button>
-                            <button class="b2">ENROLL NOW </button>
+                            <button class="b2" @click="moveUp">ENROLL NOW </button>
                         </div>
                         <div class="countdown">
                             <div class="day">
@@ -90,7 +90,25 @@
                             <img src="@/assets/cbanner.jpg" alt="course image" class="img-fluid" width=""/>
                             <div class="sect-buttons">
                                 <button class="bA">Program Details </button>
-                                <button class="bB">Download Syllabus </button>
+                                <button class="bB" @click="isOpen = true">Download Syllabus </button>
+                                <Modal :open="isOpen" @close="isOpen = !isOpen" class="modal1">
+                                    <div class="text-center m-tit">
+                                        <h3>Request detailed syllabus</h3>
+                                        <small class="small">Fill in the form to receive more information about the course.</small>
+                                    </div>
+                                  <form>
+                                    <div class="form-group">
+                                        <label>Firstname</label>
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" id="" >
+                                    </div>
+                                    <p>By providing your information and clicking "Download Syllabus", you consent and agree to receive marketing emails from Udacity, and that your information will be used in accordance with the Udacity Terms of Use and Privacy Policy, including relevant opt out provisions therein.</p>
+                                     <div class="m-but"><button disabled type="submit" class="btn btn-primary">Download Syllabus</button></div>
+                                    </form>
+                                </Modal>
                             </div>
                         </div>
                         <div class="sect-right">
@@ -118,6 +136,7 @@
                             <div class="sect-buttons">
                                 <button class="bA">Program Details </button>
                                 <button class="bB">Download Syllabus </button>
+                                
                             </div>
                         </div>
                         <div class="sect-right">
@@ -168,19 +187,33 @@
             </div>
         </div>
     </div>
+    
     <div>
       <Footer />
     </div>
        
             
-    
 </template>
 
 <script>
+import { ref } from 'vue'
+import Modal from '../components/modal.vue'
 import Footer from '../components/footer.vue'
 export default {
      components:{
-    Footer,
+        Modal,
+        Footer
+  },
+  setup(){
+      const isOpen = ref(false)
+       const  moveUp = () => {
+          window.scrollTo(0,950);
+    }
+
+      return{
+          isOpen,
+          moveUp
+      }
   }
 }
 </script>

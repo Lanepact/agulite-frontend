@@ -19,7 +19,7 @@ export default {
     },
     methods:{
         goToCourses(){
-            this.$router.push('/courses')
+            this.$router.push('/course')
             this.authentication = true
            
         },

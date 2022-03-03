@@ -3,7 +3,8 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Service from '../views/Service.vue'
 import Contact from '../views/Contact.vue'
-import Courses from '../views/Courses.vue'
+import Course from '../views/Course.vue'
+import course from '../views/course1.vue'
 import Signin from '../views/authentication/Signin.vue'
 import Signup from '../views/authentication/Signup.vue'
 import Dashboard from '../views/dashboard/Userdashboard.vue'
@@ -35,9 +36,14 @@ const routes = [
     component: Service
   },
   {
-    path: '/courses',
-    name: 'Courses',
-    component: Courses
+    path: '/course',
+    name: 'Course',
+    component: Course
+  },
+  {
+    path: '/course1',
+    name: 'course1',
+    component: course
   },
   {
     path: '/contact',

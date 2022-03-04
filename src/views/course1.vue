@@ -2,7 +2,7 @@
    <div class="advert">
        <div class="row">
            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-               <div class="text-center advert-bg">Welcome to Agulite! Claim your personal discount now. Explore programs and use within 7days. <a href="#">Learn more</a></div>
+               <div class="text-center advert-bg">Welcome to Agulite! Claim your personal discount now. Explore programs and use within 10days. <a href="#" @click="moveUp">Learn more</a></div>
            </div>
         </div>
    </div>
@@ -14,7 +14,7 @@
                         <img src="@/assets/agulogo.png" class="img-fluid"/>
                     </div>
                     <div class="action-but">
-                        <button @click="goToSignin">Get Started</button>
+                        <button @click="moveUp">Get Started</button>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                         <div class="title">Become a Blockchain Developer</div>
                         <div class="details">Demand for blockchain developers in skyrocketing in this program, you'll work with tthe Bitcoin and ethereum protocols, build projects and real wordd application. </div>
                         <div class="action-buttons">
-                            <button class="b1">LEARN MORE </button>
+                            <button class="b1">DOWNLOAD SYLLABUS </button>
                             <button class="b2" @click="moveUp">ENROLL NOW </button>
                         </div>
                         <div class="countdown">
@@ -417,11 +417,16 @@ export default {
     Footer,
   },
   setup(){
+        const payment = useRef(null)
+
        const  moveUp = () => {
-          window.scrollTo(0,2200);
-    }
+           let offSets = payment.getBoundingClientRect()
+           console.log(offSets)
+           window.scrollTo(0,2200);
+        }
 
       return{
+          payment,
           moveUp,
          
 

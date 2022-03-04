@@ -417,20 +417,18 @@ export default {
     Footer,
   },
   setup(){
-        const payment = useRef(null)
-
-       const  moveUp = () => {
+        const payment = ref(null)
+        
+        const  moveUp = () => {
            let offSets = payment.getBoundingClientRect()
            console.log(offSets)
            window.scrollTo(0,2200);
         }
-
-      return{
+        
+        return{
           payment,
-          moveUp,
-         
-
-      }
+          moveUp
+        }
   }
 }
 </script>

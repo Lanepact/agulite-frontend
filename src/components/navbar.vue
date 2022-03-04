@@ -19,7 +19,7 @@ export default {
     },
     methods:{
         goToCourses(){
-            this.$router.push('/course1')
+            this.$router.push('/blockchain-development')
             this.authentication = true
            
         },

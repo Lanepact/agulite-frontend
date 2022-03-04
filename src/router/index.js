@@ -41,7 +41,7 @@ const routes = [
     component: Course
   },
   {
-    path: '/course1',
+    path: '/blockchain-development',
     name: 'course1',
     component: course
   },

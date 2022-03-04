@@ -3,17 +3,20 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Service from '../views/Service.vue'
 import Contact from '../views/Contact.vue'
+import Course from '../views/Course.vue'
+import course from '../views/course1.vue'
 import Signin from '../views/authentication/Signin.vue'
 import Signup from '../views/authentication/Signup.vue'
 import Dashboard from '../views/dashboard/Userdashboard.vue'
 import Profile from '../views/dashboard/Profile.vue'
-import Courses from '../views/dashboard/Courses.vue'
+import StudentCourses from '../views/dashboard/Courses.vue'
 import Updateprofile from '../views/dashboard/Updateprofile.vue'
 import Verification from '../views/authentication/verification.vue'
 import Assessment from '../views/dashboard/Assessment.vue'
 import CordinatorDashboard from '../views/CordinatorDashboard/cordinatordashboard.vue'
 import CordinatorStudentStatus from '../views/CordinatorDashboard/StudentStatus.vue'
 import CordinatorStudents from '../views/CordinatorDashboard/Students.vue'
+import CordinatorCourses from '../views/CordinatorDashboard/CordinatorCourses.vue'
 import Details from '../views/Details.vue'
 
 const routes = [
@@ -31,6 +34,16 @@ const routes = [
     path: '/service',
     name: 'Service',
     component: Service
+  },
+  {
+    path: '/course',
+    name: 'Course',
+    component: Course
+  },
+  {
+    path: '/course1',
+    name: 'course1',
+    component: course
   },
   {
     path: '/contact',
@@ -58,9 +71,9 @@ const routes = [
     component: Profile
   },
   {
-    path: '/courses',
-    name: 'Courses',
-    component: Courses
+    path: '/dashboard/courses',
+    name: 'StudentCourses',
+    component: StudentCourses
   },
   {
     path: '/updateprofile',
@@ -73,7 +86,7 @@ const routes = [
     component: Verification
   },
   {
-    path: '/courses/:id',
+    path: '/dashboard/courses/:id',
     name: 'Details',
     component: Details
   },
@@ -96,6 +109,11 @@ const routes = [
     path: '/cordinator/student/status',
     name: 'CordinatorStudentStatus',
     component: CordinatorStudentStatus
+  },
+  {
+    path: '/cordinator/courses',
+    name: 'CordinatorCourses',
+    component: CordinatorCourses
   }
 
 

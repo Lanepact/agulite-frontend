@@ -160,7 +160,7 @@
                                             </table>
                                         </div>
                                          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                            <button class="backtostud">Back to Students</button>
+                                            <router-link to="/cordinator/students"><button class="backtostud">Back to Students</button></router-link>
                                         </div>
                                     </div>
                                 </div>
@@ -221,12 +221,7 @@
                                   
                                 </div>
                             </div>
-                        </div>
-
-                        
-                            
-                        
-                        
+                        </div>     
                     </div>
                 </div>
             </div>

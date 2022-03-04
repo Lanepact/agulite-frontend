@@ -418,7 +418,7 @@ export default {
   },
   setup(){
        const  moveUp = () => {
-          window.scrollTo(0,1950);
+          window.scrollTo(0,2200);
     }
 
       return{

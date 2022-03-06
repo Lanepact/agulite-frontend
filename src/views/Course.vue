@@ -32,6 +32,7 @@
                             <button class="b2" @click="moveUp">ENROLL NOW </button>
                         </div>
                         <div class="countdown">
+                         
                             <div class="day">
                                 <span class="numb">06</span>
                                 <span class="text">DAYS</span>
@@ -54,6 +55,7 @@
             </div>
         </div>
     </div>
+    
     <div class="courses-sect">
         <div class="sect">
             <div class="row">
@@ -63,7 +65,25 @@
                             <img src="@/assets/cbanner.jpg" alt="course image" class="img-fluid" width=""/>
                             <div class="sect-buttons">
                                 <button class="bA">Program Details </button>
-                                <button class="bB">Download Syllabus </button>
+                                  <button class="bB" @click="isOpen = true">Download Syllabus </button>
+                                <Modal :open="isOpen" @close="isOpen = !isOpen" class="modal1">
+                                    <div class="text-center m-tit">
+                                        <h3>Request detailed syllabus</h3>
+                                        <small class="small">Fill in the form to receive more information about the course.</small>
+                                    </div>
+                                  <form>
+                                    <div class="form-group">
+                                        <label>Firstname</label>
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" id="" >
+                                    </div>
+                                    <p>By providing your information and clicking "Download Syllabus", you consent and agree to receive marketing emails from Udacity, and that your information will be used in accordance with the Udacity Terms of Use and Privacy Policy, including relevant opt out provisions therein.</p>
+                                     <div class="m-but"><button disabled type="submit" class="btn btn-primary">Download Syllabus</button></div>
+                                    </form>
+                                </Modal>
                             </div>
                         </div>
                         <div class="sect-right">
@@ -135,7 +155,25 @@
                             <img src="@/assets/cbanner.jpg" alt="course image" class="img-fluid" width=""/>
                             <div class="sect-buttons">
                                 <button class="bA">Program Details </button>
-                                <button class="bB">Download Syllabus </button>
+                                <button class="bB" @click="isOpen = true">Download Syllabus </button>
+                                <Modal :open="isOpen" @close="isOpen = !isOpen" class="modal1">
+                                    <div class="text-center m-tit">
+                                        <h3>Request detailed syllabus</h3>
+                                        <small class="small">Fill in the form to receive more information about the course.</small>
+                                    </div>
+                                  <form>
+                                    <div class="form-group">
+                                        <label>Firstname</label>
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" id="" >
+                                    </div>
+                                    <p>By providing your information and clicking "Download Syllabus", you consent and agree to receive marketing emails from Udacity, and that your information will be used in accordance with the Udacity Terms of Use and Privacy Policy, including relevant opt out provisions therein.</p>
+                                     <div class="m-but"><button disabled type="submit" class="btn btn-primary">Download Syllabus</button></div>
+                                    </form>
+                                </Modal>
                                 
                             </div>
                         </div>
@@ -163,7 +201,25 @@
                             <img src="@/assets/cbanner.jpg" alt="course image" class="img-fluid" width=""/>
                             <div class="sect-buttons">
                                 <button class="bA">Program Details </button>
-                                <button class="bB">Download Syllabus </button>
+                                 <button class="bB" @click="isOpen = true">Download Syllabus </button>
+                                <Modal :open="isOpen" @close="isOpen = !isOpen" class="modal1">
+                                    <div class="text-center m-tit">
+                                        <h3>Request detailed syllabus</h3>
+                                        <small class="small">Fill in the form to receive more information about the course.</small>
+                                    </div>
+                                  <form>
+                                    <div class="form-group">
+                                        <label>Firstname</label>
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" id="" >
+                                    </div>
+                                    <p>By providing your information and clicking "Download Syllabus", you consent and agree to receive marketing emails from Udacity, and that your information will be used in accordance with the Udacity Terms of Use and Privacy Policy, including relevant opt out provisions therein.</p>
+                                     <div class="m-but"><button disabled type="submit" class="btn btn-primary">Download Syllabus</button></div>
+                                    </form>
+                                </Modal>
                             </div>
                         </div>
                         <div class="sect-right">
@@ -192,7 +248,7 @@
       <Footer />
     </div>
        
-            
+          
 </template>
 
 <script>

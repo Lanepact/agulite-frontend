@@ -47,7 +47,7 @@ body{
     max-width: 500px !important;
     margin: 8rem auto !important;
     border: 1px solid rgba(0,0,0, 0.3) !important;
-    
+
 }
 .vue-modal-content{
     position: relative !important;
@@ -258,11 +258,11 @@ body{
     margin-bottom: 20px !important;
     flex-direction: column !important;
     align-items: center !important;
-    padding: 60px 20px !important;
+    padding: 80px 20px !important;
     width: 96% !important;
-    height: 40vh !important;
+    height: 50vh !important;
     background-color: #ffffff !important;
-    border-radius: 5px !important;
+    border-radius: 8px !important;
     border: 2px solid #f4f6f6 !important;
 }
 .l-path .l-offers .box-1:hover{
@@ -273,11 +273,20 @@ body{
 .l-path .l-offers .box-1 .title{
     font-size: 25px !important;
     text-align: center !important;
-    color:#112a55 !important;
+    /* color:#112a55; */
     margin-bottom: 20px !important;
     font-weight: 600 !important;
 }
-
+.l-path .l-offers .box-1 .bicon{
+    /* background-color: #ed4809 !important; */
+    padding: 10px !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+.l-path .l-offers .box-1 .bicon i{
+    font-size: 60px !important;
+    /* color: #ed4809 !important; */
+}
 .l-path .l-offers .box-1 .details{
     font-size: 14px !important;
     line-height: 22px !important;
@@ -4488,5 +4497,17 @@ h1{
         margin-left: 0px !important;
         justify-content: center !important;
         align-items: center !important;
+    }
+    .vue-modal{
+        padding: 20px 10px !important;
+    }
+    .vue-modal-inner{
+        max-width: 1000px !important;
+        margin: 20px 0px !important;
+        border: 1px solid rgba(0,0,0, 0.3) !important;
+    }
+    .l-path .l-offers .box-1 .bicon i{
+        font-size: 30px !important;
+        /* color: #ed4809 !important; */
     }
 }   

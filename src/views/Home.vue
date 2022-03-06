@@ -64,7 +64,7 @@
               </div>
             </div>
           </div>
-    </div>
+     </div>
       <div class="l-path">
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -78,14 +78,16 @@
           <div class="row l-offers">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                 <div class="box-1">
-                    <div class="title">
+                    <div class="bicon"><i class="bx bx-world"></i></div>
+                    <p class="title">
                       Product Management
-                    </div>
+                    </p>
                     <p class="details">Understand role and functions responsible for the overall success of a product or project</p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <div class="box-1">
+                <div class="bicon"><i class="bx bx-slideshow"></i></div>
                   <div class="title">
                     UI/UX Design
                     </div>
@@ -94,6 +96,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                <div class="box-1">
+                   <div  class="bicon"><i class="bx bx-file"></i></div>
                   <div class="title">
                       Graphics Design and Video animation
                     </div>
@@ -102,6 +105,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <div class="box-1">
+                    <div class="bicon"><i class="bx bxl-dribbble"></i></div>
                    <div class="title">
                       Frontend Software Engineering
                     </div>
@@ -110,6 +114,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <div class="box-1">
+                   <div class="bicon"><i class="bx bx-file"></i></div>
                    <div class="title">
                       Backend Software Engineering
                     </div>
@@ -118,6 +123,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <div class="box-1">
+                  <div  class="bicon"><i class="bx bx-tachometer"></i></div>
                    <div class="title">
                       Mobile App Dev
                     </div>

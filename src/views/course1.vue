@@ -420,9 +420,7 @@ export default {
         const payment = ref(null)
         
         const  moveUp = () => {
-           let offSets = payment.getBoundingClientRect()
-           console.log(offSets)
-           window.scrollTo(0,2200);
+           window.scrollTo(0,2500);
         }
         
         return{

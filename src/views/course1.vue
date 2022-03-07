@@ -398,7 +398,7 @@
                 <h2>Blockchain Developer</h2>
                 <div class="buttons">
                     <button class="a">DOWNLOAD SYLLABUS</button>
-                    <button class="b">ENROLL NOW </button>
+                    <button class="b" @click="goToPreCheckout">ENROLL NOW </button>
                 </div>
             </div>
         </div>

@@ -828,14 +828,17 @@ h1{
 }
 .dashboard-section{
     margin:0 !important;
+    
 }
 .dashboard-items .logo{
     margin-top: 20px !important;
     margin-bottom: 40px !important;
 }
 .dashboard-items{
+    position: fixed !important;
     background-color: #F5800C !important;
     height: 180vh !important;
+    width: 20% !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -860,7 +863,7 @@ h1{
     /* margin-left: -45px !important; */
 }
 .dashboard-items .logout{
-    margin-top: 50px !important;
+    margin-top: 150px !important;
     /* margin-left: -45px !important; */
 }
 .dashboard-items .db-item span{
@@ -1721,8 +1724,13 @@ h1{
     /* margin-left: -45px !important; */
 }
 .dashboard-items .logout{
-    margin-top: 50px !important;
+    align-content: flex-end !important;
+    /* margin-top: 50px !important; */
+    /* margin-top: 220px !important; */
     /* margin-left: -45px !important; */
+}
+.mobile-dashboard .logout{
+ 
 }
 .desk-les-items .l{
     margin-left: -10px !important;
@@ -3070,6 +3078,78 @@ h1{
     margin-left: 20px !important;
     justify-content: center !important;
     align-items: center !important;
+}
+.welc .content{
+    margin: 80px !important;
+}
+.welc .content .welc-tit{
+    font-size: 40px !important;
+}
+.welc .content .welc-para{
+    font-size: 20px !important;
+}
+.welc .content .block-1{
+    background-color: white !important;
+    box-shadow: 4px 4px 4px 4px gray !important;
+    margin-top: 40px !important;
+    padding: 20px 10px !important;
+    border-radius: 5px !important;
+}
+.welc .content .block-1 h2{
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+}
+.welc .content .block-1 p{
+    font-size: 14px !important;
+    margin-bottom: 10px !important;
+}
+.welc2 .content2{
+    margin: 80px !important;
+}
+.welc2 .content2 .welc-tit{
+    font-size: 40px !important;
+}
+.welc2 .content2 .welc-para{
+    font-size: 20px !important;
+}
+.welc2 .content2 .block-1{
+    background-color: white !important;
+    box-shadow: 4px 4px 4px 4px gray !important;
+    margin-top: 40px !important;
+    padding: 20px 10px !important;
+    border-radius: 5px !important;
+    margin-bottom: 40px !important;
+}
+.welc2 .content2 .block-1 .block-info{
+    display: flex !important;
+    padding: 10px !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+.welc2 .content2 .block-1 .block-info .block-text{
+    width: 60% !important;
+}
+.welc2 .content2 .block-1 .block-info .block-text h2{
+    font-size: 25px !important ;
+    font-weight: 600 !important;
+}
+.welc2 .content2 .block-1 .block-info .block-text p{
+    font-size: 14px !important ;
+}
+.welc2 .content2 .block-1 .block-info .block-text p{
+  
+}
+.welc2 .content2 .block-1 .block-info .button-sect{
+    /* width: 40% !important; */
+}
+.welc2 .content2 .block-1 .block-info .button-sect button{
+    background-color: #ed4809 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    color: white !important;
+    font-weight: 600 !important;
+    padding: 10px 15px !important;
 }
 @media screen and (max-width:1024px){
     .learning .learn-path .learn-imgs .img-1 .overlay{
@@ -4509,5 +4589,74 @@ h1{
     .l-path .l-offers .box-1 .bicon i{
         font-size: 30px !important;
         /* color: #ed4809 !important; */
+    }
+    .welc .content{
+        margin: 0px 15px !important;
+    }
+    .welc .content .welc-tit{
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
+    .welc .content .welc-para{
+        font-size: 14px !important;
+    }
+    .welc .content .block-1{
+        background-color: white !important;
+        box-shadow: 4px 4px 4px 4px gray !important;
+        margin-top: 40px !important;
+        padding: 20px 10px !important;
+        border-radius: 5px !important;
+    }
+    .welc .content .block-1 h2{
+        font-size: 20px !important ;
+        font-weight: 600 !important;
+        margin-bottom: 10px !important;
+    }
+    .welc .content .block-1 p{
+        font-size: 12px !important ;
+        margin-bottom: 20px !important;
+    }
+    .welc2 .content2{
+        margin: 0px 15px !important;
+    }
+    .welc2 .content2 .welc-tit{
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
+    .welc2 .content2 .welc-para{
+        font-size: 16px !important;
+    }
+    .welc2 .content2 .block-1{
+        background-color: white !important;
+        box-shadow: 4px 4px 4px 4px gray !important;
+        margin-top: 40px !important;
+        padding: 20px 10px !important;
+        border-radius: 5px !important;
+        margin-bottom: 40px !important;
+    }
+    .welc2 .content2 .block-1 .block-info{
+       flex-direction: column !important;
+       align-items: flex-start !important;
+    }
+    .welc2 .content2 .block-1 .block-info .block-text{
+        width: 100% !important;
+    }
+    .welc2 .content2 .block-1 .block-info .block-text h2{
+        font-size: 20px !important ;
+        font-weight: 600 !important;
+    }
+    .welc2 .content2 .block-1 .block-info .block-text p{
+        font-size: 12px !important ;
+        margin-bottom: 20px !important;
+    }
+    .welc2 .content2 .block-1 .block-info .block-text p{
+      
+    }
+    .welc2 .content2 .block-1 .block-info .button-sect{
+        /* width: 40% !important; */
+    }
+    .welc2 .content2 .block-1 .block-info .button-sect button{
+       font-size: 12px !important;
+       padding: 5px 8px !important;
     }
 }   

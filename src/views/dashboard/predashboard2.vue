@@ -59,78 +59,63 @@
                             </div>                    
                         </div>  
                     </div>
-                    <div class="welc">
+                    <div class="welc2">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                                <h2>Welcome !! </h2>
-                                <p>Countdown to start of cohort</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container learning">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <div class="learn-path">
-                                    <div class="title">My Learning path</div>
-                                    <div class="learn-imgs">
-                                        <div class="img-1">
-                                            <div class="img">
-                                                <img src="@/assets/l1.png" class="img-fluid"/>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="content2">
+                                    <div class="con-up">
+                                        <h2 class="welc-tit">Welcome!</h2>
+                                        <p class="welc-para">Countdown to start of cohort</p>
+                                    </div>
+                                    <div class="block-1">
+                                        <div class="block-info">
+                                            <div class="block-text">
+                                                <h2 class="mb-3">Introduction to Blockchain</h2>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse alias commodi tempore asperiores eum odio! Neque possimus molestias, quos recusandae quia atque dolorum magnam voluptate quod minus, similique hic eligendi!</p>
                                             </div>
-                                            <div class="overlay">Introduction To Design</div>
-                                        </div>
-                                        <div class="img-2">
-                                           <div class="img">
-                                                <img src="@/assets/l2.png" class="img-fluid"/>
+                                            <div class="button-sect">
+                                                <router-link to="/blockchain-development"> <button>Learn More </button> </router-link>  
+                                            </div>    
+                                        </div>                                
+                                    </div>
+                                     <div class="block-1">
+                                        <div class="block-info">
+                                            <div class="block-text">
+                                                <h2 class="mb-3">Introduction to Blockchain</h2>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse alias commodi tempore asperiores eum odio! Neque possimus molestias, quos recusandae quia atque dolorum magnam voluptate quod minus, similique hic eligendi!</p>
                                             </div>
-                                            <div class="overlay idea">Ideation Proces</div>
-                                        </div>
-                                        <div class="img-3">
-                                           <div class="img">
-                                                <img src="@/assets/l3.png" class="img-fluid"/>
+                                            <div class="button-sect">
+                                                 <router-link to="/blockchain-development"> <button>Learn More </button> </router-link>  
+                                            </div>      
+                                        </div>                                
+                                    </div>
+                                     <div class="block-1">
+                                        <div class="block-info">
+                                            <div class="block-text">
+                                                <h2 class="mb-3">Introduction to Blockchain</h2>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse alias commodi tempore asperiores eum odio! Neque possimus molestias, quos recusandae quia atque dolorum magnam voluptate quod minus, similique hic eligendi!</p>
                                             </div>
-                                            <div class="overlay">Prototyping and Testing</div>
-                                        </div>
-                                        <div class="img-4">
-                                           <div class="img">
-                                                <img src="@/assets/l4.png" class="img-fluid"/>
+                                            <div class="button-sect">
+                                                 <router-link to="/blockchain-development"> <button>Learn More </button> </router-link>  
+                                            </div>      
+                                        </div>                                
+                                    </div>
+                                     <div class="block-1">
+                                        <div class="block-info">
+                                            <div class="block-text">
+                                                <h2 class="mb-3">Introduction to Blockchain</h2>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse alias commodi tempore asperiores eum odio! Neque possimus molestias, quos recusandae quia atque dolorum magnam voluptate quod minus, similique hic eligendi!</p>
                                             </div>
-                                            <div class="overlay">Build to Fit</div>
-                                        </div>
+                                            <div class="button-sect">
+                                               <router-link to="/blockchain-development"> <button>Learn More </button> </router-link>  
+                                            </div>      
+                                        </div>                                
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <div class="upcoming-task">
-                                     <div class="title mb-4">Upcoming Task</div>
-                                      <div class="task">
-                                    <span>Week 3 Task: Design Sprint</span>
-                                    <div class="percent"> 
-                                        <a href="#">Submit</a>
-                                    </div>
-                                </div>
-                                <div class="task">
-                                    <span>Week 4 Task: Design Sprint</span>
-                                    <div class="percent"> 
-                                        <a href="#">Tap to unlock</a>
-                                    </div>
-                                </div>
-                                <div class="task">
-                                    <span>Week 5 Task: Design Sprint</span>
-                                    <div class="percent"> 
-                                        <a href="#">Tap to unlock</a>
-                                    </div>
-                                </div>
-                                <div class="task">
-                                    <span>Week 6 Task: Design Sprint</span>
-                                    <div class="percent"> 
-                                        <a href="#">Tap to unlock</a>
-                                    </div>
-                                </div>
+                                    
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>             
                 </div>
             </div>
         </div>

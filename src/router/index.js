@@ -12,12 +12,16 @@ import Profile from '../views/dashboard/Profile.vue'
 import StudentCourses from '../views/dashboard/Courses.vue'
 import Updateprofile from '../views/dashboard/Updateprofile.vue'
 import Verification from '../views/authentication/verification.vue'
+import Predashboard from '../views/dashboard/predashboard.vue'
+import Predashboard2 from '../views/dashboard/predashboard2.vue'
 import Assessment from '../views/dashboard/Assessment.vue'
 import CordinatorDashboard from '../views/CordinatorDashboard/cordinatordashboard.vue'
 import CordinatorStudentStatus from '../views/CordinatorDashboard/StudentStatus.vue'
 import CordinatorStudents from '../views/CordinatorDashboard/Students.vue'
 import CordinatorCourses from '../views/CordinatorDashboard/CordinatorCourses.vue'
 import Details from '../views/Details.vue'
+import PreCheckout from '../views/preCheckout.vue'
+import Checkout from '../views/checkout.vue'
 
 const routes = [
   {
@@ -46,6 +50,16 @@ const routes = [
     component: course
   },
   {
+    path: '/pre-checkout',
+    name: 'preCheckout',
+    component: PreCheckout
+  },
+  {
+    path: '/checkout',
+    name: 'checkout',
+    component: Checkout
+  },
+  {
     path: '/contact',
     name: 'Contact',
     component: Contact
@@ -64,6 +78,16 @@ const routes = [
     path: '/dashboard',
     name: 'Dashboard',
     component: Dashboard
+  },
+  {
+    path: '/predashboard',
+    name: 'Predashboard',
+    component: Predashboard
+  },
+  {
+    path: '/predashboard2',
+    name: 'Predashboard2',
+    component: Predashboard2
   },
   {
     path: '/profile',

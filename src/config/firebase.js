@@ -1,10 +1,5 @@
-import "bootstrap/dist/css/bootstrap.min.css"
-import { createApp } from 'vue'
-import 'bootstrap-icons/font/bootstrap-icons.css'
-import App from './App.vue'
-import './assets/global.css'
-import router from './router'
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAhtnq9H_TpgMF6RunSBYmFSehnieaw4dE",
@@ -16,8 +11,5 @@ const firebaseConfig = {
   measurementId: "G-WLM93HHK8Q"
 };
 
-initializeApp(firebaseConfig);
-
-createApp(App).use(router).mount('#app')
-import "bootstrap/dist/js/bootstrap.js"
-
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);

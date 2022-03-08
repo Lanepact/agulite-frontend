@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { useAgulite } from '../composables'
+
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Service from '../views/Service.vue'
@@ -22,6 +24,23 @@ import CordinatorCourses from '../views/CordinatorDashboard/CordinatorCourses.vu
 import Details from '../views/Details.vue'
 import PreCheckout from '../views/preCheckout.vue'
 import Checkout from '../views/checkout.vue'
+
+const handleUserAuthGuard = async (to, from, next) => {
+  let agulite = await useAgulite().getAgulite()
+  let accessToken = localStorage.getItem('logged-in-user')
+
+  if(agulite && accessToken){
+    next()
+    return
+  }
+
+  next('/signin')
+}
+
+const handleUserSignOut = async (to, from, next) => {
+  await useAgulite().signout()
+  next('/signin')
+}
 
 const routes = [
   {
@@ -70,6 +89,12 @@ const routes = [
     component: Signin
   },
   {
+    path: '/signout',
+    name: 'Signout',
+    component: Signin,
+    beforeEnter: handleUserSignOut
+  },
+  {
     path: '/signup',
     name: 'Signup',
     component: Signup
@@ -92,7 +117,8 @@ const routes = [
   {
     path: '/profile',
     name: 'Profile',
-    component: Profile
+    component: Profile,
+    beforeEnter: handleUserAuthGuard
   },
   {
     path: '/dashboard/courses',
@@ -102,7 +128,8 @@ const routes = [
   {
     path: '/updateprofile',
     name: 'Updateprofile',
-    component: Updateprofile
+    component: Updateprofile,
+    beforeEnter: handleUserAuthGuard
   },
   {
     path: '/verification',
@@ -140,9 +167,6 @@ const routes = [
     component: CordinatorCourses
   }
 
-
-   
-       
 ]
 
 const router = createRouter({

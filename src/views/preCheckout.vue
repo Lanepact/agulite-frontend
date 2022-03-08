@@ -31,20 +31,30 @@
 <script>
 import { ref } from '@vue/reactivity'
 import { getErrorMessage } from '../utils'
-import {  computed } from '@vue/runtime-core'
-import {  useRouter } from 'vue-router'
+import {  computed, onMounted } from '@vue/runtime-core'
+import {  useRouter, useRoute } from 'vue-router'
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 
 export default {
     setup() {
 
         const router = useRouter()
+        const route = useRoute()
 
+        const amount = ref(0)
         const email = ref("")
         const loading = ref(false)
         const errorMessage = ref("")
 
         const continueButtonText = computed(() => loading.value ? "Please, wait." : "Continue with checkout")
+
+        onMounted(() => {
+            amount.value = route.params.amount
+
+            if(!amount.value){
+                router.push('/blockchain-development')
+            }
+        })
 
         const googleSignUp = async () => {
             const provider = new GoogleAuthProvider()
@@ -69,7 +79,7 @@ export default {
 
                     router.push({
                         name: 'checkout',
-                        params: { email: data.email }
+                        params: { email: data.email, amount: amount.value }
                     })
 
                 })
@@ -87,7 +97,7 @@ export default {
 
             router.push({
                 name: 'checkout',
-                params: { email: data.email }
+                params: { email: data.email, amount: amount.value }
             })
         }
 

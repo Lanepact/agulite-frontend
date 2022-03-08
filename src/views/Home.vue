@@ -8,7 +8,7 @@
        <div class="banner-text">
          <h1>Join Top Talents Of the Future</h1>
          <p>Get the skills and Experience needed to thrive in today's crazy global market.</p>
-         <button>Get Started </button>
+         <button @click="getStarted">Get Started </button>
        </div>
     </div>
     <div class="agu-aim">
@@ -60,7 +60,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center mt-3">
               <div>
-                <button class="get-start">Get Started </button>
+                <button @click="getStarted" class="get-start">Get Started </button>
               </div>
             </div>
           </div>
@@ -304,7 +304,7 @@
                  <div class="form-group">
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
                 </div>
-                <div class="c-but"><button>Get Started </button></div>
+                <div class="c-but"><button>Send message </button></div>
               </form>
             </div>
         </div>
@@ -321,6 +321,7 @@
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 import Navbar from '../components/navbar.vue'
 import Footer from '../components/footer.vue'
 import imageA from '@/assets/pro-im.png'
@@ -337,6 +338,8 @@ export default {
     Navigation
   },
   setup(){
+    const router = useRouter()
+
     const information = ref(false)
     const information2 = ref(false)
     const information3 = ref(false)
@@ -346,13 +349,13 @@ export default {
         {id:1, story:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem autem, dolor inventore eveniet nulla quae omnis vel eius itaque accusantium, tempora culpa amet quam esse eos illum iure numquam ullam? Ab, impedit illum ut deserunt maiores voluptatum? Sequi, temporibus?", name:"Amadi Patrick", skill:"Fullstack dev", src:imageA},
         {id:2, story:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem autem, dolor inventore eveniet nulla quae omnis vel eius itaque accusantium, tempora culpa amet quam esse eos illum iure numquam ullam? Ab, impedit illum ut deserunt maiores voluptatum? Sequi, temporibus?", name:"Richard", skill:"Mobile dev", src:imageA},
         {id:3, story:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem autem, dolor inventore eveniet nulla quae omnis vel eius itaque accusantium, tempora culpa amet quam esse eos illum iure numquam ullam? Ab, impedit illum ut deserunt maiores voluptatum? Sequi, temporibus?", name:"Beloved Maximus", skill:"Digital marketter", src:imageA},
-         {id:3, story:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem autem, dolor inventore eveniet nulla quae omnis vel eius itaque accusantium, tempora culpa amet quam esse eos illum iure numquam ullam? Ab, impedit illum ut deserunt maiores voluptatum? Sequi, temporibus?", name:"Stanley Agu", skill:"Backend dev", src:imageA}
+        {id:3, story:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem autem, dolor inventore eveniet nulla quae omnis vel eius itaque accusantium, tempora culpa amet quam esse eos illum iure numquam ullam? Ab, impedit illum ut deserunt maiores voluptatum? Sequi, temporibus?", name:"Stanley Agu", skill:"Backend dev", src:imageA}
     ])
     const settings = ref({
       itemsToShow: 1,
       snapAlign: 'left',
     })
-     const breakpoints = ref({
+    const breakpoints = ref({
       480: {
         itemsToShow: 1,
         snapAlign: 'center',
@@ -361,34 +364,36 @@ export default {
         itemsToShow: 2,
         snapAlign: 'start',
       },
-      })
+    })
     const showDetails = () => {
         information.value = !information.value
     }
-     const showDetails2 = () => {
+    const showDetails2 = () => {
          information2.value = !information2.value
     }
     const showDetails3 = () => {
          information3.value = !information3.value
     }
-     const showDetails4 = () => {
+    const showDetails4 = () => {
          information4.value = !information4.value
     }
-       return {
-            information,
-            information2,
-            information3,
-            information4,
-            showDetails,
-            showDetails2,
-            showDetails3,
-            showDetails4,
-            items,
-            breakpoints,
-            settings
-
-
-        }
+    const getStarted = () => {
+      router.push('/blockchain-development')
+    }
+    return {
+        information,
+        information2,
+        information3,
+        information4,
+        showDetails,
+        showDetails2,
+        showDetails3,
+        showDetails4,
+        items,
+        breakpoints,
+        settings,
+        getStarted
+    }
 
   }
   

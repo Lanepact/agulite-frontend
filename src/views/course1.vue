@@ -340,9 +340,9 @@
                                     <div class="access">MONTHLY ACCESS</div>
                                     <div class="pay">Pay as you go</div>
                                     <hr>
-                                    <div class="price-1">$140</div>
+                                    <div class="price-1">&#8358;74,999</div>
                                     <div class="per-m">per month</div>
-                                    <button @click="moveUp">ENROLL NOW</button>
+                                    <button @click="goToPreCheckout(1)">ENROLL NOW</button>
                                     <div class="bene">
                                         <i class="fa fa-check i"></i>
                                         <span>Maximum flexibility to learn at your own pace</span>
@@ -355,12 +355,17 @@
                                 <div class="price-info2">
                                     <div class="best">BEST VALUE</div>
                                     <div class="price-block">
-                                        <div class="access">MONTHLY ACCESS</div>
-                                        <div class="pay">Pay as you go</div>
+                                        <div class="access">5-MONTHS ACCESS</div>
+                                        <div class="pay">Pay upfront and save an extra 10%</div>
                                         <hr>
-                                        <div class="price-1">$399</div>
+                                        <div class="price-1">
+                                            &#8358;337,495
+                                            <strike class="text-danger">
+                                                <span class="cancelled"> &#8358;375,995</span>
+                                            </strike>
+                                        </div>
                                         <div class="per-m">per month</div>
-                                        <button @click="goToPreCheckout">ENROLL NOW</button>
+                                        <button @click="goToPreCheckout(2)">ENROLL NOW</button>
                                         <div class="bene">
                                             <i class="fa fa-check"></i>
                                             <span>Maximum flexibility to learn at your own pace</span>
@@ -398,7 +403,7 @@
                 <h2>Blockchain Developer</h2>
                 <div class="buttons">
                     <button class="a">DOWNLOAD SYLLABUS</button>
-                    <button class="b" @click="goToPreCheckout">ENROLL NOW </button>
+                    <button class="b" @click="moveUp">ENROLL NOW </button>
                 </div>
             </div>
         </div>
@@ -410,9 +415,10 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import Footer from '../components/footer.vue'
+import { useAgulite } from '../composables'
 
 export default {
     components: {
@@ -423,11 +429,26 @@ export default {
         const payment = ref(null)
 
         const moveUp = () => {
-            window.scrollTo(0, 2500);
+            window.scrollTo(0, payment.value.getBoundingClientRect().top)
         }
 
-        const goToPreCheckout = () => {
-            router.push("/pre-checkout")
+        const goToPreCheckout = async (id = 1) => {
+            let amount = id === 1 ? 74999 : 337495
+
+            const user = await useAgulite().getAgulite()
+
+            if(user){
+                router.push({
+                    name: 'checkout',
+                    params: { email: user.email, amount: amount }
+                })
+            } else {
+                router.push({
+                    name: 'preCheckout',
+                    params: { amount: amount }
+                })
+            }
+            
         }
 
         return {
@@ -439,6 +460,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+    .cancelled {
+        color: #000000 !important;
+        font-size: 12pt;
+    }
 </style>

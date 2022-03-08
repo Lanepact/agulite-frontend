@@ -4,7 +4,7 @@
          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
            <div class="pro">
              <h2 class="mb-4 mt-3">Begin your professional tech journey today</h2>
-             <button class="pro-btn">Get Started</button>
+             <button @click="goToCourses" class="pro-btn">Get Started</button>
           </div>
          </div>
          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -40,4 +40,23 @@
 
     </div>
 </template>
+
+<script>
+import { useRouter } from 'vue-router'
+
+export default {
+  setup() {
+    const router = useRouter()
+
+    const goToCourses = () => {
+        router.push('/blockchain-development')
+    }
+
+    return {
+      goToCourses
+    }
+  }
+}
+</script>
+
 

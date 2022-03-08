@@ -2,17 +2,14 @@ import axios from 'axios'
 import { computed, reactive } from 'vue'
 import { API_BASE_URL } from '../config'
 import { getAxiosHeader } from '../utils'
-
-let state = reactive({
-    agulite: {}
-})
+import { storeUserInDb, deleteUserFromDb, getUserFromDb } from '../utils/localDb'
 
 export const useAgulite = () => {
     
     const signin = async (data) => {
         const result = await axios.post(`${API_BASE_URL}/users/signin`, data, getAxiosHeader())
         localStorage.setItem("logged-in-user", String(result.data.token))
-        setAgulite(result.data.user)
+        await setAgulite(result.data.user)
         return result
     }
 
@@ -22,11 +19,12 @@ export const useAgulite = () => {
         return result
     }
 
-    const signout = () => {
-        if(localStorage.getItem("logged-in-user")){
+    const signout = async () => {
+        try{
             localStorage.removeItem("logged-in-user")
-            setAgulite({})
-        }
+            await setAgulite({})
+            await deleteUserFromDb()
+        }catch(e){}
     }
 
     const verifyAccount = async (data) => {
@@ -41,16 +39,19 @@ export const useAgulite = () => {
         const bearerToken = localStorage.getItem("logged-in-user")
         const headers = getAxiosHeader(bearerToken, "multipart/form-data")
         const result = await axios.patch(`${API_BASE_URL}/users/update-profile`, data, { headers })
-        setAgulite(result.data.user)
+        await setAgulite(result.data.user)
         return result
     }
 
-    const setAgulite = (agulite) => {
-        state.agulite = agulite
+    const setAgulite = async (agulite) => {
+        await deleteUserFromDb()
+        await storeUserInDb(agulite)
     }
 
-    const getAgulite = () => {
-        return state.agulite
+    const getAgulite = async () => {
+        let user = await getUserFromDb()
+        let agulite = (user && user.hasOwnProperty('email')) ? user : null
+        return agulite
     }
 
     return { signin, signup, signout, verifyAccount, updateProfile, getAgulite }

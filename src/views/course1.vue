@@ -462,7 +462,7 @@ export default {
             const user = await useAgulite().getAgulite()
 
             if(user){
-                await download()
+                download()
             } else {
                 isOpen.value = true
             }
@@ -476,22 +476,11 @@ export default {
 
             console.log(data)
 
-            await download()
+            download()
         }
 
-        const download = async () => {
-            try {
-                let response = await axios.get('https://www.orimi.com/pdf-test.pdf', { responseType: 'blob' })
-
-                const file = window.URL.createObjectURL(new Blob([response.data]))
-                const docUrl = document.createElement('x')
-                docUrl.href = file
-                docUrl.setAttribute('download', 'blockchain-development-syllabus.pdf')
-                document.body.appendChild(docUrl)
-                docUrl.click()
-            } catch(error) {
-                console.log(error.message)
-            }
+        const download = () => {
+            window.location.href = 'https://www.orimi.com/pdf-test.pdf'
         }
 
         const goToPreCheckout = async (id = 1) => {

@@ -28,7 +28,7 @@
                     <div class="title">Become a Blockchain Developer</div>
                     <div class="details">Demand for blockchain developers in skyrocketing in this program, you'll work with tthe Bitcoin and ethereum protocols, build projects and real wordd application. </div>
                     <div class="action-buttons">
-                        <button class="b1">DOWNLOAD SYLLABUS </button>
+                        <button class="b1" @click="handleDownload">DOWNLOAD SYLLABUS </button>
                         <button class="b2" @click="moveUp">ENROLL NOW </button>
                     </div>
                     <div class="countdown">
@@ -403,24 +403,6 @@
                 <h2>Blockchain Developer</h2>
                 <div class="buttons">
                     <button class="a" @click="handleDownload">DOWNLOAD SYLLABUS</button>
-                    <Modal :open="isOpen" @close="isOpen = !isOpen" class="modal1">
-                        <div class="text-center m-tit">
-                            <h3>Request detailed syllabus</h3>
-                            <small class="small">Fill in the form to receive more information about the course.</small>
-                        </div>
-                        <form @submit.prevent="submitDownloadForm">
-                            <div class="form-group">
-                                <label>Firstname</label>
-                                <input type="text" class="form-control" id="" v-model="firstName" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input type="email" class="form-control" id="" v-model="email" required>
-                            </div>
-                            <p>By providing your information and clicking "Download Syllabus", you consent and agree to receive marketing emails from Udacity, and that your information will be used in accordance with the Udacity Terms of Use and Privacy Policy, including relevant opt out provisions therein.</p>
-                            <div class="m-but"><button disabled type="submit" class="btn btn-primary">Download Syllabus</button></div>
-                        </form>
-                    </Modal>
                     <button class="b" @click="moveUp">ENROLL NOW </button>
                 </div>
             </div>
@@ -428,6 +410,24 @@
     </div>
 </div>
 <div>
+    <Modal :open="isOpen" @close="isOpen = !isOpen" class="modal1">
+        <div class="text-center m-tit">
+            <h3>Request detailed syllabus</h3>
+            <small class="small">Fill in the form to receive more information about the course.</small>
+        </div>
+        <form @submit.prevent="submitDownloadForm">
+            <div class="form-group">
+                <label>Firstname</label>
+                <input type="text" class="form-control" id="" v-model="firstName" required>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" id="" v-model="email" required>
+            </div>
+            <p>By providing your information and clicking "Download Syllabus", you consent and agree to receive marketing emails from Udacity, and that your information will be used in accordance with the Udacity Terms of Use and Privacy Policy, including relevant opt out provisions therein.</p>
+            <div class="m-but"><button disabled type="submit" class="btn btn-primary">Download Syllabus</button></div>
+        </form>
+    </Modal>
     <Footer />
 </div>
 </template>
@@ -438,6 +438,7 @@ import { onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import Footer from '../components/footer.vue'
 import { useAgulite } from '../composables'
+import axios from 'axios'
 
 export default {
     components: {
@@ -461,23 +462,36 @@ export default {
             const user = await useAgulite().getAgulite()
 
             if(user){
-                download(user.email)
+                await download()
             } else {
                 isOpen.value = true
             }
         }
 
-        const submitDownloadForm = () => {
+        const submitDownloadForm = async () => {
             const data = {
                 firstName: firstName.value,
                 email: email.value
             }
 
             console.log(data)
+
+            await download()
         }
 
-        const download = (email) => {
-            window.alert('downloaded')
+        const download = async () => {
+            try {
+                let response = await axios.get('https://www.orimi.com/pdf-test.pdf', { responseType: 'blob' })
+
+                const file = window.URL.createObjectURL(new Blob([response.data]))
+                const docUrl = document.createElement('x')
+                docUrl.href = file
+                docUrl.setAttribute('download', 'blockchain-development-syllabus.pdf')
+                document.body.appendChild(docUrl)
+                docUrl.click()
+            } catch(error) {
+                console.log(error.message)
+            }
         }
 
         const goToPreCheckout = async (id = 1) => {

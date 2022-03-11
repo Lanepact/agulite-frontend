@@ -402,20 +402,20 @@
             <div class="call-bg">
                 <h2>Blockchain Developer</h2>
                 <div class="buttons">
-                    <button class="a" @click="isOpen = true">DOWNLOAD SYLLABUS</button>
+                    <button class="a" @click="handleDownload">DOWNLOAD SYLLABUS</button>
                     <Modal :open="isOpen" @close="isOpen = !isOpen" class="modal1">
                         <div class="text-center m-tit">
                             <h3>Request detailed syllabus</h3>
                             <small class="small">Fill in the form to receive more information about the course.</small>
                         </div>
-                        <form>
+                        <form @submit.prevent="submitDownloadForm">
                             <div class="form-group">
                                 <label>Firstname</label>
-                                <input type="text" class="form-control" id="">
+                                <input type="text" class="form-control" id="" v-model="firstName" required>
                             </div>
                             <div class="form-group">
                                 <label>Email</label>
-                                <input type="email" class="form-control" id="" >
+                                <input type="email" class="form-control" id="" v-model="email" required>
                             </div>
                             <p>By providing your information and clicking "Download Syllabus", you consent and agree to receive marketing emails from Udacity, and that your information will be used in accordance with the Udacity Terms of Use and Privacy Policy, including relevant opt out provisions therein.</p>
                             <div class="m-but"><button disabled type="submit" class="btn btn-primary">Download Syllabus</button></div>
@@ -450,8 +450,34 @@ export default {
         const router = useRouter()
         const payment = ref(null)
 
+        const firstName = ref('')
+        const email = ref('')
+
         const moveUp = () => {
             window.scrollTo(0, payment.value.getBoundingClientRect().top)
+        }
+
+        const handleDownload = async () => {
+            const user = await useAgulite().getAgulite()
+
+            if(user){
+                download(user.email)
+            } else {
+                isOpen.value = true
+            }
+        }
+
+        const submitDownloadForm = () => {
+            const data = {
+                firstName: firstName.value,
+                email: email.value
+            }
+
+            console.log(data)
+        }
+
+        const download = (email) => {
+            window.alert('downloaded')
         }
 
         const goToPreCheckout = async (id = 1) => {
@@ -475,7 +501,12 @@ export default {
 
         return {
             isOpen,
+            firstName,
+            email,
             payment,
+            handleDownload,
+            submitDownloadForm,
+            download,
             moveUp,
             goToPreCheckout
         }

@@ -425,7 +425,7 @@
                 <input type="email" class="form-control" id="" v-model="email" required>
             </div>
             <p>By providing your information and clicking "Download Syllabus", you consent and agree to receive marketing emails from Udacity, and that your information will be used in accordance with the Udacity Terms of Use and Privacy Policy, including relevant opt out provisions therein.</p>
-            <div class="m-but"><button disabled type="submit" class="btn btn-primary">Download Syllabus</button></div>
+            <div class="m-but"><button type="submit" class="btn btn-primary">Download Syllabus</button></div>
         </form>
     </Modal>
     <Footer />

@@ -3151,6 +3151,177 @@ h1{
     font-weight: 600 !important;
     padding: 10px 15px !important;
 }
+.connection .connect-left{
+    margin: 10px 20px !important;
+}
+.connect-left .info .cordinators-online h2{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #F5800C !important;
+    padding: 10px 0px 10px 0px !important;
+    margin-bottom: 20px !important;
+}
+.connect-left .info .cordinators-online .person-online{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+.connect-left .info .cordinators-online .person-online .prof{
+    display: flex !important;
+    align-items: center !important;
+}
+.connect-left .info .cordinators-online .person-online .prof .name{
+    margin-left: 10px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+.connect-left .info .coursemates-online h2{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #F5800C !important;
+    padding: 10px 0px 10px 0px !important;
+    margin-bottom: 20px !important;
+}
+.connect-left .info .coursemates-online .person-online{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+.connect-left .info .coursemates-online .person-online .prof{
+    display: flex !important;
+    align-items: center !important;
+}
+.connect-left .info .coursemates-online .person-online .prof .name{
+    margin-left: 10px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+.connect-left .info .teamates-online h2{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #F5800C !important;
+    padding: 10px 0px 10px 0px !important;
+    margin-bottom: 20px !important;
+}
+.connect-left .info .teamates-online .person-online{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+.connect-left .info .teamates-online .person-online .prof{
+    display: flex !important;
+    align-items: center !important;
+}
+.connect-left .info .teamates-online .person-online .prof .name{
+    margin-left: 10px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+.connection .connect-right{
+    margin: 10px 20px !important;
+}
+.connection .connect-right .active-person{
+    display: flex !important;
+    padding: 10px 15px !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-radius: 8px !important;
+    background-color: #F1F3F9 !important;
+}
+.connection .connect-right .active-person .det{
+    display: flex !important;
+    align-items: center !important;
+}
+.connection .connect-right .active-person .det .name{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    margin-left: 10px !important;
+}
+.connection .connect-right .active-person .status{
+    display: flex !important;
+    align-items: center !important;
+}
+.connection .connect-right .active-person .status .stat-name{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    margin-left: 10px !important;
+}
+.connection .connect-right .chat-area{
+    background-color: #F1F3F9 !important;
+    margin-top: 20px !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    padding: 20px 15px !important;
+}
+.connection .connect-right .chat-area .chat-message{
+    width: 400px !important;
+    padding: 20px 15px  !important;
+    color: #010107 !important;
+    background: #F7B777;
+    font-size: 14px !important;
+    margin-bottom: 10px !important;
+}
+.connection .connect-right .chat-area .chat-inform{
+    width: 380px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 20px !important;
+}
+.connection .connect-right .chat-area .chat-inform .chat-pro-time{
+    display: flex !important;
+    align-items: center !important;
+}
+.connection .connect-right .chat-area .chat-inform .chat-pro-time img{
+    width: 20px !important;
+}
+.connection .connect-right .chat-area .chat-inform .chat-pro-time .name{
+    font-size:12px !important;
+    margin-left: 10px !important;
+}
+
+.connection .connect-right .chat-area .msg-user1{
+    border-radius: 0px 56px 54px;
+}
+.connection .connect-right .chat-area .msg-user2{
+    border-radius: 0px 56px 54px;
+    margin-left: auto !important;
+    margin-bottom: 40px !important;
+}
+.connection .connect-right .chat-area .chat-message p{
+    width: auto !important;
+}
+.connection .connect-right .chat-area .chat-form{
+    position: relative !important;
+    bottom: 0 !important;
+}
+.connection .connect-right .chat-area .chat-form .chat-input input{
+    width: 100% !important;
+    border-radius: 15px !important;
+    padding: 15px 5px 15px 40px !important;
+    border: 1px solid #f5800c !important;
+}
+.connection .connect-right .chat-area .chat-form .chat-input input:focus{
+    outline: none !important;
+}
+.connection .connect-right .chat-area .chat-form .chat-input{
+    position: relative !important;
+}
+.connection .connect-right .chat-area .chat-form .chat-input .pencil{
+    position: absolute !important;
+    top: 15px !important;
+    left:15px !important;
+}
+.connection .connect-right .chat-area .chat-form .chat-input .attachment{
+    position: absolute !important;
+    top: 15px !important;
+    right:55px !important;
+}
+.connection .connect-right .chat-area .chat-form .chat-input .send{
+    position: absolute !important;
+    top: 10px !important;
+    right:5px !important;
+}
 @media screen and (max-width:1024px){
     .learning .learn-path .learn-imgs .img-1 .overlay{
         top: 40px !important;
@@ -3347,6 +3518,15 @@ h1{
         margin-top: 30px !important;
         justify-content: center !important;
         position: absolute !important;
+    }
+    .connection .connect-right .chat-area .chat-message{
+        width: 80% !important;
+        padding: 20px 15px  !important;
+        font-size: 10px !important;
+    }
+    .connection .connect-right .chat-area .chat-inform{
+        width: 80% !important;
+       
     }
 }
 @media screen and (max-width:480px){
@@ -4658,5 +4838,59 @@ h1{
     .welc2 .content2 .block-1 .block-info .button-sect button{
        font-size: 12px !important;
        padding: 5px 8px !important;
+    }
+    .connection .connect-left{
+        margin: 10px 20px !important;
+    }
+    .connect-left .info .cordinators-online .person-online .prof .name{
+        font-size: 12px !important;
+    }
+    .connect-left .info .cordinators-online h2{
+        font-size: 16px !important;
+       
+    }
+    .connect-left .info .cordinators-online .person-online .prof img{
+       width: 40px !important;
+    }
+    .connect-left .info .coursemates-online .person-online .prof .name{
+        font-size: 12px !important;
+    }
+    .connect-left .info .coursemates-online h2{
+        font-size: 16px !important;
+    }
+    .connect-left .info .coursemates-online .person-online .prof img{
+        width: 40px !important;
+     }
+    .connect-left .info .teamates-online .person-online .prof .name{
+        font-size: 12px !important;
+    }
+    .connect-left .info .teamates-online .person-online .prof img{
+        width: 40px !important;
+     }
+    .connect-left .info .teamates-online h2{
+        font-size: 16px !important;
+       
+    }
+    .connection .connect-right{
+        margin: 10px 10px !important;
+    }
+    .connection .connect-right .chat-area .chat-message{
+        width: 50% !important;
+        padding: 20px 15px  !important;
+        font-size: 10px !important;
+    }
+    .connection .connect-right .active-person .det .name{
+        font-size: 12px !important;
+    }
+    .connection .connect-right .active-person .det  img{
+        width:40px !important;
+    }
+    .connection .connect-right .active-person .status .stat-name{
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        margin-left: 10px !important;
+    }
+    .connection .connect-right .chat-area .chat-inform{
+        width: 48% !important;
     }
 }   

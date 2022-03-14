@@ -10,6 +10,7 @@ import course from '../views/course1.vue'
 import Signin from '../views/authentication/Signin.vue'
 import Signup from '../views/authentication/Signup.vue'
 import Dashboard from '../views/dashboard/Userdashboard.vue'
+import Connection from '../views/dashboard/connection.vue'
 import Profile from '../views/dashboard/Profile.vue'
 import StudentCourses from '../views/dashboard/Courses.vue'
 import Updateprofile from '../views/dashboard/Updateprofile.vue'
@@ -103,6 +104,11 @@ const routes = [
     path: '/dashboard',
     name: 'Dashboard',
     component: Dashboard
+  },
+  {
+    path: '/connection',
+    name: 'Connection',
+    component: Connection
   },
   {
     path: '/predashboard',

@@ -238,7 +238,7 @@
                                 </div>
                             </div> 
                               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
-                                  <div class="connect-right" v-if="chat">
+                                  <div class="connect-right c-right" v-if="chat">
                                        <div class="active-person">
                                           <div class="det">
                                                <img src="@/assets/pro-im.png" class="img-fluid"/>

@@ -2277,8 +2277,6 @@ h1{
     color: black !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
-    background-color: #f5800c;
-    background-color: #db4d0b;
 }
 .advert .advert-bg{
     background-image: linear-gradient(75deg,rgba(245, 128, 12, 0.8) 10%, rgba(219, 77, 11, 0.8));
@@ -3151,8 +3149,58 @@ h1{
     font-weight: 600 !important;
     padding: 10px 15px !important;
 }
+
 .connection .connect-left{
-    margin: 10px 20px !important;
+    margin: 0px 0px !important;
+}
+.connection .connect-left .search{
+    margin-bottom: 20px !important;
+    position: relative !important;
+}
+.connection .connect-left .search input{
+    width:100% !important;
+    border: 1px solid #F1F3F9 !important;
+    border-radius: 10px !important;
+    padding: 10px 5px !important;  
+    background-color: #F1F3F9 !important;  
+}
+.connection .connect-left .search-icon{
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+}
+.connection .connect-left .search input:focus{
+    outline: none !important;
+}
+.connection .connect-left .users-online .person-online{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 40px !important;
+}
+.connect-left .info .users-online .person-online .prof{
+    display: flex !important;
+    align-items: center !important;
+}
+.connect-left .info .users-online .person-online .prof{
+    display: flex !important;
+    align-items: center !important;
+}
+.connect-left .info .users-online .person-online .prof .name{
+    margin-left: 10px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+.connect-left .info .users-online .person-online .iconc .bge{
+    background-color: #F5800C !important;
+    padding: 4px 10px !important;
+    width: auto !important;
+    /* height: 20px !important; */
+    font-size: 14px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 20px !important;
 }
 .connect-left .info .cordinators-online h2{
     font-size: 20px !important;
@@ -3182,6 +3230,17 @@ h1{
     padding: 10px 0px 10px 0px !important;
     margin-bottom: 20px !important;
 }
+.connect-left .info .cordinators-online .person-online .iconc .bge{
+    background-color: #F5800C !important;
+    padding: 4px 10px !important;
+    width: auto !important;
+    /* height: 20px !important; */
+    font-size: 14px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 20px !important;
+}
 .connect-left .info .coursemates-online .person-online{
     display: flex !important;
     justify-content: space-between !important;
@@ -3195,6 +3254,17 @@ h1{
     margin-left: 10px !important;
     font-size: 14px !important;
     font-weight: 600 !important;
+}
+.connect-left .info .coursemates-online .person-online .iconc .bge{
+    background-color: #F5800C !important;
+    padding: 4px 10px !important;
+    width: auto !important;
+    /* height: 20px !important; */
+    font-size: 14px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 20px !important;
 }
 .connect-left .info .teamates-online h2{
     font-size: 20px !important;
@@ -3217,8 +3287,19 @@ h1{
     font-size: 14px !important;
     font-weight: 600 !important;
 }
+.connect-left .info .teamates-online .person-online .iconc .bge{
+    background-color: #F5800C !important;
+    padding: 4px 10px !important;
+    width: auto !important;
+    /* height: 20px !important; */
+    font-size: 14px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 20px !important;
+}
 .connection .connect-right{
-    margin: 10px 20px !important;
+    margin: 0px 20px !important;
 }
 .connection .connect-right .active-person{
     display: flex !important;
@@ -4843,7 +4924,7 @@ h1{
         margin: 10px 20px !important;
     }
     .connect-left .info .cordinators-online .person-online .prof .name{
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
     .connect-left .info .cordinators-online h2{
         font-size: 16px !important;
@@ -4853,7 +4934,7 @@ h1{
        width: 40px !important;
     }
     .connect-left .info .coursemates-online .person-online .prof .name{
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
     .connect-left .info .coursemates-online h2{
         font-size: 16px !important;
@@ -4862,7 +4943,7 @@ h1{
         width: 40px !important;
      }
     .connect-left .info .teamates-online .person-online .prof .name{
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
     .connect-left .info .teamates-online .person-online .prof img{
         width: 40px !important;
@@ -4875,9 +4956,9 @@ h1{
         margin: 10px 10px !important;
     }
     .connection .connect-right .chat-area .chat-message{
-        width: 50% !important;
+        width: 70% !important;
         padding: 20px 15px  !important;
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
     .connection .connect-right .active-person .det .name{
         font-size: 12px !important;
@@ -4892,5 +4973,23 @@ h1{
     }
     .connection .connect-right .chat-area .chat-inform{
         width: 48% !important;
+    }
+    .connection .connect-right .chat-area .chat-inform .chat-pro-time .name{
+        font-size: 10px !important;
+    }
+    .connection .connect-right .chat-area .chat-inform .chat-exact-time .clock{
+        font-size: 10px !important;
+    }
+    .connect-left .info .users-online .person-online .iconc .bge{
+        font-size: 12px !important;
+    }
+    .connect-left .info .cordinators-online .person-online .iconc .bge{
+        font-size: 12px !important;
+    }
+    .connect-left .info .teamates-online .person-online .iconc .bge{
+        font-size: 12px !important;
+    }
+    .connect-left .info .coursemates-online .person-online .iconc .bge{
+        font-size: 12px !important;
     }
 }   

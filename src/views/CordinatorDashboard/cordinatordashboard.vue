@@ -9,7 +9,7 @@
                         <div class="logo">
                             <img src="@/assets/agulogowhite.png" alt="agulog"/>
                         </div>
-                        <a href="/dashboard" class="db-item">
+                        <a href="/cordinator/dashboard" class="db-item">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 10H8V0H0V10ZM0 18H8V12H0V18ZM10 18H18V8H10V18ZM10 0V6H18V0H10Z" fill="white"/>
                             </svg>
@@ -21,7 +21,7 @@
                             </svg>
                             <span>My Courses</span>
                         </a>
-                        <a href="/signin" class="db-item">
+                        <a href="/cordinator/students" class="db-item">
                             <svg width="18" height="18" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 3.33333V26.6667C0 28.5 1.48333 30 3.33333 30H26.6667C28.5 30 30 28.5 30 26.6667V3.33333C30 1.5 28.5 0 26.6667 0H3.33333C1.48333 0 0 1.5 0 3.33333ZM20 10C20 12.7667 17.7667 15 15 15C12.2333 15 10 12.7667 10 10C10 7.23333 12.2333 5 15 5C17.7667 5 20 7.23333 20 10ZM5 23.3333C5 20 11.6667 18.1667 15 18.1667C18.3333 18.1667 25 20 25 23.3333V25H5V23.3333Z" fill="white"/>
                             </svg>
@@ -58,7 +58,7 @@
 
                             <span>Documents</span>
                         </a>
-                        <a href="/signin" class="db-item">
+                        <a href="/cordinator/connection" class="db-item">
                             <svg width="18" height="18" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M30.334 0.333344H3.66732C1.83398 0.333344 0.350651 1.83334 0.350651 3.66668L0.333984 33.6667L7.00065 27H30.334C32.1673 27 33.6673 25.5 33.6673 23.6667V3.66668C33.6673 1.83334 32.1673 0.333344 30.334 0.333344ZM27.0007 20.3333H7.00065V17H27.0007V20.3333ZM27.0007 15.3333H7.00065V12H27.0007V15.3333ZM27.0007 10.3333H7.00065V7.00001H27.0007V10.3333Z" fill="white"/>    
                             </svg>

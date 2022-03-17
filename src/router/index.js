@@ -13,6 +13,7 @@ import Dashboard from '../views/dashboard/Userdashboard.vue'
 import Connection from '../views/dashboard/connection.vue'
 import Profile from '../views/dashboard/Profile.vue'
 import StudentCourses from '../views/dashboard/Courses.vue'
+
 import Updateprofile from '../views/dashboard/Updateprofile.vue'
 import Verification from '../views/authentication/verification.vue'
 import Predashboard from '../views/dashboard/predashboard.vue'
@@ -22,6 +23,7 @@ import CordinatorDashboard from '../views/CordinatorDashboard/cordinatordashboar
 import CordinatorStudentStatus from '../views/CordinatorDashboard/StudentStatus.vue'
 import CordinatorStudents from '../views/CordinatorDashboard/Students.vue'
 import CordinatorCourses from '../views/CordinatorDashboard/CordinatorCourses.vue'
+import CordinatorConnection from '../views/CordinatorDashboard/Connection.vue'
 import Details from '../views/Details.vue'
 import PreCheckout from '../views/preCheckout.vue'
 import Checkout from '../views/checkout.vue'
@@ -101,12 +103,12 @@ const routes = [
     component: Signup
   },
   {
-    path: '/dashboard',
+    path: '/user/dashboard',
     name: 'Dashboard',
     component: Dashboard
   },
   {
-    path: '/connection',
+    path: '/user/connection',
     name: 'Connection',
     component: Connection
   },
@@ -121,13 +123,13 @@ const routes = [
     component: Predashboard2
   },
   {
-    path: '/profile',
+    path: '/user/profile',
     name: 'Profile',
     component: Profile,
     beforeEnter: handleUserAuthGuard
   },
   {
-    path: '/dashboard/courses',
+    path: '/user/courses',
     name: 'StudentCourses',
     component: StudentCourses
   },
@@ -171,6 +173,11 @@ const routes = [
     path: '/cordinator/courses',
     name: 'CordinatorCourses',
     component: CordinatorCourses
+  },
+  {
+    path: '/cordinator/connection',
+    name: 'CordinatorConnection',
+    component: CordinatorConnection
   }
 
 ]

@@ -36,18 +36,10 @@
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-lg btn-block login p-2" :disabled="loading">{{ loginButtonText }}</button>
                                 <div class="account-signup">Don’t have an account?  <a href="/signup" class="">Sign up</a> </div>
-                                 <button type="button" class="btn btn-primary btn-lg btn-block google-sign-in">
+                                 <button type="button" class="btn btn-primary btn-lg btn-block google-sign-in pt-2 pb-2">
                                      <img src="@/assets/Google-Logo.png" alt="g"/>
                                      <span>Login with Google</span>
-                                 </button>
-                                  <button type="button" class="btn btn-primary btn-lg btn-block apple-sign-in p-2">
-                                     <img src="@/assets/Apple_logo_black.svg" alt="g"/>
-                                     <span>Login with Apple Id</span>
-                                 </button>
-                                  <button type="button" class="btn btn-primary btn-lg btn-block facebook-sign-in p-2">
-                                     <img src="@/assets/facebook-logo.png" alt="g"/>
-                                     <span>Login with Facebook</span>
-                                 </button>
+                                 </button>   
                             </form>
                         </div>
                       

@@ -6,10 +6,37 @@
        <div class="bg-overlay">
        </div>
        <div class="banner-text">
-         <h1>Join Top Talents Of the Future</h1>
-         <p>Get the skills and Experience needed to thrive in today's crazy global market.</p>
-         <button @click="getStarted">Get Started </button>
+         <div class="banner-left">
+           <h1>The World's Leading Web 3.0 and Blockchain Development Learning Space</h1>
+           <div class="b-details">
+             <div><i class="fa fa-check ic"></i><p>One of the most profitable auto-staking and auto-compounding protocol</p></div>
+             <div><i class="fa fa-check ic"></i><p>The next generation of creators, guided by a community of blockchain development experts</p></div>
+             <div><i class="fa fa-check ic"></i><p>Agulite having one of the highest APYs in crypto</p></div>
+             <div><i class="fa fa-check ic"></i><p>Interest paid every 30 minutes: 48 Times Daily!</p></div>
+             <div><i class="fa fa-check ic"></i><p>Several projects and innovations from the learning space developed to revolutionize the WEB 3.0 and blockchain space</p></div>
+           </div>
+          </div>
+          <div class="banner-right d-none d-md-block">
+             <div class="logo">
+              <img src="@/assets/agulogowhite.png" class="img-fluid"/>
+            </div>
+            <button class="mt-4 airdrop">Join Airdrop </button>
+            <button class="mt-4 presale">Pre-sale </button>
+            <button class="mt-4 develop">Become a Blockcahain Developer </button>
+          </div>
        </div>
+    </div>
+    <div class="ad-section d-block d-md-none">
+       <button class="mt-4 airdrop">Join Airdrop </button>
+        <button class="mt-4 presale">Pre-sale </button>
+        <button class="mt-4 develop">Become a Blockcahain Developer </button>
+    </div>
+    <div class="d-obj d-block d-md-none">
+        <div><i class="fa fa-check ic"></i><p>One of the most profitable auto-staking and auto-compounding protocol</p></div>
+        <div><i class="fa fa-check ic"></i><p>The next generation of creators, guided by a community of blockchain development experts</p></div>
+        <div><i class="fa fa-check ic"></i><p>Agulite having one of the highest APYs in crypto</p></div>
+        <div><i class="fa fa-check ic"></i><p>Interest paid every 30 minutes: 48 Times Daily!</p></div>
+        <div><i class="fa fa-check ic"></i><p>Several projects and innovations from the learning space developed to revolutionize the WEB 3.0 and blockchain space</p></div>
     </div>
     <div class="agu-aim">
           <div class="row">
@@ -65,6 +92,32 @@
             </div>
           </div>
      </div>
+     <div class="staking-section">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+               <h2 class="text-center header">Agulite Auto-Staking Protocol </h2>
+            </div>  
+        </div>
+        <div class="row stake-all">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <div class="stake-left">
+                <h2 class="head1">Innovation Driven</h2>
+                <h2 class="head2">Learning Space </h2>
+                <p class="power">powered by </p>
+                <p class="apy">102,024.80%</p>
+                <p class="fixed">Fixed Staking APY</p>
+                <button class="airdrop">AIRDROP</button>
+                <button class="whitepaper">WHITE PAPER </button>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <div class="stake-right">
+                <h2 class="abt-head">ABOUT</h2>
+                <p class="abt-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolore deserunt odio velit nam fuga. Temporibus non quam ipsa porro vero error tenetur sunt distinctio magnam accusantium, maxime, nesciunt esse! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cupiditate doloribus autem, eaque nulla ipsum hic voluptas, enim velit ab quaerat. Quisquam, accusamus aut necessitatibus porro laborum error odio officia?</p>
+              </div>
+          </div>
+        </div>
+      </div>
       <div class="l-path">
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

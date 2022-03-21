@@ -7,7 +7,7 @@
        <a href="/blockchain-development">Developer</a>
        <a :href="whitepaperlink" target="_blank">White Paper</a>
        <a :href="expertlink" target="_blank">Expert</a>
-       <a href="#">Community</a>
+       <a href="#" @click="goToSocials">Community</a>
     </div>
   </div>
   <div class="mobile-navbar-section d-flex d-lg-none">
@@ -23,7 +23,7 @@
              <a href="/blockchain-development">Developer</a>
             <a :href="whitepaperlink" target="_blank">White Paper</a>
             <a :href="expertlink" target="_blank">Expert</a>
-            <a href="#">Community</a>
+            <a href="#" @click="goToSocials">Community</a>
         </div>
 
   </div>
@@ -34,12 +34,16 @@
 import { onMounted, ref } from 'vue'
 export default {
     name:'navBarMobile',
-    setup(){
+    props:['goToCommunity'],
+    setup(props){
         const authentication = ref(false)
          const navBarMobile = ref(null)
          const whitepaperlink = ref("https://agulite.gitbook.io/agulite")
          const expertlink = ref("https://expert.agulite.com")
-
+        
+        const goToSocials = () => {
+            props.goToCommunity()
+        }
      const openNavbar = () => {
         //   sidebar.value.classList.add('bgred')
 
@@ -70,7 +74,8 @@ export default {
           navBarMobile,
           openNavbar,
           whitepaperlink,
-          expertlink
+          expertlink,
+          goToSocials
       }
     }
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <navbar />
+    <navbar :goToCommunity="goToCommunity" />
   </div>
     <div class="h-banner">
        <div class="bg-overlay">
@@ -395,21 +395,28 @@
         </div>
       </div>
     </div>
-    <div class="community-section">
+    <div class="community-section" ref="community">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                 <h1 class="header">Keep In Touch </h1>
             </div>
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="community-social">
-                        <div><i class="fab fa-twitter ic"></i></div>
-                        <div><i class="fab fa-telegram ic"></i></div>
-                        <div><i class="fab fa-linkedin ic"></i></div>
-                        <div><i class="fab fa-reddit ic"></i></div>
-                        <div><i class="fab fa-instagram ic"></i></div>
+                        <div><a href="https://t.me/agulite_community" target="_blank"><i class="fab fa-telegram ic"></i></a></div>
+                        <div><a href="https://twitter.com/officialagulite"><i class="fab fa-twitter ic"></i></a></div>
+                        <div><a href="https://www.linkedin.com/company/agulite"><i class="fab fa-linkedin ic"></i></a></div>
+                        <div><a href="https://www.reddit.com/r/AGUITE/"><i class="fab fa-reddit ic"></i></a></div>
+                        <div><a href="https://www.instagram.com/official_agulite/"><i class="fab fa-instagram ic"></i></a></div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="fter">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <h4 class="p-5">Copyright &copy;2022</h4>
             </div>
         </div>
     </div>
@@ -500,7 +507,11 @@ export default {
     const information2 = ref(false)
     const information3 = ref(false)
     const information4 = ref(false)
-
+    const community = ref(null)
+     
+    const goToCommunity = () => {
+        window.scrollTo(0, community.value.getBoundingClientRect().top)
+    }
     const items = ref([
         {id:1, story:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem autem, dolor inventore eveniet nulla quae omnis vel eius itaque accusantium, tempora culpa amet quam esse eos illum iure numquam ullam? Ab, impedit illum ut deserunt maiores voluptatum? Sequi, temporibus?", name:"Amadi Patrick", skill:"Fullstack dev", src:imageA},
         {id:2, story:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem autem, dolor inventore eveniet nulla quae omnis vel eius itaque accusantium, tempora culpa amet quam esse eos illum iure numquam ullam? Ab, impedit illum ut deserunt maiores voluptatum? Sequi, temporibus?", name:"Richard", skill:"Mobile dev", src:imageA},
@@ -548,7 +559,9 @@ export default {
         items,
         breakpoints,
         settings,
-        getStarted
+        getStarted,
+        community,
+        goToCommunity
     }
 
   }

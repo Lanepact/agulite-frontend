@@ -22,14 +22,14 @@
             </div>
             <button class="mt-4 airdrop">Join Airdrop </button>
             <button class="mt-4 presale">Pre-sale </button>
-            <button class="mt-4 develop">Become a Blockcahain Developer </button>
+            <a href="/blockchain-development" class="mt-4 develop text-center">Become a Blockcahain Developer </a>
           </div>
        </div>
     </div>
     <div class="ad-section d-block d-md-none">
        <button class="mt-4 airdrop">Join Airdrop </button>
         <button class="mt-4 presale">Pre-sale </button>
-        <button class="mt-4 develop">Become a Blockcahain Developer </button>
+        <a href="/blockchain-development" class="mt-4 develop text-center">Become a Blockcahain Developer </a>
     </div>
     <div class="d-obj d-block d-md-none">
         <div><i class="fa fa-check ic"></i><p>One of the most profitable auto-staking and auto-compounding protocol</p></div>
@@ -38,61 +38,7 @@
         <div><i class="fa fa-check ic"></i><p>Interest paid every 30 minutes: 48 Times Daily!</p></div>
         <div><i class="fa fa-check ic"></i><p>Several projects and innovations from the learning space developed to revolutionize the WEB 3.0 and blockchain space</p></div>
     </div>
-    <div class="agu-aim">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="agulite-head">
-                  <span class="head">AGULITE</span>
-                  <div class="line"></div>
-                </div>
-                <div class="why">WHY CHOOSE AGULITE</div>  
-            </div>
-          </div>
-          <div class="row service-bg">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-                <div class="box-1">
-                    <div class="title">
-                      <span><i class="far fa-smile fn"></i></span>
-                      <span class="h-text">100% remote learning</span>
-                    </div>
-                    <p class="details"><b>Agulite</b> offers top notch virtual classroom experience, helping you connect with fellow learners on the go</p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-              <div class="box-1">
-                  <div class="title">
-                      <span><i class="far fa-address-book fn"></i></span>
-                      <span class="h-text">Access to professional skills</span>
-                    </div>
-                    <p class="details"><b>Agulite</b> offers top notch virtual classroom experience, helping you connect with fellow learners on the go</p>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-               <div class="box-1">
-                  <div class="title">
-                      <span><i class="fas fa-headset fa-lg fn"></i></span>
-                      <span class="h-text">Build Your Portfolio</span>
-                    </div>
-                    <p class="details"><b>Agulite</b> offers top notch virtual classroom experience, helping you connect with fellow learners on the go</p>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-              <div class="box-1">
-                  <div class="title">
-                      <span><i class="fas fa-user-friends fn"></i></span>
-                      <span class="h-text">Access to dedicated coordinator</span>
-                    </div>
-                    <p class="details"><b>Agulite</b> offers top notch virtual classroom experience, helping you connect with fellow learners on the go</p>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center mt-3">
-              <div>
-                <button @click="getStarted" class="get-start">Get Started </button>
-              </div>
-            </div>
-          </div>
-     </div>
-     <div class="staking-section">
+    <div class="staking-section">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                <h2 class="text-center header">Agulite Auto-Staking Protocol </h2>
@@ -106,16 +52,30 @@
                 <p class="power">powered by </p>
                 <p class="apy">102,024.80%</p>
                 <p class="fixed">Fixed Staking APY</p>
-                <button class="airdrop">AIRDROP</button>
-                <button class="whitepaper">WHITE PAPER </button>
+                <div class="adrp-buttons">
+                  <button class="airdrop">AIRDROP</button>
+                  <button class="whitepaper">WHITE PAPER </button>
+                </div>
+                
               </div>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
               <div class="stake-right">
                 <h2 class="abt-head">ABOUT</h2>
-                <p class="abt-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolore deserunt odio velit nam fuga. Temporibus non quam ipsa porro vero error tenetur sunt distinctio magnam accusantium, maxime, nesciunt esse! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cupiditate doloribus autem, eaque nulla ipsum hic voluptas, enim velit ab quaerat. Quisquam, accusamus aut necessitatibus porro laborum error odio officia?</p>
+                <p class="abt-info">
+                  A community for Web3 experts and blockchain developers that is driven by a decentralized financial asset. Agulite offers one of the industry's highest fixed APYs, paid every 30 minutes and simple buy-hold-earn system that grows your $AGULITE portfolio in wallet at a lightning fast pace.
+                </p>
               </div>
           </div>
+        </div>
+      </div>
+      <div class="reward">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="reward-text text-center">
+                    <h3>ʻʻ All Agulite holders are rewarded with automatic compound interest which is paid every 15 minutes and every 30 minutes. ʼʼ</h3>
+                </div>
+            </div>
         </div>
       </div>
       <div class="l-path">
@@ -133,30 +93,30 @@
                 <div class="box-1">
                     <div class="bicon"><i class="bx bx-world"></i></div>
                     <p class="title">
-                      Product Management
+                      Blockchain Development
                     </p>
-                    <p class="details">Understand role and functions responsible for the overall success of a product or project</p>
+                    <p class="details">Understand behind-the-scene functionality of blockchain platforms, smart contracts, DeFi and other based projects</p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <div class="box-1">
                 <div class="bicon"><i class="bx bx-slideshow"></i></div>
                   <div class="title">
-                    UI/UX Design
+                    Web 3 Frontend Software Engineering
                     </div>
-                    <p class="details">Learn how to use flexible and scalable design to portray users ideas to great product designs</p>
+                    <p class="details">Learn to create interactive websites with a blend of design, technology and programming that interacts seemlessly with blockchain networks</p>
               </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                <div class="box-1">
                    <div  class="bicon"><i class="bx bx-file"></i></div>
                   <div class="title">
-                      Graphics Design and Video animation
+                      Web 3 Mobile App Development
                     </div>
-                    <p class="details">earn the craft of creating visual content to communicate user messages in an excellent way</p>
+                    <p class="details">Use creativity, thinking and coding skills to integrate the mobile user experience and build mobile applications</p>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <div class="box-1">
                     <div class="bicon"><i class="bx bxl-dribbble"></i></div>
                    <div class="title">
@@ -164,8 +124,8 @@
                     </div>
                     <p class="details">earn the craft of creating visual content to communicate user messages in an excellent way</p>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            </div> -->
+            <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <div class="box-1">
                    <div class="bicon"><i class="bx bx-file"></i></div>
                    <div class="title">
@@ -173,8 +133,8 @@
                     </div>
                     <p class="details">earn the craft of creating visual content to communicate user messages in an excellent way</p>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            </div> -->
+            <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <div class="box-1">
                   <div  class="bicon"><i class="bx bx-tachometer"></i></div>
                    <div class="title">
@@ -182,10 +142,82 @@
                     </div>
                     <p class="details">earn the craft of creating visual content to communicate user messages in an excellent way</p>
               </div>
-            </div>
+            </div> -->
           </div>
     </div>
-     <div class="contact-section">
+    <div class="agu-aim">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="agulite-head">
+                  <span class="head">AGULITE</span>
+                  <div class="line"></div>
+                </div>
+                <div class="why">WHY CHOOSE AGULITE</div>  
+            </div>
+          </div>
+          <div class="row service-bg">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="box-1">
+                    <div class="title">
+                      <span><i class="far fa-smile fn"></i></span>
+                      <span class="h-text">Learning Space innovation increases the token's worth</span>
+                    </div>
+                    <p class="details">Learning-based innovation is the driving force of Agulite. The token's value will continue to rise as internal projects and R&D are aimed at enhancing the Web3 ecosystem.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="box-1">
+                  <div class="title">
+                      <span><i class="far fa-address-book fn"></i></span>
+                      <span class="h-text">Low Risk Exposure with the Agu Insurance Fund (AIF) </span>
+                    </div>
+                    <p class="details">The Agulite Insurance Fund holds 5% of all trading fees, which serves to sustain and back the staking benefits by sustaining price stability and greatly lowering downside risk..</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+               <div class="box-1">
+                  <div class="title">
+                      <span><i class="fas fa-headset fa-lg fn"></i></span>
+                      <span class="h-text">Easy and Safe Staking</span>
+                    </div>
+                    <p class="details"> The Agulite token is always kept in your wallet, therefore it is never given to a 3rd party or centralized authority. All you have to do is buy and hold since you will automatically receive rewards in your own wallet, eliminating the need for any complicated staking processes.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="box-1">
+                  <div class="title">
+                      <span><i class="fas fa-user-friends fn"></i></span>
+                      <span class="h-text">Interest Yield with Automatic Rapid Interest Payments</span>
+                    </div>
+                    <p class="details"> You will not be required to re-stake your tokens. Your interest yield is paid automatically every 30 minutes or 48 times each day and compounded in your wallet, ensuring that you never miss a payment. Making it one of the fastest auto-compounding protocol in crypto.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="box-1">
+                  <div class="title">
+                      <span><i class="fas fa-user-friends fn"></i></span>
+                      <span class="h-text">One of the Highest APY</span>
+                    </div>
+                    <p class="details">Agulite pays out at 110,000 % upwards of in the first year, which is unrivaled in the DeFi industry to date. After the first year, the interest rate drops over a predefined Longterm Interest Cycle period.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="box-1">
+                  <div class="title">
+                      <span><i class="fas fa-user-friends fn"></i></span>
+                      <span class="h-text">Auto Token Burn</span>
+                    </div>
+                    <p class="details">One of the exciting features of the Agulite Protocol is an automatic token burn system named “The Fire Pit” which prevents circulating supply getting out of hand and becoming unmanageable. The Fire Pit burns 2.5% out of all Agulite Token market sales and is burned in the same individual transaction.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center mt-3">
+              <!-- <div>
+                <button @click="getStarted" class="get-start">Get Started </button>
+              </div> -->
+            </div>
+          </div>
+     </div>
+     <!-- <div class="contact-section">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="contact-head">
@@ -221,6 +253,61 @@
         </div>
       </div>
          
+    </div> -->
+    <div class="how-section">
+      <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h1 class="text-center header">How It Works</h1>
+          </div>
+      </div>
+      <div class="row how-view">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 text-center">
+              <div class="box">
+                 <div class="log"> <img src="@/assets/agulogo.png" class="img-fluid"/></div>
+                 <div class="title">$AGU TOKEN</div>
+                 <p>$AGU is the native token which interest based rewards are paid.Every token holder automatically
+                   receives interest every 30 minutes just for holding $AGU token in their wallet </p> 
+              </div>
+          </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <div class="box">
+                  <div class="log"><img src="@/assets/Asset1.png" class="img-fluid"/></div>
+                  <div class="title">Auto-Compounding</div>
+                  <p>The Agulite Protocol pays every Agulite Token holder each and every 30 minutes or 48 times each day, making it one of the fastest auto-compounding
+                    protocol in crypto</p>
+              </div>
+          </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                <div class="box">
+                  <div class="log"><img src="@/assets/Asset3.png" class="img-fluid"/></div>
+                  <div class="title">Agu Insurance Fund</div>
+                  <p>The Agulite Insurance Fund holds 5% of all trading fees, which serves to sustain and back the staking
+                     benefits by sustaining price stability and greatly lowering downside risk
+                  </p>
+              </div>
+          </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                <div class="box">
+                    <div class="log"><img src="@/assets/Asset2.png" class="img-fluid"/></div>
+                    <div class="title">Easy and Safe Staking</div>
+                    <p>The Agulite token is always kept in your wallet, therefore it is never given to a third party
+                      or centralized authority.All you have to do is to buy and hold since you will automatically receive rewards
+                      in your own wallet, eliminating the need for any complicated staking processes
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                 <div class="box">
+                    <div class="log"><img src="@/assets/flame.png" width="60px" class="img-fluid"/></div>
+                    <div class="title">Fire Pit</div>
+                    <p>One of the exciting features of the Agulite-Protocol is an automatic token burn system
+                      named "The Fire Pit" which prevents circulating supply getting out of hand and becoming 
+                      unmanageable.The fire Pit burns 2.5% out of all Agulite Token market sales and is burned in
+                      the same individual transaction
+                    </p>
+                </div>
+          </div>
+      </div>
     </div>
     <div class="l-faq">
       <div class="row">
@@ -308,7 +395,25 @@
         </div>
       </div>
     </div>
-    <div class="contact-section">
+    <div class="community-section">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <h1 class="header">Keep In Touch </h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="community-social">
+                        <div><i class="fab fa-twitter ic"></i></div>
+                        <div><i class="fab fa-telegram ic"></i></div>
+                        <div><i class="fab fa-linkedin ic"></i></div>
+                        <div><i class="fab fa-reddit ic"></i></div>
+                        <div><i class="fab fa-instagram ic"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="contact-section">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="contact-head">
@@ -362,10 +467,8 @@
             </div>
         </div>
       </div>
-    </div>
-    <div>
-      <Footer />
-    </div>
+    </div> -->
+ 
    
   
 </template>

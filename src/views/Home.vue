@@ -311,7 +311,7 @@
     </div>
     <div class="l-faq">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="faq-head">
               <span class="head">F.A.Q</span>
               <div class="line"></div>
@@ -320,12 +320,12 @@
         </div>
       </div>
       <div class="row faq-bg-section">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-          <div class="faq-img">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <!-- <div class="faq-img">
             <img src="@/assets/faq-img.jpg" class="img-fluid"/>
-          </div>
+          </div> -->
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="faq-overview">
             <div class="info">
               Are you starting from scratch or looking to improve your skills? You can become a qualified designer, software developer, product manager, or business development in a few months, competenet enough work for a company or startup anywhere in the world.

@@ -17,7 +17,10 @@
         </div>
         <form class="form" @submit.prevent="continueWithCheckout()">
             <div class="form-group mt-2">
-                <input type="email" class="form-control form-control-lg p-2" v-model="email" required>
+                <input type="email" class="form-control form-control-lg p-2" v-model="email" placeholder="Email" required>
+            </div>
+            <div class="form-group mt-2">
+                <input type="password" class="form-control form-control-lg p-2" v-model="password" placeholder="Password"  required>
             </div>
             <div class="d-flex justify-content-center mt-2">
                 <button type="submit" class="btn btn-lg agulite-btn btn-block login p-2">{{ continueButtonText }}</button>
@@ -33,7 +36,7 @@ import { ref } from '@vue/reactivity'
 import { getErrorMessage } from '../utils'
 import {  computed, onMounted } from '@vue/runtime-core'
 import {  useRouter, useRoute } from 'vue-router'
-import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+import { getAuth, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword } from 'firebase/auth'
 
 export default {
     setup() {
@@ -43,6 +46,7 @@ export default {
 
         const amount = ref(0)
         const email = ref("")
+        const password = ref("")
         const loading = ref(false)
         const errorMessage = ref("")
 
@@ -89,20 +93,29 @@ export default {
         }
 
         const continueWithCheckout = async () => {
-            const data = {
-                email: email.value
+
+            const credentials = {
+                email: email.value,
+                password: password.value
             }
 
-            // TODO: Sign up or authenticate user
+            try{
+                const authUser = await createUserWithEmailAndPassword(getAuth(), credentials.email, credentials.password)
 
-            router.push({
-                name: 'checkout',
-                params: { email: data.email, amount: amount.value }
-            })
+                // TODO: Try verifying the user
+
+                router.push({
+                    name: 'checkout',
+                    params: { email: data.email, amount: amount.value }
+                })
+            } catch(error) {
+                console.log(error.message)
+            }
         }
 
         return {
             email,
+            password,
             loading,
             errorMessage,
             continueButtonText,

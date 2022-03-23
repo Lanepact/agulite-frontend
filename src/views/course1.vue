@@ -129,7 +129,7 @@
                                     <div class="squar1">
                                         <div class=""><i class="fas fa-book icon"></i></div>
                                         <div class="tit">NEED TO PREPARE ? </div>
-                                        <div class="info">Get started right now by taking the <a target="_blank" ref="https://www.youtube.com/watch?v=UB1O30fR-EE&list=PLFXomc0Vr7mS_6D7UMWri4NxTA5YUI279">HTML and JavaScript crash courses</a> and ref="https://www.youtube.com/watch?v=4l3bTDlT6ZI&list=PL4cUxeGkcC9i5yvDkJgt60vNVWffpblB7">JavaScript OPP</a> by a good friends Traversy media, amigoscode and the net ninja respectively.</div>
+                                        <div class="info">Get started right now by taking the <a target="_blank" href="https://www.youtube.com/watch?v=UB1O30fR-EE&list=PLFXomc0Vr7mS_6D7UMWri4NxTA5YUI279">HTML and JavaScript crash courses</a> and <a target="_blank" href="https://www.youtube.com/watch?v=4l3bTDlT6ZI&list=PL4cUxeGkcC9i5yvDkJgt60vNVWffpblB7">JavaScript OPP</a> by a good friends Traversy media, amigoscode and the net ninja respectively.</div>
                                     </div>
                                     <div class="squar2">
                                         <div class=""><i class="fas fa-book icon"></i></div>

@@ -72,7 +72,7 @@
                                 <hr class="mt-4 mb-4">
                                 <div class="action">
                                     <a href="#" class="hide">HIDE DETAILS </a>
-                                    <div class="duration">4 months to complete </div>
+                                    <div class="duration">5 months to complete </div>
                                 </div>
                             </div>
                         </div>
@@ -82,8 +82,17 @@
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
                                 <div class="knowledge">
                                     <div class="title">PREREQUESITE KNOWLEDGE</div>
-                                    <div class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus fuga ex sit amet consectetur adipisicing elit. Del t!</div>
-                                    <a href="#">See detailed requirements </a>
+                                    <div class="details">
+                                    <ol>
+                                        <li>- Fundamental understanding of core design patterns as well as an architectural paradigm. It is also necessary to be at ease when learning new programming language. </li>
+                                        <li>- Good to have knowledge of some Javascript frameworks, as well as some experience with Javascript web apps.</li>
+                                        <li>- Basic knowledge of the Javascript DOM model</li>
+                                        <li>- 1+ years of object-oriented programming experience</li>
+                                        <li>- Understanding of how to design a server and use the client-server model in software architecture</li>
+                                        <li>- Expertise in consuming data from a distant API</li>
+                                    </ol>
+                                    </div>
+                                   <--!  <a href="#">See detailed requirements </a> --> 
                                     <div class="programs">
                                         <div class="mil">
                                             <div class="title">Blockchain Fundamentals</div>

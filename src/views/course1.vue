@@ -50,9 +50,9 @@
                         </div> 
                         
                     </div>
-                    <div class="details" style="padding-top:100px;">
-                        <p>Next Corhots on the 4th April </p>
-                        <p>Enroll on or before 4th April and get access to groups and prep resources</p>
+                    <div class="details" style="padding-top:20px !important; font-weight:500 !important;">
+                        <p style="text-transform:uppercase !important;">NEXT Corhots on the 4th April </p>
+                        <p style="padding-top:5px !important;">Enroll on or before 4th April and get access to groups and prep resources</p>
                     </div>
                 </div>
             </div>

@@ -89,7 +89,6 @@
                                         <li>- 1+ years of object-oriented programming experience</li>
                                         <li>- Understanding of how to design a server and use the client-server model in software architecture</li>
                                         <li>- Expertise in consuming data from a distant API</li>
-                                    
                                     </div>
                                     <div class="programs">
                                         <div class="mil">

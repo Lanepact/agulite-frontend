@@ -26,7 +26,7 @@
             <div class="c-banner">
                 <div class="c-banner-info">
                     <div class="title">Become a Blockchain Developer</div>
-                    <div class="details">Demand for blockchain developers in skyrocketing in this program, you'll work with tthe Bitcoin and ethereum protocols, build projects and real wordd application. </div>
+                    <div class="details">The demand for blockchain developers is escalating. In this program, you'll work with the Ethereum and top blockchain protocols to create projects and real-world applications. </div>
                     <div class="action-buttons">
                         <button class="b1" @click="handleDownload">DOWNLOAD SYLLABUS </button>
                         <button class="b2" @click="moveUp">ENROLL NOW </button>
@@ -68,7 +68,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
                             <div class="full-info">
                                 <div class="title">Blockchain Developer </div>
-                                <div class="det">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rerum pariatur ea enim cum, aliquid neque voluptatibus nisi repudiandae fuga magni harum eaque eveniet vitae molestias hic eius sint excepturi perferendis alias fugiat ipsum dolor! Maxime fugiat quibusdam eveniet molestiae.</div>
+                                <div class="det">Discover the fundamentals of the blockchain platform. Create your own private blockchain and secure a digital asset with blockchain identity. Investigate the Ethereum platform and build your own decentralized application with Solidity and smart contracts. Create a comprehensive DAPP and ICO with Web3J, TruffleV4, MetaMask, Ganache, and Solidity ++.</div>
                                 <hr class="mt-4 mb-4">
                                 <div class="action">
                                     <a href="#" class="hide">HIDE DETAILS </a>

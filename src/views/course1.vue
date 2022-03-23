@@ -83,16 +83,15 @@
                                 <div class="knowledge">
                                     <div class="title">PREREQUESITE KNOWLEDGE</div>
                                     <div class="details">
-                                    <ol>
+                                    <ul>
                                         <li>- Fundamental understanding of core design patterns as well as an architectural paradigm. It is also necessary to be at ease when learning new programming language. </li>
                                         <li>- Good to have knowledge of some Javascript frameworks, as well as some experience with Javascript web apps.</li>
                                         <li>- Basic knowledge of the Javascript DOM model</li>
                                         <li>- 1+ years of object-oriented programming experience</li>
                                         <li>- Understanding of how to design a server and use the client-server model in software architecture</li>
                                         <li>- Expertise in consuming data from a distant API</li>
-                                    </ol>
+                                    </ul>
                                     </div>
-                                   <a href="#">See detailed requirements </a> 
                                     <div class="programs">
                                         <div class="mil">
                                             <div class="title">Blockchain Fundamentals</div>
@@ -132,7 +131,7 @@
                                     <div class="squar1">
                                         <div class=""><i class="fas fa-book icon"></i></div>
                                         <div class="tit">NEED TO PREPARE ? </div>
-                                        <div class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus atque sunt iusto temporibus, nemo veritatis debitis.</div>
+                                        <div class="info">Get started right now by taking the <a target="_blank" ref="https://www.youtube.com/watch?v=UB1O30fR-EE&list=PLFXomc0Vr7mS_6D7UMWri4NxTA5YUI279">HTML and JavaScript crash courses</a> and ref="https://www.youtube.com/watch?v=4l3bTDlT6ZI&list=PL4cUxeGkcC9i5yvDkJgt60vNVWffpblB7">JavaScript OPP</a> by a good friends Traversy media, amigoscode and the net ninja respectively.</div>
                                     </div>
                                     <div class="squar2">
                                         <div class=""><i class="fas fa-book icon"></i></div>

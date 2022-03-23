@@ -135,7 +135,7 @@
                                     </div>
                                     <div class="squar2">
                                         <div class=""><i class="fas fa-book icon"></i></div>
-                                        <div class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus atque sunt iusto temporibus, nemo veritatis debitis.</div>
+                                        <div class="info">Blockchain demand is exploding, and the market is predicted to increase at a rate of more than 65% each year.</div>
                                     </div>
                                 </div>
                             </div>

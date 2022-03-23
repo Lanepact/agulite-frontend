@@ -84,11 +84,11 @@
                                     <div class="title">PREREQUESITE KNOWLEDGE</div>
                                     <div class="details">
                                     <li>- Fundamental understanding of core design patterns as well as an architectural paradigm. It is also necessary to be at ease when learning new programming language. </li>
-                                        <li>- Good to have knowledge of some Javascript frameworks, as well as some experience with Javascript web apps.</li>
-                                        <li>- Basic knowledge of the Javascript DOM model</li>
-                                        <li>- 1+ years of object-oriented programming experience</li>
-                                        <li>- Understanding of how to design a server and use the client-server model in software architecture</li>
-                                        <li>- Expertise in consuming data from a distant API</li>
+                                        <li>Good to have knowledge of some Javascript frameworks, as well as some experience with Javascript web apps.</li>
+                                        <li>Basic knowledge of the Javascript DOM model</li>
+                                        <li>1+ years of object-oriented programming experience</li>
+                                        <li>Understanding of how to design a server and use the client-server model in software architecture</li>
+                                        <li>Expertise in consuming data from a distant API</li>
                                     </div>
                                     <div class="programs">
                                         <div class="mil">

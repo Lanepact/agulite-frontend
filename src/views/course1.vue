@@ -48,6 +48,10 @@
                             <span class="numb">42</span>
                             <span class="text">SEC</span>
                         </div>
+                        <div>
+                            <p>Next Corhots on the 4th April </p>
+                            <p>Enroll on or before 4th April and get access to groups and prep resources</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,7 +75,6 @@
                                 <div class="det">Discover the fundamentals of the blockchain platform. Create your own private blockchain and secure a digital asset with blockchain identity. Investigate the Ethereum platform and build your own decentralized application with Solidity and smart contracts. Create a comprehensive DAPP and ICO with Web3J, TruffleV4, MetaMask, Ganache, and Solidity ++.</div>
                                 <hr class="mt-4 mb-4">
                                 <div class="action">
-                                    <a href="#" class="hide">HIDE DETAILS </a>
                                     <div class="duration">5 months to complete </div>
                                 </div>
                             </div>
@@ -83,7 +86,7 @@
                                 <div class="knowledge">
                                     <div class="title">PREREQUESITE KNOWLEDGE</div>
                                     <div class="details">
-                                    <li>- Fundamental understanding of core design patterns as well as an architectural paradigm. It is also necessary to be at ease when learning new programming language. </li>
+                                        <li>Fundamental understanding of core design patterns as well as an architectural paradigm. It is also necessary to be at ease when learning new programming language. </li>
                                         <li>Good to have knowledge of some Javascript frameworks, as well as some experience with Javascript web apps.</li>
                                         <li>Basic knowledge of the Javascript DOM model</li>
                                         <li>1+ years of object-oriented programming experience</li>

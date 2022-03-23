@@ -51,8 +51,8 @@
                         
                     </div>
                     <div class="details" style="padding-top:20px !important; font-weight:500 !important;">
-                        <p style="text-transform:uppercase !important;">NEXT Corhots on the 4th April </p>
-                        <p style="padding-top:5px !important;">Enroll on or before 4th April and get access to groups and prep resources</p>
+                        <p style="text-transform:uppercase !important;">NEXT Corhots starts on the 4th April </p>
+                        <p style="padding-top:5px !important;"<b>Enroll now</b> to get access to groups and prep resources</p>
                     </div>
                 </div>
             </div>

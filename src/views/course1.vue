@@ -47,11 +47,12 @@
                         <div class="sec">
                             <span class="numb">42</span>
                             <span class="text">SEC</span>
-                        </div> <br>
-                        <div>
-                            <p>Next Corhots on the 4th April </p>
-                            <p>Enroll on or before 4th April and get access to groups and prep resources</p>
-                        </div>
+                        </div> 
+                        
+                    </div>
+                    <div>
+                        <p>Next Corhots on the 4th April </p>
+                        <p>Enroll on or before 4th April and get access to groups and prep resources</p>
                     </div>
                 </div>
             </div>

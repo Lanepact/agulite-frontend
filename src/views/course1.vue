@@ -50,7 +50,7 @@
                         </div> 
                         
                     </div>
-                    <div class="p3">
+                    <div class="p3 pt-4">
                         <p>Next Corhots on the 4th April </p>
                         <p>Enroll on or before 4th April and get access to groups and prep resources</p>
                     </div>

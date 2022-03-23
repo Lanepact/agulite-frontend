@@ -92,7 +92,7 @@
                                         <li>- Expertise in consuming data from a distant API</li>
                                     </ol>
                                     </div>
-                                   <--!  <a href="#">See detailed requirements </a> --> 
+                                   <a href="#">See detailed requirements </a> 
                                     <div class="programs">
                                         <div class="mil">
                                             <div class="title">Blockchain Fundamentals</div>

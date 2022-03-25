@@ -5,8 +5,8 @@
     </div>
      <div class="action-links">
        <a href="/blockchain-development">Developer</a>
-       <a :href="whitepaperlink" target="_blank">White Paper</a>
-       <a :href="expertlink" target="_blank">Expert</a>
+       <a href="https://agulite.gitbook.io/agulite" target="_blank">White Paper</a>
+       <a href="https://expert.agulite.com" target="_blank">Expert</a>
        <a href="#" @click="goToSocials">Community</a>
     </div>
   </div>
@@ -37,22 +37,22 @@ export default {
     props:['goToCommunity'],
     setup(props){
         const authentication = ref(false)
-         const navBarMobile = ref(null)
+        const navBarMobile = ref(null)
         
         const goToSocials = () => {
             props.goToCommunity()
         }
-     const openNavbar = () => {
-        //   sidebar.value.classList.add('bgred')
+        const openNavbar = () => {
+            //   sidebar.value.classList.add('bgred')
 
-        console.log(navBarMobile.value.style)
+            console.log(navBarMobile.value.style)
 
-        if(navBarMobile.value.style.left == "-250px"){
-            navBarMobile.value.style.left ="0px";
-        }else{
-            navBarMobile.value.style.left ="-250px";
+            if(navBarMobile.value.style.left == "-250px"){
+                navBarMobile.value.style.left ="0px";
+            }else{
+                navBarMobile.value.style.left ="-250px";
+            }
         }
-     }
 
      onMounted(() => {
          navBarMobile.value.classList.add('mobile-navbar')

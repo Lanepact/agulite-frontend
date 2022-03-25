@@ -50,7 +50,7 @@
                 <h2 class="head1">Innovation Driven</h2>
                 <h2 class="head2">Learning Space </h2>
                 <p class="power">powered by </p>
-                <p class="apy">102,024.80%</p>
+                <p class="apy">140,512.90%</p>
                 <p class="fixed">Fixed Staking APY</p>
                 <div class="adrp-buttons">
                   <button class="airdrop"><a class="text-decoration-none" href="https://t.me/AguliteAirdropBot" target="_blank">AIRDROP</a></button>

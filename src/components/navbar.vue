@@ -4,7 +4,7 @@
         <img src="@/assets/agulogo.png" class="img-fluid"/>
     </div>
      <div class="action-links">
-       <a href="/blockchain-development">Developer</a>
+       <a href="/blockchain-development" target="_blank">Developer</a>
        <a href="https://agulite.gitbook.io/agulite" target="_blank">White Paper</a>
        <a href="https://expert.agulite.com" target="_blank">Expert</a>
        <a href="#" @click="goToSocials">Community</a>
@@ -20,7 +20,7 @@
             </svg>
        </div>
         <div ref="navBarMobile" class="mobile-navbar d-block d-lg-none" id="mobile-navbar">
-             <a href="/blockchain-development">Developer</a>
+             <a href="/blockchain-development" target="_blank">Developer</a>
             <a href="https://agulite.gitbook.io/agulite" target="_blank">White Paper</a>
             <a href="https://expert.agulite.com" target="_blank">Expert</a>
             <a href="#" @click="goToSocials">Community</a>

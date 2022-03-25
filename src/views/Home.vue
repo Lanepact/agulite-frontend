@@ -20,7 +20,7 @@
              <div class="logo">
               <img src="@/assets/agulogowhite.png" class="img-fluid"/>
             </div>
-            <button class="mt-4 airdrop">Join Airdrop </button>
+            <button class="mt-4 airdrop"><a class="text-decoration-none" href="https://t.me/AguliteAirdropBot" target="_blank">Join Airdrop</a> </button>
             <button class="mt-4 presale">Pre-sale </button>
             <a href="/blockchain-development" class="mt-4 develop text-center">Become a Blockcahain Developer </a>
           </div>
@@ -53,8 +53,8 @@
                 <p class="apy">102,024.80%</p>
                 <p class="fixed">Fixed Staking APY</p>
                 <div class="adrp-buttons">
-                  <button class="airdrop">AIRDROP</button>
-                  <button class="whitepaper">WHITE PAPER </button>
+                  <button class="airdrop"><a class="text-decoration-none" href="https://t.me/AguliteAirdropBot" target="_blank">AIRDROP</a></button>
+                  <button class="whitepaper"><a class="text-decoration-none" href="https://agulite.gitbook.io/agulite" target="_blank">WHITE PAPER</a> </button>
                 </div>
                 
               </div>

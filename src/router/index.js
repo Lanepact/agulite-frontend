@@ -8,7 +8,7 @@ import Contact from '../views/Contact.vue'
 import Course from '../views/Course.vue'
 import course from '../views/course1.vue'
 import Signin from '../views/authentication/Signin.vue'
-import Signup from '../views/authentication/Signup.vue'
+// import Signup from '../views/authentication/Signup.vue'
 import Dashboard from '../views/dashboard/Userdashboard.vue'
 import Connection from '../views/dashboard/connection.vue'
 import Profile from '../views/dashboard/Profile.vue'
@@ -25,8 +25,8 @@ import CordinatorStudents from '../views/CordinatorDashboard/Students.vue'
 import CordinatorCourses from '../views/CordinatorDashboard/CordinatorCourses.vue'
 import CordinatorConnection from '../views/CordinatorDashboard/Connection.vue'
 import Details from '../views/Details.vue'
-import PreCheckout from '../views/preCheckout.vue'
-import Checkout from '../views/checkout.vue'
+import Signup from '../views/Signup.vue'
+import Confirmation from '../views/confirmation.vue'
 
 const handleUserAuthGuard = async (to, from, next) => {
   let agulite = await useAgulite().getAgulite()
@@ -72,16 +72,6 @@ const routes = [
     component: course
   },
   {
-    path: '/pre-checkout',
-    name: 'preCheckout',
-    component: PreCheckout
-  },
-  {
-    path: '/checkout',
-    name: 'checkout',
-    component: Checkout
-  },
-  {
     path: '/contact',
     name: 'Contact',
     component: Contact
@@ -101,6 +91,11 @@ const routes = [
     path: '/signup',
     name: 'Signup',
     component: Signup
+  },
+  {
+    path: '/confirmation',
+    name: 'Confirmation',
+    component: Confirmation
   },
   {
     path: '/user/dashboard',

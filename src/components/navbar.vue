@@ -21,8 +21,8 @@
        </div>
         <div ref="navBarMobile" class="mobile-navbar d-block d-lg-none" id="mobile-navbar">
              <a href="/blockchain-development">Developer</a>
-            <a :href="whitepaperlink" target="_blank">White Paper</a>
-            <a :href="expertlink" target="_blank">Expert</a>
+            <a href="https://agulite.gitbook.io/agulite" target="_blank">White Paper</a>
+            <a href="https://expert.agulite.com" target="_blank">Expert</a>
             <a href="#" @click="goToSocials">Community</a>
         </div>
 
@@ -38,8 +38,6 @@ export default {
     setup(props){
         const authentication = ref(false)
          const navBarMobile = ref(null)
-         const whitepaperlink = ref("https://agulite.gitbook.io/agulite")
-         const expertlink = ref("https://expert.agulite.com")
         
         const goToSocials = () => {
             props.goToCommunity()
@@ -72,9 +70,7 @@ export default {
       
       return{
           navBarMobile,
-          openNavbar,
-          whitepaperlink,
-          expertlink,
+          openNavbar, 
           goToSocials
       }
     }

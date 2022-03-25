@@ -1,22 +1,9 @@
 <template>
+<navbar :goToCommunity="goToCommunity"/>
 <div class="advert">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="text-center advert-bg">Welcome to Agulite! Claim your personal discount now. Explore programs and use within 10days. <a href="#" @click="moveUp">Learn more</a></div>
-        </div>
-    </div>
-</div>
-<div class="navc">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="cr-nav">
-                <div class="logo">
-                    <img src="@/assets/agulogo.png" class="img-fluid" />
-                </div>
-                <div class="action-but">
-                    <button @click="moveUp">Get Started</button>
-                </div>
-            </div>
         </div>
     </div>
 </div>
@@ -340,9 +327,9 @@
                                     <div class="access">MONTHLY ACCESS</div>
                                     <div class="pay">Pay as you go</div>
                                     <hr>
-                                    <div class="price-1">&#8358;74,999</div>
+                                    <div class="price-1">$131.99</div>
                                     <div class="per-m">per month</div>
-                                    <button @click="goToPreCheckout(1)">ENROLL NOW</button>
+                                    <button @click="goToSignUp(1)">ENROLL NOW</button>
                                     <div class="bene">
                                         <i class="fa fa-check i"></i>
                                         <span>Maximum flexibility to learn at your own pace</span>
@@ -359,13 +346,13 @@
                                         <div class="pay">Pay upfront and save an extra 10%</div>
                                         <hr>
                                         <div class="price-1">
-                                            &#8358;337,495
+                                            $593.96
                                             <strike class="text-danger">
-                                                <span class="cancelled"> &#8358;375,995</span>
+                                                <span class="cancelled"> $659.95</span>
                                             </strike>
                                         </div>
                                         <div class="per-m">per month</div>
-                                        <button @click="goToPreCheckout(2)">ENROLL NOW</button>
+                                        <button @click="goToSignUp(2)">ENROLL NOW</button>
                                         <div class="bene">
                                             <i class="fa fa-check"></i>
                                             <span>Maximum flexibility to learn at your own pace</span>
@@ -428,7 +415,31 @@
             <div class="m-but"><button type="submit" class="btn btn-primary">Download Syllabus</button></div>
         </form>
     </Modal>
-    <Footer />
+    <div class="mt-4 community-section" ref="community">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <h1 class="header">Keep In Touch </h1>
+            </div>
+            <div class="row mb-4">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="community-social">
+                        <div><a href="https://t.me/agulite_community" target="_blank"><i class="fab fa-telegram ic"></i></a></div>
+                        <div><a href="https://twitter.com/officialagulite"><i class="fab fa-twitter ic"></i></a></div>
+                        <div><a href="https://www.linkedin.com/company/agulite"><i class="fab fa-linkedin ic"></i></a></div>
+                        <div><a href="https://www.reddit.com/r/AGUITE/"><i class="fab fa-reddit ic"></i></a></div>
+                        <div><a href="https://www.instagram.com/official_agulite/"><i class="fab fa-instagram ic"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fter">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <h4 class="p-5 h6">Copyright &copy;2022</h4>
+            </div>
+        </div>
+    </div>
 </div>
 </template>
 
@@ -436,16 +447,18 @@
 import Modal from '../components/modal.vue'
 import { onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import Footer from '../components/footer.vue'
+import Navbar from '../components/navbar.vue'
 import { useAgulite } from '../composables'
 import axios from 'axios'
 
 export default {
     components: {
-        Modal,
-        Footer,
+        Navbar,
+        Modal
     },
     setup() {
+        const { getAgulite, saveSyllabusViewer } = useAgulite()
+
         const isOpen = ref(false)
 
         const router = useRouter()
@@ -454,12 +467,16 @@ export default {
         const firstName = ref('')
         const email = ref('')
 
+        const goToCommunity = () => {
+            window.scrollTo(0, community.value.getBoundingClientRect().top)
+        }
+
         const moveUp = () => {
             window.scrollTo(0, payment.value.getBoundingClientRect().top)
         }
 
         const handleDownload = async () => {
-            const user = await useAgulite().getAgulite()
+            const user = await getAgulite()
 
             if(user){
                 download()
@@ -474,31 +491,26 @@ export default {
                 email: email.value
             }
 
-            console.log(data)
+            try {
+                await saveSyllabusViewer(data)
+                download()
+            } catch(error) {
+                console.log(error.message)
+            }
 
-            download()
         }
 
         const download = () => {
             window.location.href = 'https://www.orimi.com/pdf-test.pdf'
         }
 
-        const goToPreCheckout = async (id = 1) => {
-            let amount = id === 1 ? 74999 : 337495
+        const goToSignUp = async (id = 1) => {
+            let amount = id === 1 ? 131.99 : 593.96
 
-            const user = await useAgulite().getAgulite()
-
-            if(user){
-                router.push({
-                    name: 'checkout',
-                    params: { email: user.email, amount: amount }
-                })
-            } else {
-                router.push({
-                    name: 'preCheckout',
-                    params: { amount: amount }
-                })
-            }
+            router.push({
+                name: 'Signup',
+                params: { amount: amount }
+            })
             
         }
 
@@ -507,11 +519,12 @@ export default {
             firstName,
             email,
             payment,
+            goToCommunity,
             handleDownload,
             submitDownloadForm,
             download,
             moveUp,
-            goToPreCheckout
+            goToSignUp
         }
     }
 }

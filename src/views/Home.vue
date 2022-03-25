@@ -416,7 +416,7 @@
     <div class="fter">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                <h4 class="p-5">Copyright &copy;2022</h4>
+                <h4 class="p-5 h6">Copyright &copy;2022</h4>
             </div>
         </div>
     </div>

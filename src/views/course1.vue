@@ -20,19 +20,19 @@
                     </div>
                     <div class="countdown">
                         <div class="day">
-                            <span class="numb">06</span>
+                            <span class="numb">{{ countdown.days }}</span>
                             <span class="text">DAYS</span>
                         </div>
                         <div class="hrs">
-                            <span class="numb">10</span>
+                            <span class="numb">{{ countdown.hours }}</span>
                             <span class="text">HRS</span>
                         </div>
                         <div class="min">
-                            <span class="numb">49</span>
+                            <span class="numb">{{ countdown.minutes }}</span>
                             <span class="text">MIN</span>
                         </div>
                         <div class="sec">
-                            <span class="numb">42</span>
+                            <span class="numb">{{ countdown.seconds }}</span>
                             <span class="text">SEC</span>
                         </div> 
                         
@@ -469,6 +469,10 @@ export default {
     setup() {
         const { getAgulite, saveSyllabusViewer } = useAgulite()
 
+        const countdown = ref({
+            days: 0, hours: 0, minutes: 0, seconds: 0
+        })
+
         const isOpen = ref(false)
 
         const router = useRouter()
@@ -524,7 +528,42 @@ export default {
             
         }
 
+        const initCountDown = (timeAmount) => {
+
+            const component = (x, v) => {
+                return Math.floor(x / v);
+            }
+
+            setInterval(function () {
+                timeAmount--
+
+                let days = component(timeAmount, 24 * 60 * 60),
+                    hours = component(timeAmount, 60 * 60) % 24,
+                    minutes = component(timeAmount, 60) % 60,
+                    seconds = component(timeAmount, 1) % 60
+
+                countdown.value = { days, hours, minutes, seconds }
+
+                if (timeAmount <= 0) {
+                    window.location.reload()
+                }
+
+            }, 1000)
+        }
+
+        onMounted(() => {
+            let currentTime = Math.round(Date.now() / 1000)
+            let startTime = 1649048400 // 06:00:00 AM, April 4th, 2022
+            let timeLeft = startTime - currentTime
+
+            if(timeLeft > 0){
+                initCountDown(timeLeft)
+            }
+            
+        })
+
         return {
+            countdown,
             isOpen,
             firstName,
             email,

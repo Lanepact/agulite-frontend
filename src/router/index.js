@@ -27,6 +27,7 @@ import CordinatorConnection from '../views/CordinatorDashboard/Connection.vue'
 import Details from '../views/Details.vue'
 import Signup from '../views/Signup.vue'
 import Confirmation from '../views/confirmation.vue'
+import Presale from '../views/presale.vue'
 
 const handleUserAuthGuard = async (to, from, next) => {
   let agulite = await useAgulite().getAgulite()
@@ -96,6 +97,11 @@ const routes = [
     path: '/confirmation',
     name: 'Confirmation',
     component: Confirmation
+  },
+  {
+    path: '/presale',
+    name: 'Presale',
+    component: Presale
   },
   {
     path: '/user/dashboard',

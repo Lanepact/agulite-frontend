@@ -22,14 +22,14 @@
             </div>
             <button class="mt-4 airdrop"><a class="text-decoration-none text-white" href="https://t.me/AguliteAirdropBot" target="_blank">Join Airdrop</a> </button>
             <button class="mt-4 presale">Pre-sale </button>
-            <a href="/blockchain-development" class="mt-4 develop text-center">Become a Blockcahain Developer </a>
+            <a target="_blank" href="/blockchain-development" class="mt-4 develop text-center">Become a Blockcahain Developer </a>
           </div>
        </div>
     </div>
     <div class="ad-section d-block d-md-none">
        <button class="mt-4 airdrop">Join Airdrop </button>
         <button class="mt-4 presale">Pre-sale </button>
-        <a href="/blockchain-development" class="mt-4 develop text-center">Become a Blockcahain Developer </a>
+        <a target="_blank" href="/blockchain-development" class="mt-4 develop text-center">Become a Blockcahain Developer </a>
     </div>
     <div class="d-obj d-block d-md-none">
         <div><i class="fa fa-check ic"></i><p>One of the most profitable auto-staking and auto-compounding protocol</p></div>

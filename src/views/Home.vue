@@ -7,7 +7,7 @@
        </div>
        <div class="banner-text">
          <div class="banner-left">
-           <h1>The World's Leading Web 3.0 and Blockchain Development Learning Space</h1>
+           <h1>A Leading Web 3.0 and Blockchain Development Learning Space</h1>
            <div class="b-details">
              <div><i class="fa fa-check ic"></i><p>One of the most profitable auto-staking and auto-compounding protocol</p></div>
              <div><i class="fa fa-check ic"></i><p>The next generation of creators, guided by a community of blockchain development experts</p></div>

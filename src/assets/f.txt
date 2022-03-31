@@ -1,4 +1,20 @@
 <template>
+
+
+     <!-- <div class="ad-section d-block d-md-none">
+       <button class="mt-4 airdrop"><a class="text-decoration-none text-white" href="https://t.me/AguliteAirdropBot" target="_blank">Join Airdrop </a></button>
+        <button class="mt-4 presale"><a class="text-decoration-none text-white" href="/presale" target="_blank">Pre-sale </a></button>
+        <a target="_blank" href="/blockchain-development" class="mt-4 develop text-center">Become a Blockcahain Developer </a>
+    </div>
+    <div class="d-obj d-block d-md-none">
+        <div><i class="fa fa-check ic"></i><p>One of the most profitable auto-staking and auto-compounding protocol</p></div>
+        <div><i class="fa fa-check ic"></i><p>The next generation of creators, guided by a community of blockchain development experts</p></div>
+        <div><i class="fa fa-check ic"></i><p>Agulite having one of the highest APYs in crypto</p></div>
+        <div><i class="fa fa-check ic"></i><p>Interest paid every 30 minutes: 48 Times Daily!</p></div>
+        <div><i class="fa fa-check ic"></i><p>Several projects and innovations from the learning space developed to revolutionize the WEB 3.0 and blockchain space</p></div>
+    </div> -->
+
+
     <div class="mobile-dashboard-section">
         <div class="mobile-nav d-flex d-lg-none">
               <div class="logo">

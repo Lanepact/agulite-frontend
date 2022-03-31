@@ -2,9 +2,7 @@
   <div>
     <navbar :goToCommunity="goToCommunity" />
   </div>
-    <div class="h-banner">
-       <div class="bg-overlay">
-       </div>
+    <div class="h-banner d-none d-lg-block">
        <div class="banner-text">
          <div class="banner-left">
            <h1>A Leading Web 3.0 and Blockchain Development Learning Space</h1>
@@ -26,17 +24,28 @@
           </div>
        </div>
     </div>
-    <div class="ad-section d-block d-md-none">
-       <button class="mt-4 airdrop"><a class="text-decoration-none text-white" href="https://t.me/AguliteAirdropBot" target="_blank">Join Airdrop </a></button>
-        <button class="mt-4 presale"><a class="text-decoration-none text-white" href="/presale" target="_blank">Pre-sale </a></button>
-        <a target="_blank" href="/blockchain-development" class="mt-4 develop text-center">Become a Blockcahain Developer </a>
+    <div class="mobile-banner d-block d-lg-none">
+        <h1 class="header">A Leading Web 3.0 and Blockchain Development Learning Space</h1>
+        <div class="details">
+          <div><i class="fa fa-check ic"></i><p>One of the most profitable auto-staking and auto-compounding protocol</p></div>
+          <div><i class="fa fa-check ic"></i><p>The next generation of creators, guided by a community of blockchain development experts</p></div>
+          <div><i class="fa fa-check ic"></i><p>Agulite having one of the highest APYs in crypto</p></div>
+          <div><i class="fa fa-check ic"></i><p>Interest paid every 30 minutes: 48 Times Daily!</p></div>
+          <div><i class="fa fa-check ic"></i><p>Several projects and innovations from the learning space developed to revolutionize the WEB 3.0 and blockchain space</p></div>
+        </div>
     </div>
-    <div class="d-obj d-block d-md-none">
-        <div><i class="fa fa-check ic"></i><p>One of the most profitable auto-staking and auto-compounding protocol</p></div>
-        <div><i class="fa fa-check ic"></i><p>The next generation of creators, guided by a community of blockchain development experts</p></div>
-        <div><i class="fa fa-check ic"></i><p>Agulite having one of the highest APYs in crypto</p></div>
-        <div><i class="fa fa-check ic"></i><p>Interest paid every 30 minutes: 48 Times Daily!</p></div>
-        <div><i class="fa fa-check ic"></i><p>Several projects and innovations from the learning space developed to revolutionize the WEB 3.0 and blockchain space</p></div>
+  
+    <div class="row d-block d-md-flex d-lg-none ad-sect">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-4">
+          <router-link to="https://t.me/AguliteAirdropBot" target="_blank"><button class="airdrop">Join Airdrop</button></router-link>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-4">
+         <router-link to="/presale" target="_blank"><button class="presale">Pre-sale</button></router-link>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-4">
+           <router-link to="/blockchain-development" target="_blank"><button class="develop">Blockchain Development</button></router-link>
+          
+      </div>
     </div>
     <div class="staking-section">
         <div class="row">
@@ -400,16 +409,22 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                 <h1 class="header">Keep In Touch </h1>
             </div>
-            <div class="row mb-4">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="community-social">
-                        <div><a href="https://t.me/agulite_community" target="_blank"><i class="fab fa-telegram ic"></i></a></div>
-                        <div><a href="https://twitter.com/officialagulite"><i class="fab fa-twitter ic"></i></a></div>
-                        <div><a href="https://www.linkedin.com/company/agulite"><i class="fab fa-linkedin ic"></i></a></div>
-                        <div><a href="https://www.reddit.com/r/AGUITE/"><i class="fab fa-reddit ic"></i></a></div>
-                        <div><a href="https://www.instagram.com/official_agulite/"><i class="fab fa-instagram ic"></i></a></div>
-                    </div>
+            <div class="row mb-4 text-center community-social">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                    <div><a href="https://t.me/agulite_community" target="_blank"><i class="fab fa-telegram ic"></i></a></div>
                 </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                    <div><a href="https://twitter.com/officialagulite"><i class="fab fa-twitter ic"></i></a></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">  
+                    <div><a href="https://www.linkedin.com/company/agulite"><i class="fab fa-linkedin ic"></i></a></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                    <div><a href="https://www.reddit.com/r/AGUITE/"><i class="fab fa-reddit ic"></i></a></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                    <div><a href="https://www.instagram.com/official_agulite/"><i class="fab fa-instagram ic"></i></a></div>
+                </div> 
             </div>
         </div>
     </div>

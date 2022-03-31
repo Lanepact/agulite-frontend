@@ -38,7 +38,7 @@
                         
                     </div>
                     <div class="details" style="padding-top:20px !important; font-weight:500 !important;">
-                        <p style="text-transform:uppercase !important;">NEXT Corhots starts on the 4th April </p>
+                        <p style="text-transform:uppercase !important;">NEXT Corhots starts on the 11th April </p>
                         <p style="padding-top:5px !important;"><b>Enroll now</b> to get access to workspace and prep resources</p>
                     </div>
                 </div>
@@ -84,33 +84,27 @@
                                     <div class="programs">
                                         <div class="mil">
                                             <div class="title">Blockchain Fundamentals</div>
-                                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur similique eum harum. Id, dignissimos! Velit earum blanditiis quasi eligendi libero.</div>
-                                            <div class="create"><i class="fa fa-list"></i> <span> CREATE YOUR PRIVATE BLOCKCHAIN </span></div>
+                                            <div class="text">Create your own private blockchain to learn the fundamentals of the blockchain data paradigm.</div>
+                                            <div class="create"><i class="fa fa-list"></i> <span style="text-transform:uppercase !important;"> PROJECT 1: CREATE YOUR PRIVATE BLOCKCHAIN </span></div>
                                             <div class="circ"></div>
                                         </div>
                                         <div class="mil">
-                                            <div class="title">Blockchain Fundamentals</div>
-                                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur similique eum harum. Id, dignissimos! Velit earum blanditiis quasi eligendi libero.</div>
-                                            <div class="create"><i class="fa fa-list"></i> <span> CREATE YOUR PRIVATE BLOCKCHAIN </span></div>
+                                            <div class="title">Ethereum Smart Contracts, Tokens and Dapps</div>
+                                            <div class="text">Smart contracts on the Ethereum network will allow you to advance your blockchain competence to the second generation of blockchain services.</div>
+                                            <div class="create"><i class="fa fa-list"></i> <span style="text-transform:uppercase !important;">PROJECT 2: Design, develop and deploy a smart contract for a decentralized Lottery </span></div>
                                             <div class="circ2"></div>
                                         </div>
                                         <div class="mil">
-                                            <div class="title">Blockchain Fundamentals</div>
-                                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur similique eum harum. Id, dignissimos! Velit earum blanditiis quasi eligendi libero.</div>
-                                            <div class="create"><i class="fa fa-list"></i> <span> CREATE YOUR PRIVATE BLOCKCHAIN </span></div>
+                                            <div class="title">Blockchain Architecture</div>
+                                            <div class="text">Learn about blockchain architecture as well as advanced topics like privacy, security, and decentralized file management.</div>
+                                            <div class="create"><i class="fa fa-list"></i> <span style="text-transform:uppercase !important;"> PROJECT 3: Design, develop and deploy a smart contract for a decentralized Auction Platform </span></div>
                                             <div class="circ3"></div>
                                         </div>
                                         <div class="mil">
-                                            <div class="title">Blockchain Fundamentals</div>
-                                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur similique eum harum. Id, dignissimos! Velit earum blanditiis quasi eligendi libero.</div>
-                                            <div class="create"><i class="fa fa-list"></i> <span> CREATE YOUR PRIVATE BLOCKCHAIN </span></div>
+                                            <div class="title">Dapp with autonomous smart contracts and orcles</div>
+                                            <div class="text">Develop a decentralized application (Dapp) that will take activities depending on external triggers and manage payments to expand your blockchain skill set.</div>
+                                            <div class="create"><i class="fa fa-list"></i> <span style="text-transform:uppercase !important;"> PROJECT 4: Design, create and deploy a fully-compliant ERC20 Token and launch an Initial Coin Offering (ICO)</span></div>
                                             <div class="circ4"></div>
-                                        </div>
-                                        <div class="mil">
-                                            <div class="title">Blockchain Fundamentals</div>
-                                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur similique eum harum. Id, dignissimos! Velit earum blanditiis quasi eligendi libero.</div>
-                                            <div class="create"><i class="fa fa-list"></i> <span> CREATE YOUR PRIVATE BLOCKCHAIN </span></div>
-                                            <div class="circ5"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -145,11 +139,11 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="pr-deet">
                                 <div class="pr-image">
-                                    <img src="@/assets/person.png" class="img-fluid" />
+                                    <img src="@/assets/syllabus-image2.jpg" class="img-fluid" />
                                 </div>
                                 <div class="pr-in">
-                                    <h3>Real world projects from industry experts</h3>
-                                    <p>Lorem ipsum dolor sit, numquam pariatur dolorum incidunt saepe deleniti id, beatae ipsa! Quo inventore adipisci similique temporibus aliquam consequatur nihil. Sunt.</p>
+                                    <h3>Estimated Time</h3>
+                                    <p>5 Months at 10 hrs/week</p>
                                     <div class="it"><i class="far fa-clock i"></i></div>
                                 </div>
                             </div>
@@ -157,11 +151,11 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="pr-deet">
                                 <div class="pr-image">
-                                    <img src="@/assets/person-2.png" class="img-fluid" />
+                                    <img src="@/assets/syllabus-image1.jpg" class="img-fluid" />
                                 </div>
                                 <div class="pr-in">
-                                    <h3>Real world projects from industry experts</h3>
-                                    <p>Lorem ipsum dolor sit, pariatur dolorum incidunt saepe deleniti id, beatae ipsa! Quo inventore adipisci similique temporibus aliquam consequatur nihil. Sunt.</p>
+                                    <h3>Community of Practice</h3>
+                                    <p>Be part of a thriving community driving innovation in the Web 3.0 and Blockchain Space </p>
                                     <div class="it"><i class="far fa-clock i"></i></div>
                                 </div>
                             </div>
@@ -169,11 +163,11 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="pr-deet">
                                 <div class="pr-image">
-                                    <img src="@/assets/person.png" class="img-fluid" />
+                                    <img src="@/assets/syllabus-image4.jpg" class="img-fluid" />
                                 </div>
                                 <div class="pr-in">
-                                    <h3>Real world projects from industry experts</h3>
-                                    <p>Lorem ipsum dolor sit, numquam pariatur dolorum incidunt saepe deleniti id, beatae ipsa! Quo inventore adipisci similique temporibus aliquam consequatur nihil. Sunt.</p>
+                                    <h3>Realtime Expert Guide</h3>
+                                    <p>Direct access to a blockchain development expert</p>
                                     <div class="it"><i class="far fa-clock i"></i></div>
                                 </div>
                             </div>
@@ -181,11 +175,11 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="pr-deet">
                                 <div class="pr-image">
-                                    <img src="@/assets/person-3.png" class="img-fluid" />
+                                    <img src="@/assets/syllabus-image9.jpg" class="img-fluid" />
                                 </div>
                                 <div class="pr-in">
-                                    <h3>Real world projects from industry experts</h3>
-                                    <p>Lorem ipsum dolor sit, numquam pariatur dolorum incidunt saepe deleniti id, beatae ipsa! Quo inventore adipisci similique temporibus aliquam consequatur nihil. Sunt.</p>
+                                    <h3>Flexible Project-Driven Learning Path</h3>
+                                    <p>Learn on your time, as long as you complete weekly activities</p>
                                     <div class="it"><i class="far fa-clock i"></i></div>
                                 </div>
                             </div>
@@ -196,7 +190,7 @@
         </div>
     </div>
 </div>
-<div class="prog-table-section">
+<!-- <div class="prog-table-section">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="prog-table">
@@ -322,7 +316,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <div class="pricing-section" ref="payment">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -342,11 +336,7 @@
                                     <button @click="goToSignUp(1)">ENROLL NOW</button>
                                     <div class="bene">
                                         <i class="fa fa-check i"></i>
-                                        <span>Maximum flexibility to learn at your own pace</span>
-                                    </div>
-                                    <div class="bene">
-                                        <i class="fa fa-check i"></i>
-                                        <span>Maximum flexibility to learn at your own pace</span>
+                                        <span>Maximum flexibility to learn at your own pace as long as you achieve weekly activities</span>
                                     </div>
                                 </div>
                                 <div class="price-info2">
@@ -363,18 +353,6 @@
                                         </div>
                                         <div class="per-m">per month</div>
                                         <button @click="goToSignUp(2)">ENROLL NOW</button>
-                                        <div class="bene">
-                                            <i class="fa fa-check"></i>
-                                            <span>Maximum flexibility to learn at your own pace</span>
-                                        </div>
-                                        <div class="bene">
-                                            <i class="fa fa-check"></i>
-                                            <span>Maximum flexibility to learn at your own pace</span>
-                                        </div>
-                                        <div class="bene">
-                                            <i class="fa fa-check"></i>
-                                            <span>Maximum flexibility to learn at your own pace</span>
-                                        </div>
                                         <div class="bene">
                                             <i class="fa fa-check"></i>
                                             <span>Maximum flexibility to learn at your own pace</span>
@@ -553,7 +531,7 @@ export default {
 
         onMounted(() => {
             let currentTime = Math.round(Date.now() / 1000)
-            let startTime = 1649048400 // 06:00:00 AM, April 4th, 2022
+            let startTime = 1649656800 // 06:00:00 AM, April 11th, 2022
             let timeLeft = startTime - currentTime
 
             if(timeLeft > 0){

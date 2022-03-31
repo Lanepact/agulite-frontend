@@ -84,37 +84,27 @@
                                     <div class="programs">
                                         <div class="mil">
                                             <div class="title">Blockchain Fundamentals</div>
-                                            <div class="text">Create your own private blockchain to learn the fundamentals of the blockchain data paradigm.
-.</div>
-                                            <div class="create"><i class="fa fa-list"></i> <span> PROJECT 1: CREATE YOUR PRIVATE BLOCKCHAIN </span></div>
+                                            <div class="text">Create your own private blockchain to learn the fundamentals of the blockchain data paradigm.</div>
+                                            <div class="create"><i class="fa fa-list"></i> <span style="text-transform:uppercase !important;"> PROJECT 1: CREATE YOUR PRIVATE BLOCKCHAIN </span></div>
                                             <div class="circ"></div>
                                         </div>
                                         <div class="mil">
-                                            <div class="title">Ethereum Smart Contracts,
-Tokens and Dapps</div>
+                                            <div class="title">Ethereum Smart Contracts, Tokens and Dapps</div>
                                             <div class="text">Smart contracts on the Ethereum network will allow you to advance your blockchain competence to the second generation of blockchain services.</div>
-                                            <div class="create"><i class="fa fa-list"></i> <span>PROJECT 2: Design, develop and deploy a smart contract
-for a decentralized Lottery
- </span></div>
+                                            <div class="create"><i class="fa fa-list"></i> <span style="text-transform:uppercase !important;">PROJECT 2: Design, develop and deploy a smart contract for a decentralized Lottery </span></div>
                                             <div class="circ2"></div>
                                         </div>
                                         <div class="mil">
-                                            <div class="title">Blockchain Fundamentals</div>
-                                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur similique eum harum. Id, dignissimos! Velit earum blanditiis quasi eligendi libero.</div>
-                                            <div class="create"><i class="fa fa-list"></i> <span> CREATE YOUR PRIVATE BLOCKCHAIN </span></div>
+                                            <div class="title">Blockchain Architecture</div>
+                                            <div class="text">Learn about blockchain architecture as well as advanced topics like privacy, security, and decentralized file management.</div>
+                                            <div class="create"><i class="fa fa-list"></i> <span style="text-transform:uppercase !important;"> PROJECT 3: Design, develop and deploy a smart contract for a decentralized Auction Platform </span></div>
                                             <div class="circ3"></div>
                                         </div>
                                         <div class="mil">
-                                            <div class="title">Blockchain Fundamentals</div>
-                                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur similique eum harum. Id, dignissimos! Velit earum blanditiis quasi eligendi libero.</div>
-                                            <div class="create"><i class="fa fa-list"></i> <span> CREATE YOUR PRIVATE BLOCKCHAIN </span></div>
+                                            <div class="title">Dapp with autonomous smart contracts and orcles</div>
+                                            <div class="text">Develop a decentralized application (Dapp) that will take activities depending on external triggers and manage payments to expand your blockchain skill set.</div>
+                                            <div class="create"><i class="fa fa-list"></i> <span style="text-transform:uppercase !important;"> PROJECT 4: Design, create and deploy a fully-compliant ERC20 Token and launch an Initial Coin Offering (ICO)</span></div>
                                             <div class="circ4"></div>
-                                        </div>
-                                        <div class="mil">
-                                            <div class="title">Blockchain Fundamentals</div>
-                                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur similique eum harum. Id, dignissimos! Velit earum blanditiis quasi eligendi libero.</div>
-                                            <div class="create"><i class="fa fa-list"></i> <span> CREATE YOUR PRIVATE BLOCKCHAIN </span></div>
-                                            <div class="circ5"></div>
                                         </div>
                                     </div>
                                 </div>

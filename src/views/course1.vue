@@ -129,7 +129,7 @@
         </div>
     </div>
 </div>
-<! -- <div class="program-section">
+<div class="program-section">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="progrm">
@@ -190,7 +190,7 @@
         </div>
     </div>
 </div>
-<!-- <div class="prog-table-section">
+<div class="prog-table-section">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="prog-table">
@@ -316,7 +316,7 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 <div class="pricing-section" ref="payment">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

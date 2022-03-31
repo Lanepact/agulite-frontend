@@ -139,7 +139,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="pr-deet">
                                 <div class="pr-image">
-                                    <img src="@/assets/syllabus image2.jpg" class="img-fluid" />
+                                    <img src="@/assets/syllabus-image2.jpg" class="img-fluid" />
                                 </div>
                                 <div class="pr-in">
                                     <h3>Estimated Time</h3>
@@ -151,7 +151,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="pr-deet">
                                 <div class="pr-image">
-                                    <img src="@/assets/syllabus image1.jpg" class="img-fluid" />
+                                    <img src="@/assets/syllabus-image1.jpg" class="img-fluid" />
                                 </div>
                                 <div class="pr-in">
                                     <h3>Community of Practice</h3>
@@ -163,7 +163,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="pr-deet">
                                 <div class="pr-image">
-                                    <img src="@/assets/syllabus image4.jpg" class="img-fluid" />
+                                    <img src="@/assets/syllabus-image4.jpg" class="img-fluid" />
                                 </div>
                                 <div class="pr-in">
                                     <h3>Realtime Expert Guide</h3>
@@ -175,7 +175,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="pr-deet">
                                 <div class="pr-image">
-                                    <img src="@/assets/syllabus image9.jpg" class="img-fluid" />
+                                    <img src="@/assets/syllabus-image9.jpg" class="img-fluid" />
                                 </div>
                                 <div class="pr-in">
                                     <h3>Flexible Project-Driven Learning Path</h3>

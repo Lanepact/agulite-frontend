@@ -129,8 +129,10 @@
         <p class="text-end fst-italic mt-2">
           Balance: {{ wallet.balance }} BUSD
         </p>
-        <p class="text-center mt-2" id="message"></p>
       </form>
+    </section>
+    <section class="error-container mt-1">
+        <p class="text-center text-danger">{{ errorMessage02 }}</p>
     </section>
   </div>
 </template>
@@ -170,6 +172,7 @@ export default {
     const signupProcessing = ref(false);
     const paymentProcessing = ref(false);
     const errorMessage = ref("");
+    const errorMessage02 = ref("");
 
     const signupButtonText = computed(() =>
       signupProcessing.value ? "Please, wait." : "Sign up"
@@ -240,6 +243,7 @@ export default {
 
     const payWithBusd = async () => {
       paymentProcessing.value = true;
+      errorMessage02.value = ''
 
       try {
         const options = {
@@ -264,7 +268,8 @@ export default {
           params: { ...data }
         });
       } catch (error) {
-        console.log(`payWithBusd: ${error.message}`);
+        errorMessage02.value = 'Something went wrong. Make sure you are connected to BSC mainnet and have enough BUSD for payment.'
+        console.log(`payWithBusd: ${error.message}`)
       }
 
       paymentProcessing.value = false;
@@ -279,6 +284,7 @@ export default {
       email,
       signupProcessing,
       errorMessage,
+      errorMessage02,
       signupButtonText,
       payButtonText,
       paymentProcessing,
@@ -330,6 +336,11 @@ export default {
   color: #ffffff;
   padding: 25px !important;
   border-radius: 10px;
+}
+
+.error-container {
+  width: 40%;
+  padding: 25px !important;
 }
 
 @media screen and (max-width: 1024px) {

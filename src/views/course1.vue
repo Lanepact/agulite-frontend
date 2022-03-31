@@ -129,7 +129,7 @@
         </div>
     </div>
 </div>
-<!-- <div class="program-section">
+<div class="program-section">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="progrm">
@@ -139,11 +139,11 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="pr-deet">
                                 <div class="pr-image">
-                                    <img src="@/assets/person.png" class="img-fluid" />
+                                    <img src="@/assets/syllabus image2.jpg" class="img-fluid" />
                                 </div>
                                 <div class="pr-in">
-                                    <h3>Real world projects from industry experts</h3>
-                                    <p>Lorem ipsum dolor sit, numquam pariatur dolorum incidunt saepe deleniti id, beatae ipsa! Quo inventore adipisci similique temporibus aliquam consequatur nihil. Sunt.</p>
+                                    <h3>Estimated Time</h3>
+                                    <p>5 Months at 10 hrs/week</p>
                                     <div class="it"><i class="far fa-clock i"></i></div>
                                 </div>
                             </div>
@@ -151,11 +151,11 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="pr-deet">
                                 <div class="pr-image">
-                                    <img src="@/assets/person-2.png" class="img-fluid" />
+                                    <img src="@/assets/syllabus image1.jpg" class="img-fluid" />
                                 </div>
                                 <div class="pr-in">
-                                    <h3>Real world projects from industry experts</h3>
-                                    <p>Lorem ipsum dolor sit, pariatur dolorum incidunt saepe deleniti id, beatae ipsa! Quo inventore adipisci similique temporibus aliquam consequatur nihil. Sunt.</p>
+                                    <h3>Community of Practice</h3>
+                                    <p>Be part of a thriving community driving innovation in the Web 3.0 and Blockchain Space </p>
                                     <div class="it"><i class="far fa-clock i"></i></div>
                                 </div>
                             </div>
@@ -163,11 +163,11 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="pr-deet">
                                 <div class="pr-image">
-                                    <img src="@/assets/person.png" class="img-fluid" />
+                                    <img src="@/assets/syllabus image4.jpg" class="img-fluid" />
                                 </div>
                                 <div class="pr-in">
-                                    <h3>Real world projects from industry experts</h3>
-                                    <p>Lorem ipsum dolor sit, numquam pariatur dolorum incidunt saepe deleniti id, beatae ipsa! Quo inventore adipisci similique temporibus aliquam consequatur nihil. Sunt.</p>
+                                    <h3>Realtime Expert Guide</h3>
+                                    <p>Direct access to a blockchain development expert</p>
                                     <div class="it"><i class="far fa-clock i"></i></div>
                                 </div>
                             </div>
@@ -175,11 +175,11 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="pr-deet">
                                 <div class="pr-image">
-                                    <img src="@/assets/person-3.png" class="img-fluid" />
+                                    <img src="@/assets/syllabus image9.jpg" class="img-fluid" />
                                 </div>
                                 <div class="pr-in">
-                                    <h3>Real world projects from industry experts</h3>
-                                    <p>Lorem ipsum dolor sit, numquam pariatur dolorum incidunt saepe deleniti id, beatae ipsa! Quo inventore adipisci similique temporibus aliquam consequatur nihil. Sunt.</p>
+                                    <h3>Flexible Project-Driven Learning Path</h3>
+                                    <p>Learn on your time, as long as you complete weekly activities</p>
                                     <div class="it"><i class="far fa-clock i"></i></div>
                                 </div>
                             </div>
@@ -189,8 +189,8 @@
             </div>
         </div>
     </div>
-</div> -->
-<div class="prog-table-section">
+</div> 
+<!-- <div class="prog-table-section">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="prog-table">
@@ -316,7 +316,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <div class="pricing-section" ref="payment">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -336,11 +336,7 @@
                                     <button @click="goToSignUp(1)">ENROLL NOW</button>
                                     <div class="bene">
                                         <i class="fa fa-check i"></i>
-                                        <span>Maximum flexibility to learn at your own pace</span>
-                                    </div>
-                                    <div class="bene">
-                                        <i class="fa fa-check i"></i>
-                                        <span>Maximum flexibility to learn at your own pace</span>
+                                        <span>Maximum flexibility to learn at your own pace as long as you achieve weekly activities</span>
                                     </div>
                                 </div>
                                 <div class="price-info2">
@@ -357,18 +353,6 @@
                                         </div>
                                         <div class="per-m">per month</div>
                                         <button @click="goToSignUp(2)">ENROLL NOW</button>
-                                        <div class="bene">
-                                            <i class="fa fa-check"></i>
-                                            <span>Maximum flexibility to learn at your own pace</span>
-                                        </div>
-                                        <div class="bene">
-                                            <i class="fa fa-check"></i>
-                                            <span>Maximum flexibility to learn at your own pace</span>
-                                        </div>
-                                        <div class="bene">
-                                            <i class="fa fa-check"></i>
-                                            <span>Maximum flexibility to learn at your own pace</span>
-                                        </div>
                                         <div class="bene">
                                             <i class="fa fa-check"></i>
                                             <span>Maximum flexibility to learn at your own pace</span>

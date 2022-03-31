@@ -16,7 +16,7 @@
              <div><i class="fa fa-check ic"></i><p>Several projects and innovations from the learning space developed to revolutionize the WEB 3.0 and blockchain space</p></div>
            </div>
           </div>
-          <div class="banner-right d-none d-md-block">
+          <div class="banner-right">
              <div class="logo">
               <img src="@/assets/agulogowhite.png" class="img-fluid"/>
             </div>
@@ -89,7 +89,7 @@
             </div>
           </div>
           <div class="row l-offers">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
                 <div class="box-1">
                     <div class="bicon"><i class="bx bx-world"></i></div>
                     <p class="title">
@@ -98,7 +98,7 @@
                     <p class="details">Understand behind-the-scene functionality of blockchain platforms, smart contracts, DeFi and other based projects</p>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
               <div class="box-1">
                 <div class="bicon"><i class="bx bx-slideshow"></i></div>
                   <div class="title">
@@ -107,7 +107,7 @@
                     <p class="details">Learn to create interactive websites with a blend of design, technology and programming that interacts seemlessly with blockchain networks</p>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
                <div class="box-1">
                    <div  class="bicon"><i class="bx bx-file"></i></div>
                   <div class="title">
@@ -156,7 +156,7 @@
             </div>
           </div>
           <div class="row service-bg">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
                 <div class="box-1">
                     <div class="title">
                       <span><i class="far fa-smile fn"></i></span>
@@ -165,7 +165,7 @@
                     <p class="details">Learning-based innovation is the driving force of Agulite. The token's value will continue to rise as internal projects and R&D are aimed at enhancing the Web3 ecosystem.</p>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
               <div class="box-1">
                   <div class="title">
                       <span><i class="far fa-address-book fn"></i></span>
@@ -174,7 +174,7 @@
                     <p class="details">The Agulite Insurance Fund holds 5% of all trading fees, which serves to sustain and back the staking benefits by sustaining price stability and greatly lowering downside risk..</p>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
                <div class="box-1">
                   <div class="title">
                       <span><i class="fas fa-headset fa-lg fn"></i></span>
@@ -183,7 +183,7 @@
                     <p class="details"> The Agulite token is always kept in your wallet, therefore it is never given to a 3rd party or centralized authority. All you have to do is buy and hold since you will automatically receive rewards in your own wallet, eliminating the need for any complicated staking processes.</p>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
               <div class="box-1">
                   <div class="title">
                       <span><i class="fas fa-user-friends fn"></i></span>
@@ -192,7 +192,7 @@
                     <p class="details"> You will not be required to re-stake your tokens. Your interest yield is paid automatically every 30 minutes or 48 times each day and compounded in your wallet, ensuring that you never miss a payment. Making it one of the fastest auto-compounding protocol in crypto.</p>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
               <div class="box-1">
                   <div class="title">
                       <span><i class="fas fa-user-friends fn"></i></span>
@@ -201,7 +201,7 @@
                     <p class="details">Agulite pays out at 110,000 % upwards of in the first year, which is unrivaled in the DeFi industry to date. After the first year, the interest rate drops over a predefined Longterm Interest Cycle period.</p>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
               <div class="box-1">
                   <div class="title">
                       <span><i class="fas fa-user-friends fn"></i></span>

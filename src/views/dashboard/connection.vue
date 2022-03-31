@@ -60,6 +60,7 @@
                                                      <img src="@/assets/pro-im.png" class="img-fluid"/>
                                                      <div class="name">Camdor Dennis</div>
                                                 </div>
+                            
                                                 <div class="iconc">
                                                     <span class="badge badge-light bge">1224</span>
                                                 </div>

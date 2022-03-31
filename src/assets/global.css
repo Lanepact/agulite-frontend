@@ -3922,6 +3922,47 @@ h1{
     .connection .connect-right .chat-area .chat-inform{
         width: 80% !important;
     }
+    .h-banner .banner-text{
+        flex-direction: column !important;
+       
+    }
+    .h-banner{
+        height: auto !important;
+    }
+    .h-banner .bg-overlay{
+        height: auto !important ;
+    }
+    .h-banner .banner-text .banner-left{
+      width: 100% !important;
+    }
+    .h-banner .banner-text .banner-right{
+        display: none !important;
+    }
+    .h-banner .banner-text .banner-right{
+        /* display: none !important; */
+        flex-direction: column !important;
+        display: flex !important;
+        width: 100% !important;
+        align-items: flex-start !important;
+    }
+    .h-banner .banner-text .banner-right .logo{
+        display: none !important;
+    }
+    .h-banner .banner-text .banner-right .airdrop{
+      
+    }
+    .d-obj{
+        display: none !important;
+    }
+    .ad-section{
+        display: none !important;
+    }
+    .h-banner .banner-text .banner-left h1{
+        line-height: 60px !important;
+    }
+    .h-banner .banner-text .banner-left .b-details{
+        /* display: none !important; */
+    }
     .staking-section .header{
         font-size: 35px !important;
         margin-bottom: 30px !important;

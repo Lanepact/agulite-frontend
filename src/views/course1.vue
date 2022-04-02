@@ -443,7 +443,7 @@
 <script>
 import Modal from '../components/modal.vue'
 import { onMounted, ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 import Navbar from '../components/navbar.vue'
 import { useAgulite } from '../composables'
 import { getErrorMessage } from '../utils'
@@ -464,6 +464,7 @@ export default {
         const isOpen = ref(false)
 
         const router = useRouter()
+        const route = useRoute()
         const payment = ref(null)
         const errorMessage = ref(null)
 
@@ -525,7 +526,7 @@ export default {
 
             router.push({
                 name: 'Signup',
-                params: { amount: amount }
+                params: { amount: amount, referrerCode: route.params.referrerCode }
             })
             
         }
@@ -561,7 +562,6 @@ export default {
             if(timeLeft > 0){
                 initCountDown(timeLeft)
             }
-            
         })
 
         return {

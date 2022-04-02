@@ -138,6 +138,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import { ref } from "@vue/reactivity";
 import { getErrorMessage } from "../utils";
 import { useAgulite } from '../composables'
@@ -169,6 +170,8 @@ export default {
     const firstName = ref("");
     const lastName = ref("");
     const email = ref("");
+    const nationality = ref("");
+    const referrerCode = ref("");
     const signupProcessing = ref(false);
     const paymentProcessing = ref(false);
     const errorMessage = ref("");
@@ -187,7 +190,19 @@ export default {
       if (!amount.value) {
         router.push("/blockchain-development");
       }
+
+      nationality.value = await getUserCountry()
+      referrerCode.value = route.params.referrerCode
     });
+
+    const getUserCountry = async () => {
+      try {
+        let result = await axios.get('https://api.ipregistry.co/?key=tryout')
+        return result.data.location.country.name
+      } catch(error) {
+        return null
+      }
+    }
 
     const signup = async () => {
       signupProcessing.value = true;
@@ -258,7 +273,9 @@ export default {
         const data = {
             firstName: firstName.value.trim(),
             lastName: lastName.value.trim(),
-            email: email.value.trim()
+            email: email.value.trim(),
+            nationality: nationality.value.trim(),
+            referrerCode: referrerCode.value.trim()
         }
 
         await inviteToSlack(data)

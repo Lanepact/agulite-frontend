@@ -28,6 +28,7 @@ import Details from '../views/Details.vue'
 import Signup from '../views/Signup.vue'
 import Confirmation from '../views/confirmation.vue'
 import Presale from '../views/presale.vue'
+import BlockchainWeek from '../views/authentication/blockchainWeek.vue'
 
 const handleUserAuthGuard = async (to, from, next) => {
   let agulite = await useAgulite().getAgulite()
@@ -68,7 +69,7 @@ const routes = [
     component: Course
   },
   {
-    path: '/blockchain-development',
+    path: '/blockchain-development/:referrerCode?',
     name: 'course1',
     component: course
   },
@@ -92,6 +93,11 @@ const routes = [
     path: '/signup',
     name: 'Signup',
     component: Signup
+  },
+  {
+    path: '/blockchain-week',
+    name: 'BlockchainWeek',
+    component: BlockchainWeek
   },
   {
     path: '/confirmation',

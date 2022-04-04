@@ -380,12 +380,12 @@
               </transition>
             </div>
              <div class="list-bg mt-4">
-              <div @click="showDetails3" class="drpdn">
+              <div @click="showDetails5" class="drpdn">
                 <span class="quest"><b> Is Agulite just another Safuu Fork?</b></span>
                 <span><i class="fas fa-arrow-circle-down"></i></span>
               </div>
               <transition name="fade">
-                <div v-if="information3" class="content pt-4 pb-4">
+                <div v-if="information5" class="content pt-4 pb-4">
                   <p>The smart contract for our protocol was built and implemented by our own competent team of developers. It has some relation to Safuu's code and function, 
                   as we can see from Safuu's well-designed new set of mechanisms that ensure protocol sustainability.
 We have several proprietary mechanisms in place, such as our Agulite Auto-Liquidity Engine (AALE), the Agulite Insurance Fund (AIF), and our Longterm Interest Cycle (LIC), as well as measures in place to protect against hostile hacking attempts.
@@ -394,12 +394,12 @@ Agulite's tokenomics are also entirely unique, with its Auto-Burn Fire Pit struc
               </transition>
             </div>
             <div class="list-bg mt-4">
-              <div @click="showDetails3" class="drpdn">
+              <div @click="showDetails6" class="drpdn">
                 <span class="quest"><b> How can we sustain such a huge APY?</b></span>
                 <span><i class="fas fa-arrow-circle-down"></i></span>
               </div>
               <transition name="fade">
-                <div v-if="information3" class="content pt-4 pb-4">
+                <div v-if="information6" class="content pt-4 pb-4">
                   <p>Agulite, as a utility token, uses a far more extensive method than Safuu or other rivals. 
                   Our token supply is far lower at just 2,896,000, with auto burn at 0.5 percent, 
                   auto LP every 48 hours, and the factor of rebasing at 16-minute intervals, resulting 
@@ -411,12 +411,12 @@ Agulite's tokenomics are also entirely unique, with its Auto-Burn Fire Pit struc
               </transition>
             </div>
             <div class="list-bg mt-4">
-              <div @click="showDetails3" class="drpdn">
+              <div @click="showDetails7" class="drpdn">
                 <span class="quest"><b> How long is Agulite's training Programme?</b></span>
                 <span><i class="fas fa-arrow-circle-down"></i></span>
               </div>
               <transition name="fade">
-                <div v-if="information3" class="content pt-4 pb-4">
+                <div v-if="information7" class="content pt-4 pb-4">
                   <p>The program runs for a period of 5 months which is but the beginning to your amazing journey as an Agulite.</p>
                 </div>
               </transition>
@@ -558,6 +558,9 @@ export default {
     const information2 = ref(false)
     const information3 = ref(false)
     const information4 = ref(false)
+    const information5 = ref(false)
+    const information6 = ref(false)
+    const information7 = ref(false)
     const community = ref(null)
      
     const goToCommunity = () => {
@@ -595,6 +598,15 @@ export default {
     const showDetails4 = () => {
          information4.value = !information4.value
     }
+    const showDetails5 = () => {
+         information5.value = !information5.value
+    }
+    const showDetails6 = () => {
+         information6.value = !information6.value
+    }
+    const showDetails7 = () => {
+         information7.value = !information7.value
+    }
     const getStarted = () => {
       router.push('/blockchain-development')
     }
@@ -603,10 +615,16 @@ export default {
         information2,
         information3,
         information4,
+        information5,
+        information6,
+        information7,
         showDetails,
         showDetails2,
         showDetails3,
         showDetails4,
+        showDetails5,
+        showDetails6,
+        showDetails7,
         items,
         breakpoints,
         settings,

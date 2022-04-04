@@ -341,42 +341,78 @@
             </div> -->
             <div class="list-bg mt-4">
               <div @click="showDetails" class="drpdn">
-                <span class="quest"><b>01 What does Agulite do?</b></span>
+                <span class="quest"><b> What does Agulite do?</b></span>
                 <span><i class="fas fa-arrow-circle-down"></i></span>
               </div>
               <transition name="fade">
                 <div v-if="information" class="content pt-4 pb-4">
-                  <p class="mb-4">Agulite addresses unemployment by empowering top talents of the future with the skills and experience needed to kick-start your career in today's global market.</p>
-                  <p class="mb-4">Are you starting from scratch or looking to improve your skills? You can become a qualified designer, software developer, product manager, or business development in a few months, competenet enough work for a company or startup anywhere in the world.</p>
+                  <p class="mb-4">Agulite is a thriving Web 3.0 and Blockchain Learning Space that develops top talents of the future with the skills and experience needed to kick-start your career in today's Web 3.0 powered by a decentralized sustainable asset fund for all users that rewards token holders every 16 minutes.</p>
+                  <p class="mb-4">Are you starting from scratch or looking to improve your skills? You can become a blockchain developer</p>
                   <p>We specialize in following three core areas:</p>
-                  <p>1. Product Design</p>
-                  <p>i. Graphics Design and Video animation</p>
-                  <p>ii. UI/UX Design</p>
-                  <p class="mt-4">2. Product Development</p>
-                  <p>i. Product Management</p>
-                  <p>ii. Software Engineering (Web and Mobile)</p>
-                  <p>iii. DevOps Engineering</p>
-                  <p>iv. Cloud Computing</p>
-                  <p>v. Blockchain</p>
-                  <p>vi. Data Science and</p>
-                  <p>vii. Quality Assurance Engineering</p>
+                  <p>1. Blockchain Development</p>
+                  <p>2. Web 3 Frontend Software Engineering</p>
+                  <p>3. Web 3 Mobile App Development</p>
+                  
                 </div>
               </transition>
             </div>
              <div class="list-bg mt-4">
               <div @click="showDetails2" class="drpdn">
-                <span class="quest"><b>02 How do I become a Agulite?</b></span>
+                <span class="quest"><b> How do I become a Blockchain Developer?</b></span>
                 <span><i class="fas fa-arrow-circle-down"></i></span>
               </div>
               <transition name="fade">
                 <div v-if="information2" class="content pt-4 pb-4">
-                  <p>Our registration process is straightforward. Complete this form, choose your desired learning path and fill in your details to begin your journey.</p>
+                  <p>Our registration procedure is simple. Click "Developer" in the Navbar, then "Enroll for the Next Cohort" to begin your amazing journey on one of the lucrative professional paths today.</p>
                 </div>
               </transition>
             </div>
             <div class="list-bg mt-4">
               <div @click="showDetails3" class="drpdn">
-                <span class="quest"><b>03 How long is Agulite's training Programme?</b></span>
+                <span class="quest"><b> Who is the Agulite?</b></span>
+                <span><i class="fas fa-arrow-circle-down"></i></span>
+              </div>
+              <transition name="fade">
+                <div v-if="information3" class="content pt-4 pb-4">
+                  <p>The Agulite Team is made up of a growing team of developers, marketing specialists, and its CEO, Marcellus Nwankwo. We have a large network of contacts in the cryptosphere, 
+                  which allows us to reach stakeholders even while they are in diaspora.</p>
+                </div>
+              </transition>
+            </div>
+             <div class="list-bg mt-4">
+              <div @click="showDetails3" class="drpdn">
+                <span class="quest"><b> Is Agulite just another Safuu Fork?</b></span>
+                <span><i class="fas fa-arrow-circle-down"></i></span>
+              </div>
+              <transition name="fade">
+                <div v-if="information3" class="content pt-4 pb-4">
+                  <p>The smart contract for our protocol was built and implemented by our own competent team of developers. It has some relation to Safuu's code and function, 
+                  as we can see from Safuu's well-designed new set of mechanisms that ensure protocol sustainability.
+We have several proprietary mechanisms in place, such as our Agulite Auto-Liquidity Engine (AALE), the Agulite Insurance Fund (AIF), and our Longterm Interest Cycle (LIC), as well as measures in place to protect against hostile hacking attempts.
+Agulite's tokenomics are also entirely unique, with its Auto-Burn Fire Pit structure, low initial supply, and lower 16-minute Epochs for a much more linear APY progression of attainability.</p>
+                </div>
+              </transition>
+            </div>
+            <div class="list-bg mt-4">
+              <div @click="showDetails3" class="drpdn">
+                <span class="quest"><b> How can we sustain such a huge APY?</b></span>
+                <span><i class="fas fa-arrow-circle-down"></i></span>
+              </div>
+              <transition name="fade">
+                <div v-if="information3" class="content pt-4 pb-4">
+                  <p>Agulite, as a utility token, uses a far more extensive method than Safuu or other rivals. 
+                  Our token supply is far lower at just 2,896,000, with auto burn at 0.5 percent, 
+                  auto LP every 48 hours, and the factor of rebasing at 16-minute intervals, resulting 
+                  in a more linear growth of sustainability. Market volume will provide money for the 
+                  Treasury in the form of a 2.5-4.5 percent tax, as well as an extra 5% for the Agulite Insurance Fund,
+                   which will more than cover the daily interest being awarded. APY will be 100% sustained. Simply said, the more that is traded on a daily basis, the larger the Treasury & AIF balance increases automatically, assisting with long-term sustainability and future development. We also have a patented Agulite Auto-Liquidity Engine (AALE) that automatically injects an additional 4% liquidity every 48 hours to preserve protocol stability and ensure the APY is maintained for the life of Agulite. On top of that, we have our patented LIC model in place, which cuts the interest rate over time beyond the first 12 months, 
+                   allowing our protocol to stay stable.</p>
+                </div>
+              </transition>
+            </div>
+            <div class="list-bg mt-4">
+              <div @click="showDetails3" class="drpdn">
+                <span class="quest"><b> How long is Agulite's training Programme?</b></span>
                 <span><i class="fas fa-arrow-circle-down"></i></span>
               </div>
               <transition name="fade">
@@ -387,16 +423,16 @@
             </div>
              <div class="list-bg mt-4">
               <div @click="showDetails4" class="drpdn">
-                <span class="quest"><b>04 How much does the program cost?</b></span>
+                <span class="quest"><b> How much does the program cost?</b></span>
                 <span><i class="fas fa-arrow-circle-down"></i></span>
               </div>
               <transition name="fade">
                 <div v-if="information4" class="content pt-4 pb-4">
-                  <p class="mb-4">You can start with our 14 days free access to any desired learning path.</p>
-                  <p>With a 30 days money-back guarantee, and upon completing the 14 days free access to your desired learning path, continue as follows:</p>
-                  <p>ESSENTIAL ₦16,495 ($29.99) inclusive of VAT which covers, learning resources, assess to team coordinators and network.</p>
+                  <p class="mb-4">You can start with our 7 days free access to the blockchain development learning path.</p>
+                  <p>With a 30 days money-back guarantee, and upon completing the 7 days free access to the blockchain development learning path, continue as follows:</p>
+                  <p>ESSENTIAL $131.99 inclusive of VAT which covers, learning resources, assess to team experts and network.</p>
                   <p>or</p>
-                  <p>STANDARD ₦65,980 ($119.96) for complete payment path (i.e 5 months) and save 20% inclusive of VAT which covers, learning resources and assess to team coordinators and network</p>
+                  <p>STANDARD $593.96 for complete payment path (i.e 5 months) and save 10% inclusive of VAT which covers, learning resources and assess to team experts and network</p>
                 </div>
               </transition>
             </div>

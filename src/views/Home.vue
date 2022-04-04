@@ -336,9 +336,9 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="faq-overview">
-            <div class="info">
+             <!-- <div class="info">
               Are you starting from scratch or looking to improve your skills? You can become a qualified designer, software developer, product manager, or business development in a few months, competenet enough work for a company or startup anywhere in the world.
-            </div>
+            </div> -->
             <div class="list-bg mt-4">
               <div @click="showDetails" class="drpdn">
                 <span class="quest"><b>01 What does Agulite do?</b></span>

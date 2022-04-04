@@ -59,7 +59,7 @@
                 <h2 class="head1">Innovation Driven</h2>
                 <h2 class="head2">Learning Space </h2>
                 <p class="power">powered by </p>
-                <p class="apy">140,512.90%</p>
+                <p class="apy">102,212.69%</p>
                 <p class="fixed">Fixed Staking APY</p>
                 <div class="adrp-buttons">
                   <button class="airdrop"><a class="text-decoration-none text-white" href="https://t.me/AguliteAirdropBot" target="_blank">AIRDROP</a> </button>
@@ -198,7 +198,7 @@
                       <span><i class="fas fa-user-friends fn"></i></span>
                       <span class="h-text">Interest Yield with Automatic Rapid Interest Payments</span>
                     </div>
-                    <p class="details"> You will not be required to re-stake your tokens. Your interest yield is paid automatically every 30 minutes or 48 times each day and compounded in your wallet, ensuring that you never miss a payment. Making it one of the fastest auto-compounding protocol in crypto.</p>
+                    <p class="details"> You will not be required to re-stake your tokens. Your interest yield is paid automatically every 16 minutes or 90 times each day and compounded in your wallet, ensuring that you never miss a payment. Making it one of the fastest auto-compounding protocol in crypto.</p>
               </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
@@ -207,7 +207,7 @@
                       <span><i class="fas fa-user-friends fn"></i></span>
                       <span class="h-text">One of the Highest APY</span>
                     </div>
-                    <p class="details">Agulite pays out at 110,000 % upwards of in the first year, which is unrivaled in the DeFi industry to date. After the first year, the interest rate drops over a predefined Longterm Interest Cycle period.</p>
+                    <p class="details">Agulite pays out at 102,212% in the first year, which is unrivaled in the DeFi industry to date. After the first year, the interest rate drops over a predefined Longterm Interest Cycle period.</p>
               </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
@@ -216,7 +216,7 @@
                       <span><i class="fas fa-user-friends fn"></i></span>
                       <span class="h-text">Auto Token Burn</span>
                     </div>
-                    <p class="details">One of the exciting features of the Agulite Protocol is an automatic token burn system named “The Fire Pit” which prevents circulating supply getting out of hand and becoming unmanageable. The Fire Pit burns 2.5% out of all Agulite Token market sales and is burned in the same individual transaction.</p>
+                    <p class="details">One of the exciting features of the Agulite Protocol is an automatic token burn system named “The Fire Pit” which prevents circulating supply getting out of hand and becoming unmanageable. The Fire Pit burns 0.5% out of all Agulite Token market sales and is burned in the same individual transaction.</p>
               </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center mt-3">
@@ -275,7 +275,7 @@
                  <div class="log"> <img src="@/assets/agulogo.png" class="img-fluid"/></div>
                  <div class="title">$AGU TOKEN</div>
                  <p>$AGU is the native token which interest based rewards are paid.Every token holder automatically
-                   receives interest every 30 minutes just for holding $AGU token in their wallet </p> 
+                   receives interest every 16 minutes just for holding $AGU token in their wallet </p> 
               </div>
           </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
@@ -311,7 +311,7 @@
                     <div class="title">Fire Pit</div>
                     <p>One of the exciting features of the Agulite-Protocol is an automatic token burn system
                       named "The Fire Pit" which prevents circulating supply getting out of hand and becoming 
-                      unmanageable.The fire Pit burns 2.5% out of all Agulite Token market sales and is burned in
+                      unmanageable.The fire Pit burns 0.5% out of all Agulite Token market sales and is burned in
                       the same individual transaction
                     </p>
                 </div>

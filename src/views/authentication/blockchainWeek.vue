@@ -21,15 +21,30 @@
                             <form @submit.prevent="signup">
                                 <div class="form-group">
                                     <label for="">First Name:</label>
-                                    <input type="password" class="form-control" v-model="firstName" required>
+                                    <input type="text" class="form-control" v-model="firstName" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="">Last Name:</label>
-                                    <input type="password" class="form-control" v-model="lastName" required>
+                                    <input type="text" class="form-control" v-model="lastName" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="">Email Address:</label>
                                     <input type="email" class="form-control" v-model="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">What do you want to gain from the event?</label>
+                                    <div class="form-check">
+                                        <input type="checkbox" id="goal01" value="I want to learn blockchain development" v-model="goal"/>
+                                        <label for="goal01" class="ps-2 d-inline">I want to learn blockchain development</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" id="goal02" value="I want to learn blockchain (crypto) trading" v-model="goal"/>
+                                        <label for="goal02" class="ps-2 d-inline">I want to learn blockchain (crypto) trading</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" id="goal03" value="I want to learn how blockchain affects other industries" v-model="goal"/>
+                                        <label for="goal03" class="ps-2 d-inline">I want to learn how blockchain affects other industries</label>
+                                    </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-lg btn-block login p-2" :disabled="loading">{{ loginButtonText }}</button>
                             </form>
@@ -47,9 +62,10 @@
 <script>
 import { ref } from '@vue/reactivity'
 import { useAgulite } from '../../composables'
-import { validateEmail, getErrorMessage } from '../../utils'
+import { validateEmail, getErrorMessage, getUserCountry } from '../../utils'
 import { computed, onMounted } from '@vue/runtime-core'
 import { useRouter } from 'vue-router'
+import axios from 'axios'
 
 export default {
     setup(){
@@ -61,6 +77,7 @@ export default {
         const firstName = ref("")
         const lastName = ref("")
         const email = ref("")
+        const goal = ref([])
 
         const loginButtonText = computed(() => loading.value ? "Please, wait." : "Signup")
 
@@ -72,20 +89,27 @@ export default {
 
             loading.value = true
 
+            const country = await getUserCountry()
+
             const data = {
-                firstName: firstName.value,
-                lastName: lastName.value,
-                email: email.value
+                firstname: firstName.value,
+                lastname: lastName.value,
+                email: email.value,
+                goal: JSON.stringify(goal.value),
+                country: country ? country : ""
             }
 
             try{
-                await signin(data)
-                router.push("/profile")
+                let result = await axios.post('https://agulite.herokuapp.com/api/v1/blockchain/createuser', data)
+                router.push({
+                    name: "JoinCommunity",
+                    params: { ...data }
+                });
             } catch(e) {
                 errorMessage.value = getErrorMessage(e)
-                loading.value = false
-                
             }
+
+            loading.value = false
 
         }
 
@@ -93,9 +117,10 @@ export default {
             loginButtonText,
             loading,
             errorMessage,
-            email,
             firstName,
             lastName,
+            email,
+            goal,
             signup
         }
     }

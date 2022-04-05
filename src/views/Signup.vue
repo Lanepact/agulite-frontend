@@ -140,7 +140,7 @@
 <script>
 import axios from 'axios'
 import { ref } from "@vue/reactivity";
-import { getErrorMessage } from "../utils";
+import { getErrorMessage, getUserCountry } from "../utils";
 import { useAgulite } from '../composables'
 import { computed, onMounted } from "@vue/runtime-core";
 import { useRouter, useRoute } from "vue-router";
@@ -194,15 +194,6 @@ export default {
       nationality.value = await getUserCountry()
       referrerCode.value = route.params.referrerCode
     });
-
-    const getUserCountry = async () => {
-      try {
-        let result = await axios.get('https://api.ipregistry.co/?key=tryout')
-        return result.data.location.country.name
-      } catch(error) {
-        return null
-      }
-    }
 
     const signup = async () => {
       signupProcessing.value = true;

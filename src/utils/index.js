@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 export const getAxiosHeader = (bearerToken = null, contentType = "application/json") => {
     return !bearerToken ? {
         "Content-Type": `${contentType}`
@@ -18,5 +20,15 @@ export const getErrorMessage = (e) => {
         return e.message
     } else {
         return "Something went wrong. Try again!"
+    }
+}
+
+export const getUserCountry = async () => {
+    try {
+        let result = await axios.get('https://api.ipregistry.co/?key=tryout')
+        return result.data.location.country.name
+    } catch(error) {
+        console.log(error)
+        return null
     }
 }

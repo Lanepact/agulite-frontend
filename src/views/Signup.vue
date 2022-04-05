@@ -129,15 +129,18 @@
         <p class="text-end fst-italic mt-2">
           Balance: {{ wallet.balance }} BUSD
         </p>
-        <p class="text-center mt-2" id="message"></p>
       </form>
+    </section>
+    <section class="error-container mt-1">
+        <p class="text-center text-danger">{{ errorMessage02 }}</p>
     </section>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 import { ref } from "@vue/reactivity";
-import { getErrorMessage } from "../utils";
+import { getErrorMessage, getUserCountry } from "../utils";
 import { useAgulite } from '../composables'
 import { computed, onMounted } from "@vue/runtime-core";
 import { useRouter, useRoute } from "vue-router";
@@ -167,9 +170,12 @@ export default {
     const firstName = ref("");
     const lastName = ref("");
     const email = ref("");
+    const nationality = ref("");
+    const referrerCode = ref("");
     const signupProcessing = ref(false);
     const paymentProcessing = ref(false);
     const errorMessage = ref("");
+    const errorMessage02 = ref("");
 
     const signupButtonText = computed(() =>
       signupProcessing.value ? "Please, wait." : "Sign up"
@@ -184,6 +190,9 @@ export default {
       if (!amount.value) {
         router.push("/blockchain-development");
       }
+
+      nationality.value = await getUserCountry()
+      referrerCode.value = route.params.referrerCode
     });
 
     const signup = async () => {
@@ -240,6 +249,7 @@ export default {
 
     const payWithBusd = async () => {
       paymentProcessing.value = true;
+      errorMessage02.value = ''
 
       try {
         const options = {
@@ -254,7 +264,9 @@ export default {
         const data = {
             firstName: firstName.value.trim(),
             lastName: lastName.value.trim(),
-            email: email.value.trim()
+            email: email.value.trim(),
+            nationality: nationality.value.trim(),
+            referrerCode: referrerCode.value.trim()
         }
 
         await inviteToSlack(data)
@@ -264,7 +276,8 @@ export default {
           params: { ...data }
         });
       } catch (error) {
-        console.log(`payWithBusd: ${error.message}`);
+        errorMessage02.value = 'Something went wrong. Make sure you are connected to BSC mainnet and have enough BUSD for payment.'
+        console.log(`payWithBusd: ${error.message}`)
       }
 
       paymentProcessing.value = false;
@@ -279,6 +292,7 @@ export default {
       email,
       signupProcessing,
       errorMessage,
+      errorMessage02,
       signupButtonText,
       payButtonText,
       paymentProcessing,
@@ -330,6 +344,11 @@ export default {
   color: #ffffff;
   padding: 25px !important;
   border-radius: 10px;
+}
+
+.error-container {
+  width: 40%;
+  padding: 25px !important;
 }
 
 @media screen and (max-width: 1024px) {

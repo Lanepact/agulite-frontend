@@ -52,7 +52,7 @@
             <div class="b-info">
                 <div class="benefits">
                     <div class="title">What You Will Learn </div>
-                    <button class="download">DOWNLOAD SYLLABUS </button>
+                    <button class="download" @click="handleDownload">DOWNLOAD SYLLABUS </button>
                 </div>
                 <div class="features">
                     <div class="syllabus">SYLLABUS</div>
@@ -347,9 +347,7 @@
                                         <hr>
                                         <div class="price-1">
                                             $593.96
-                                            <strike class="text-danger">
-                                                <span class="cancelled"> $659.95</span>
-                                            </strike>
+                                            <del class="text-danger fst-bold"><span class="cancelled"> $659.95</span></del>
                                         </div>
                                         <div class="per-m">per month</div>
                                         <button @click="goToSignUp(2)">ENROLL NOW</button>
@@ -400,7 +398,10 @@
                 <input type="email" class="form-control" id="" v-model="email" required>
             </div>
             <p>By providing your information and clicking "Download Syllabus", you consent and agree to receive marketing emails from Udacity, and that your information will be used in accordance with the Udacity Terms of Use and Privacy Policy, including relevant opt out provisions therein.</p>
-            <div class="m-but"><button type="submit" class="btn btn-primary">Download Syllabus</button></div>
+            <div class="m-but"><button type="submit" class="btn btn-primary" :disabled="downloadProcessing">Download Syllabus</button></div>
+            <p class="text-danger text-center mt-2">
+                {{ errorMessage }}
+            </p>
         </form>
     </Modal>
 
@@ -442,9 +443,10 @@
 <script>
 import Modal from '../components/modal.vue'
 import { onMounted, ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 import Navbar from '../components/navbar.vue'
 import { useAgulite } from '../composables'
+import { getErrorMessage } from '../utils'
 import axios from 'axios'
 
 export default {
@@ -462,10 +464,14 @@ export default {
         const isOpen = ref(false)
 
         const router = useRouter()
+        const route = useRoute()
         const payment = ref(null)
+        const errorMessage = ref(null)
 
         const firstName = ref('')
         const email = ref('')
+
+        const downloadProcessing = ref(false)
 
         const goToCommunity = () => {
             window.scrollTo(0, community.value.getBoundingClientRect().top)
@@ -486,6 +492,9 @@ export default {
         }
 
         const submitDownloadForm = async () => {
+            downloadProcessing.value = true
+            errorMessage.value = ''
+
             const data = {
                 firstName: firstName.value,
                 email: email.value
@@ -493,15 +502,23 @@ export default {
 
             try {
                 await saveSyllabusViewer(data)
+                isOpen.value = false
                 download()
             } catch(error) {
+                errorMessage.value = getErrorMessage(error.message)
                 console.log(error.message)
             }
 
+            downloadProcessing.value = false
         }
 
         const download = () => {
-            window.location.href = 'https://www.orimi.com/pdf-test.pdf'
+            // let downloadLink = document.createElement('a')
+            // downloadLink.target = "_blank"
+            // downloadLink.href = 'https://drive.google.com/file/d/1MN6dzZinqUpzisskU_nw1RJ5GwR5hk6H/view?usp=sharing'
+            // downloadLink.click()
+
+            window.location.href = 'https://drive.google.com/file/d/1MN6dzZinqUpzisskU_nw1RJ5GwR5hk6H/view?usp=sharing'
         }
 
         const goToSignUp = async (id = 1) => {
@@ -509,7 +526,7 @@ export default {
 
             router.push({
                 name: 'Signup',
-                params: { amount: amount }
+                params: { amount: amount, referrerCode: route.params.referrerCode }
             })
             
         }
@@ -545,7 +562,6 @@ export default {
             if(timeLeft > 0){
                 initCountDown(timeLeft)
             }
-            
         })
 
         return {
@@ -554,6 +570,8 @@ export default {
             firstName,
             email,
             payment,
+            errorMessage,
+            downloadProcessing,
             goToCommunity,
             handleDownload,
             submitDownloadForm,

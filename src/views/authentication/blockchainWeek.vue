@@ -7,8 +7,11 @@
             <div class="container main">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-none d-md-block">
-                        <div class="left-img">
+                      <!--  <div class="left-img">
                             <img src="@/assets/login-img.png" alt="signupimg" class="img-fluid" />
+                        </div> -->
+                        <div class="left-img">
+                            <img src="@/assets/BC.jpg" alt="signupimg" class="img-fluid" />
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">

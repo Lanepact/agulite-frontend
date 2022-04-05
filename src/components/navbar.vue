@@ -1,7 +1,8 @@
 <template>
 <div class="navbar-section d-none d-lg-flex" v-show="!authentication">
     <div class="logo">
-        <img src="@/assets/agulogo.png" class="img-fluid"/>
+        <router-link to="/"><img src="@/assets/agulogo.png" class="img-fluid"/></router-link>
+        
     </div>
      <div class="action-links">
         <a href="/" target="_blank">Home</a>
@@ -13,7 +14,7 @@
   </div>
   <div class="mobile-navbar-section d-flex d-lg-none">
        <div class="logo">
-        <img src="@/assets/agulogo.png" class="img-fluid"/>
+        <router-link to="/"><img src="@/assets/agulogo.png" class="img-fluid"/></router-link>
       </div>
        <div id="menuBtn" @click="openNavbar">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#F5800C">

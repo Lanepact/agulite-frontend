@@ -39,21 +39,29 @@
 </div>
 
 <div>
-    <div class="mt-4 community-section" ref="community">
+   
+
+     <div class="community-section" ref="community">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                 <h1 class="header">Keep In Touch </h1>
             </div>
-            <div class="row mb-4">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="community-social">
-                        <div><a href="https://t.me/agulite_community" target="_blank"><i class="fab fa-telegram ic"></i></a></div>
-                        <div><a href="https://twitter.com/officialagulite"><i class="fab fa-twitter ic"></i></a></div>
-                        <div><a href="https://www.linkedin.com/company/agulite"><i class="fab fa-linkedin ic"></i></a></div>
-                        <div><a href="https://www.reddit.com/r/AGUITE/"><i class="fab fa-reddit ic"></i></a></div>
-                        <div><a href="https://www.instagram.com/official_agulite/"><i class="fab fa-instagram ic"></i></a></div>
-                    </div>
+            <div class="row mb-4 text-center community-social">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                    <div><a href="https://t.me/agulite_community" target="_blank"><i class="fab fa-telegram ic"></i></a></div>
                 </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                    <div><a href="https://twitter.com/officialagulite"><i class="fab fa-twitter ic"></i></a></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">  
+                    <div><a href="https://www.linkedin.com/company/agulite"><i class="fab fa-linkedin ic"></i></a></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                    <div><a href="https://www.reddit.com/r/AGUITE/"><i class="fab fa-reddit ic"></i></a></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                    <div><a href="https://www.instagram.com/official_agulite/"><i class="fab fa-instagram ic"></i></a></div>
+                </div> 
             </div>
         </div>
     </div>

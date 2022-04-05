@@ -17,7 +17,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="signin-form-section">
                             <h1>Blockchain Week,</h1>
-                            <p>A gathering for blockchain enthusiasts, including industry professionals, developers, and traders.</p>
+                            <!-- <p>A gathering for blockchain enthusiasts, including industry professionals, developers, and traders.</p> -->
                             <p class="fst-italic">Featuring: Smart Contract Development, Trading highlights, and Panel Sessions on how blockchain is impacting key industries</p>
                             <div v-show="errorMessage" class="mt-3 bg-danger error-box p-3">
                                 <h6 class="text-white">{{ errorMessage }}</h6>

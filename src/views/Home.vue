@@ -369,7 +369,7 @@
             </div>
             <div class="list-bg mt-4">
               <div @click="showDetails3" class="drpdn">
-                <span class="quest"><b> Who is the Agulite?</b></span>
+                <span class="quest"><b> Who is the Agulite Team?</b></span>
                 <span><i class="fas fa-arrow-circle-down"></i></span>
               </div>
               <transition name="fade">

@@ -374,8 +374,8 @@
               </div>
               <transition name="fade">
                 <div v-if="information3" class="content pt-4 pb-4">
-                  <p>The Agulite Team is made up of a growing team of developers, marketing specialists, and its CEO, Marcellus Nwankwo. We have a large network of contacts in the cryptosphere, 
-                  which allows us to reach stakeholders even while they are in diaspora.</p>
+                  <p>The Agulite Team is comprised of a growing team of developers, marketing professionals, and its CEO, Marcellus Nwankwo, who is driven by a goal of pushing Innovation in the Web 3.0 space by establishing a genuinely global learning space that will yield revolutionary solutions. We have a broad network of contacts in the cryptosphere, 
+                  allowing us to access stakeholders even while they are in diaspora.</p>
                 </div>
               </transition>
             </div>

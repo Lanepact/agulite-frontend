@@ -38,7 +38,7 @@
                         
                     </div>
                     <div class="details" style="padding-top:20px !important; font-weight:500 !important;">
-                        <p style="text-transform:uppercase !important;">NEXT Corhots starts on the 11th April </p>
+                        <p style="text-transform:uppercase !important;">NEXT Corhots starts on the 25th April </p>
                         <p style="padding-top:5px !important;"><b>Enroll now</b> to get access to workspace and prep resources</p>
                     </div>
                 </div>
@@ -327,6 +327,19 @@
                         <div class="title">Blockchain Developer </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="price">
+
+                                <div class="price-info">
+                                    <div class="access">7-days Free ACCESS</div>
+                                    <div class="pay">Pay as you go</div>
+                                    <hr>
+                                    <div class="price-1">$00.00</div>
+                                    <div class="per-m"></div>
+                                    <a href="" target="_blank" class="text-decoration-none"><button @click="goToSignUp(1)">START NOW</button></a> 
+                                    <div class="bene">
+                                        <i class="fa fa-check i"></i>
+                                        <span>Maximum flexibility to learn at your own pace and join the full learning path once payment is completed</span>
+                                    </div>
+                                </div>
                                 <div class="price-info">
                                     <div class="access">MONTHLY ACCESS</div>
                                     <div class="pay">Pay as you go</div>
@@ -559,7 +572,7 @@ export default {
 
         onMounted(() => {
             let currentTime = Math.round(Date.now() / 1000)
-            let startTime = 1649656800 // 06:00:00 AM, April 11th, 2022
+            let startTime = 1650862800// 06:00:00 AM, April 25th, 2022
             let timeLeft = startTime - currentTime
 
             if(timeLeft > 0){

@@ -3155,13 +3155,14 @@ h1{
 }
 .pricing-section .price-sect .pricing .price{
     display: flex !important;
-    left: 20% !important;
+    left: 20px !important;
     margin-top: 30px !important;
     justify-content: center !important;
     position: absolute !important;
 }
 .pricing-section .price-sect .pricing .price .price-info{
     background-color: white !important;
+    width: 25% !important;
     padding: 20px 20px 50px !important;
     margin-top: 40px !important;
     height: 64vh !important;
@@ -3218,6 +3219,7 @@ h1{
 }
 .pricing-section .price-sect .pricing .price .price-info2{
     background-color: #ffae0c !important;
+    width: 25% !important;
     margin-right: 40px !important;
     height: 71.5vh !important;
     position: relative !important;
@@ -5183,6 +5185,7 @@ h1{
     }
     .pricing-section .price-sect .pricing .price .price-info{
         background-color: white !important;
+        width: 100% !important;
         padding: 20px 20px 50px !important;
         margin-top: 0px !important;
         margin-bottom: 60px !important;
@@ -5241,6 +5244,7 @@ h1{
     .pricing-section .price-sect .pricing .price .price-info2{
         background-color: #ffae0c !important;
         margin-right: 0px !important;
+        width: 100% !important;
         height: 60.5vh !important;
         position: relative !important;
         padding: 0px 5px 0px 5px !important;

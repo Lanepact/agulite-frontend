@@ -17,7 +17,7 @@
              <div class="logo">
               <img src="@/assets/agulogowhite.png" class="img-fluid"/>
             </div>
-            <button class="mt-4 airdrop"><a class="text-decoration-none text-white" href="https://agulite.com/blockchain-week" target="_blank">Participate in Blockchain Week</a> </button>
+            <button class="mt-4 airdrop"><a class="text-decoration-none text-white" href="/blockchain-week" target="_blank">Participate in Blockchain Week</a> </button>
             <button class="mt-4 presale"><a class="text-decoration-none text-white" href="/presale" target="_blank">Pre-sale </a></button>
             <a target="_blank" href="/blockchain-development" class="mt-4 develop text-center">Become a Blockcahain Developer </a>
           </div>
@@ -35,7 +35,7 @@
   
     <div class="row d-block d-md-flex d-lg-none ad-sect">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-          <router-link to="https://agulite.com/blockchain-week" target="_blank"><button class="airdrop">Participate in Blockchain Week</button></router-link>
+          <router-link to="/blockchain-week" target="_blank"><button class="airdrop">Participate in Blockchain Week</button></router-link>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-4">
          <router-link to="/presale" target="_blank"><button class="presale">Pre-sale</button></router-link>
@@ -56,12 +56,12 @@
               <div class="stake-left">
                 <h2 class="head1">Innovation Driven</h2>
                 <h2 class="head2">Learning Space </h2>
-                <p class="power">powered by </p>
+                <p class="power">powered by a utility token </p>
                 <p class="apy">102,212.69%</p>
                 <p class="fixed">Fixed Staking APY</p>
                 <div class="adrp-buttons">
                   <button class="whitepaper"><a class="text-decoration-none text-white" href="https://agulite.gitbook.io/agulite" target="_blank">WHITE PAPER</a> </button>
-                  <button class="airdrop"><a class="text-decoration-none text-white" href="https://agulite.com/blockchain-week" target="_blank">Participate in Blockchain Week.</a> </button>
+                  <button class="airdrop"><router-link class="text-decoration-none text-white" to="/blockchain-week" target="_blank">Participate in Blockchain Week.</router-link> </button>
   
                 </div>
                 
@@ -71,7 +71,7 @@
               <div class="stake-right">
                 <h2 class="abt-head">ABOUT</h2>
                 <p class="abt-info">
-                  A community for Web3 experts and blockchain developers that is driven by a decentralized financial asset. Agulite offers one of the industry's highest fixed APYs, paid every 30 minutes and simple buy-hold-earn system that grows your $AGULITE portfolio in wallet at a lightning fast pace.
+                 A global Web 3.0 and blockchain learning space that matches people with experts who will guide them as they work on major projects in Blockchain Development, Web 3.0 Frontend Development, DApps and design, Blockchain Trading, the Metaverse (Design and implementation of Augmented Reality, Virtual Reality, and Mixed Reality), and Information Science. A learning environment driven by a decentralized financial asset that rewards every 16 minutes to its holders.
                 </p>
               </div>
           </div>
@@ -265,7 +265,7 @@
     <div class="how-section">
       <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <h1 class="text-center header">How It Works</h1>
+              <h1 class="text-center header">How the Utility Token Works</h1>
           </div>
       </div>
       <div class="row how-view">

@@ -123,7 +123,7 @@ export default {
 
         onMounted(() => {
             let currentTime = Math.round(Date.now() / 1000)
-            let startTime = 1650283200 // 12:00:00 AM, April 18th, 2022
+            let startTime = 1650862800// 06:00:00 AM, April 25th, 2022
             let timeLeft = startTime - currentTime
 
             if(timeLeft > 0){

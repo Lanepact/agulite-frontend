@@ -426,6 +426,9 @@
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
                     <div><a href="https://www.instagram.com/official_agulite/"><i class="fab fa-instagram ic"></i></a></div>
                 </div> 
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                    <div><a href="https://m.facebook.com/officialAgulite"><i class="fab fa-facebook ic"></i></a></div>
+                </div>
             </div>
         </div>
     </div>

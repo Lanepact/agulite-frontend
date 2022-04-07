@@ -7,10 +7,9 @@
          <div class="banner-left">
            <h1>A Leading Web 3.0 and Blockchain Development Learning Space</h1>
            <div class="b-details">
-             <div><i class="fa fa-check ic"></i><p>One of the most profitable auto-staking and auto-compounding protocol</p></div>
              <div><i class="fa fa-check ic"></i><p>The next generation of creators, guided by a community of blockchain development experts</p></div>
-             <div><i class="fa fa-check ic"></i><p>Agulite having one of the highest APYs in crypto</p></div>
-             <div><i class="fa fa-check ic"></i><p>Interest paid every 30 minutes: 48 Times Daily!</p></div>
+             <div><i class="fa fa-check ic"></i><p>Agulite having one of the highest APYs in crypto as her Utility Token </p></div>
+             <div><i class="fa fa-check ic"></i><p>Agulite Utility Token pays interest every 16 minutes: 90 times per day!</p></div>
              <div><i class="fa fa-check ic"></i><p>Several projects and innovations from the learning space developed to revolutionize the WEB 3.0 and blockchain space</p></div>
            </div>
           </div>
@@ -18,7 +17,7 @@
              <div class="logo">
               <img src="@/assets/agulogowhite.png" class="img-fluid"/>
             </div>
-            <button class="mt-4 airdrop"><a class="text-decoration-none text-white" href="https://t.me/AguliteAirdropBot" target="_blank">Join Airdrop</a> </button>
+            <button class="mt-4 airdrop"><a class="text-decoration-none text-white" href="https://agulite.com/blockchain-week" target="_blank">Participate in Blockchain Week</a> </button>
             <button class="mt-4 presale"><a class="text-decoration-none text-white" href="/presale" target="_blank">Pre-sale </a></button>
             <a target="_blank" href="/blockchain-development" class="mt-4 develop text-center">Become a Blockcahain Developer </a>
           </div>
@@ -27,17 +26,16 @@
     <div class="mobile-banner d-block d-lg-none">
         <h1 class="header">A Leading Web 3.0 and Blockchain Development Learning Space</h1>
         <div class="details">
-          <div><i class="fa fa-check ic"></i><p>One of the most profitable auto-staking and auto-compounding protocol</p></div>
           <div><i class="fa fa-check ic"></i><p>The next generation of creators, guided by a community of blockchain development experts</p></div>
-          <div><i class="fa fa-check ic"></i><p>Agulite having one of the highest APYs in crypto</p></div>
-          <div><i class="fa fa-check ic"></i><p>Interest paid every 30 minutes: 48 Times Daily!</p></div>
+          <div><i class="fa fa-check ic"></i><p>Agulite having one of the highest APYs in crypto as her Utility Token </p></div>
+          <div><i class="fa fa-check ic"></i><p>Agulite Utility Token pays interest every 16 minutes: 90 times per day!</p></div>
           <div><i class="fa fa-check ic"></i><p>Several projects and innovations from the learning space developed to revolutionize the WEB 3.0 and blockchain space</p></div>
         </div>
     </div>
   
     <div class="row d-block d-md-flex d-lg-none ad-sect">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-4">
-          <router-link to="https://t.me/AguliteAirdropBot" target="_blank"><button class="airdrop">Join Airdrop</button></router-link>
+          <router-link to="https://agulite.com/blockchain-week" target="_blank"><button class="airdrop">Participate in Blockchain Week</button></router-link>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mb-4">
          <router-link to="/presale" target="_blank"><button class="presale">Pre-sale</button></router-link>
@@ -50,7 +48,7 @@
     <div class="staking-section">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-               <h2 class="text-center header">Agulite Auto-Staking Protocol </h2>
+               <h2 class="text-center header">Agulite Auto-Staking Protocol</h2>
             </div>  
         </div>
         <div class="row stake-all">
@@ -62,8 +60,9 @@
                 <p class="apy">102,212.69%</p>
                 <p class="fixed">Fixed Staking APY</p>
                 <div class="adrp-buttons">
-                  <button class="airdrop"><a class="text-decoration-none text-white" href="https://t.me/AguliteAirdropBot" target="_blank">AIRDROP</a> </button>
                   <button class="whitepaper"><a class="text-decoration-none text-white" href="https://agulite.gitbook.io/agulite" target="_blank">WHITE PAPER</a> </button>
+                  <button class="airdrop"><a class="text-decoration-none text-white" href="https://agulite.com/blockchain-week" target="_blank">Participate in Blockchain Week.</a> </button>
+  
                 </div>
                 
               </div>
@@ -82,7 +81,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="reward-text text-center">
-                    <h3>ʻʻ All Agulite holders are rewarded with automatic compound interest which is paid every 15 minutes and every 30 minutes. ʼʼ</h3>
+                    <h3>ʻʻ All Agulite holders are rewarded with automatic compound interest which is paid every 16 minutes ʼʼ</h3>
                 </div>
             </div>
         </div>
@@ -461,6 +460,9 @@ Agulite's tokenomics are also entirely unique, with its Auto-Burn Fire Pit struc
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
                     <div><a href="https://www.instagram.com/official_agulite/"><i class="fab fa-instagram ic"></i></a></div>
                 </div> 
+                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                    <div><a href="https://m.facebook.com/officialAgulite"><i class="fab fa-facebook ic"></i></a></div>
+                </div>
             </div>
         </div>
     </div>

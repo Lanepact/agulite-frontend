@@ -8,7 +8,7 @@
         <a href="/" target="_blank">Home</a>
        <a href="/blockchain-development" target="_blank">Developer</a>
        <a href="https://agulite.gitbook.io/agulite" target="_blank">White Paper</a>
-       <a href="https://agulite-expert.netlify.app" target="_blank">Expert</a>
+       <a href="https://expert.agulite.com" target="_blank">Expert</a>
        <a href="#" @click="goToSocials">Community</a>
     </div>
   </div>
@@ -25,7 +25,7 @@
             <a href="/" target="_blank">Home</a>
              <a href="/blockchain-development" target="_blank">Developer</a>
             <a href="https://agulite.gitbook.io/agulite" target="_blank">White Paper</a>
-            <a href="https://agulite-expert.netlify.app" target="_blank">Expert</a>
+            <a href="https://expert.agulite.com" target="_blank">Expert</a>
             <a href="#" @click="goToSocials">Community</a>
         </div>
 

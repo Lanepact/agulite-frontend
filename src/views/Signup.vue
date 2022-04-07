@@ -1,54 +1,7 @@
 <template>
   <div class="d-flex justify-content-center align-items-center flex-column">
     <section v-if="!authenticated" class="signup-container">
-      <p class="h5 d-block text-agulite">
-        <i class="fas fa-sign-in-alt"></i> Signup with wallet
-      </p>
-      <form class="form mt-2" @submit.prevent="signup()">
-        <div class="form-group mt-2">
-          <input
-            type="text"
-            class="form-control p-2"
-            v-model="firstName"
-            placeholder="First Name"
-            required
-          />
-        </div>
-        <div class="form-group mt-2">
-          <input
-            type="text"
-            class="form-control p-2"
-            v-model="lastName"
-            placeholder="Last Name"
-            required
-          />
-        </div>
-        <div class="form-group mt-2">
-          <input
-            type="email"
-            class="form-control p-2"
-            v-model="email"
-            placeholder="Email"
-            required
-          />
-        </div>
-        <div class="d-flex justify-content-center mt-2">
-          <button
-            :disabled="signupProcessing"
-            type="submit"
-            class="btn btn-agulite btn-block w-100 login p-2"
-          >
-            {{ signupButtonText }}
-          </button>
-        </div>
-        <span
-          class="d-block text-center text-danger fst-italic py-3"
-          v-if="errorMessage"
-        >
-          {{ errorMessage }}
-        </span>
-      </form>
-      <div class="guide mt-4">
+      <div class="guide mt-2">
         <p class="h5 text-agulite">
           <i class="fas fa-book"></i> Guide on payment
         </p>
@@ -113,6 +66,54 @@
           </div>
         </div>
       </div>
+      <p class="h5 d-block text-agulite mt-4">
+        <i class="fas fa-sign-in-alt"></i> Signup with wallet
+      </p>
+      <form class="form mt-2" @submit.prevent="signup()">
+        <div class="form-group mt-2">
+          <input
+            type="text"
+            class="form-control p-2"
+            v-model="firstName"
+            placeholder="First Name"
+            required
+          />
+        </div>
+        <div class="form-group mt-2">
+          <input
+            type="text"
+            class="form-control p-2"
+            v-model="lastName"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <div class="form-group mt-2">
+          <input
+            type="email"
+            class="form-control p-2"
+            v-model="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="d-flex justify-content-center mt-2">
+          <button
+            :disabled="signupProcessing"
+            type="submit"
+            class="btn btn-agulite btn-block w-100 login p-2"
+          >
+            {{ signupButtonText }}
+          </button>
+        </div>
+        <span
+          class="d-block text-center text-danger fst-italic py-3"
+          v-if="errorMessage"
+        >
+          {{ errorMessage }}
+        </span>
+      </form>
+      
     </section>
     <section v-else-if="authenticated" class="payment-container mt-4">
       <form @submit.prevent="payWithBusd" class="mt-4" id="form">

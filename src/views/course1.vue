@@ -334,7 +334,7 @@
                                     <hr>
                                     <div class="price-1">$00.00</div>
                                     <div class="per-m"></div>
-                                    <a href="" target="_blank" class="text-decoration-none"><button @click="goToSignUp(1)">START NOW</button></a> 
+                                    <a href="https://join.slack.com/t/agulite/shared_invite/zt-15qxp2mdt-4jUi_llFX3FbBTYVqq6x1A" target="_blank" class="text-decoration-none"><button @click="goToSignUp(1)">START NOW</button></a> 
                                     <div class="bene">
                                         <i class="fa fa-check i"></i>
                                         <span>Maximum flexibility to learn at your own pace and join the full learning path once payment is completed</span>
